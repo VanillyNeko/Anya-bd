@@ -11,13 +11,18 @@
 
 :root{
     --backgroundImage: url(https://vnil.me/spy-x-family-anya-forger-anime-desktop-wallpaper-preview.jpg);
+    --Chat-Font-Used: 'Pacifico', normal ;
+    --Chat-Font-Size: 15.5px;
 }
 
-.message-content {font-size: 120%}
-.message-content {color: black;}
-.message-content {font-family: Pacifico;}
-.message-content {line-height: 1.5;}
-.user-name {font: bold 16px/30px Pacifico;}
+
+:not([class="hljs"]):not(code){
+    font-family: var(--Chat-Font-Used)!important;
+}
+    
+.markup:not(code) {
+    font-size: var(--Chat-Font-Size)!important;
+}
 
 body {
     background-image: var(--backgroundImage);
