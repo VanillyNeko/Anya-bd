@@ -29,6 +29,21 @@
     --home-icon-image: url('https://vnil.me/1.png');
     --home-icon-image-zoom: 100%;
     --home-icon-image-position: center center;
+
+    /* Colour Implementation */
+    --text-normal: rgb(255, 255, 255);
+    --header-primary: rgb(255, 255, 255);
+    --header-secondary: rgb(255, 255, 255);
+    --text-muted: rgb(255, 255, 255);
+    --channels-default: rgb(255, 255, 255);
+    --interactive-active: rgb(255, 255, 255);
+    --interactive-muted: rgb(255, 255, 255);
+    --interactive-hover: rgb(255, 255, 255);
+    --interactive-normal: rgb(255, 255, 255);
+    --background-tertiary: rgba(71, 16, 99, 0.144);
+    --background-floating: rgb(170, 0, 255);
+    --font-primary: rgb(255, 255, 255);
+    --transparency-color-_v: rgb(255, 255, 255);
 }
 
 /* Font Is Implemented Here! */
@@ -88,6 +103,15 @@ svg {
     display: none;
 }
 
+/* More Colour Allocation */
+.link__2e8e1{
+    color: rgb(255, 255, 255);
+}
+.layerContainer_d5a653{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+
+}
 
 .theme-light, .theme-dark, .theme-amoled {
 	--text-positive: rgb(var(--successcolor));
