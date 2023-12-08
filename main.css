@@ -20,6 +20,10 @@
     /* Font */
     --Chat-Font-Used: 'Pacifico', normal ;
     --Chat-Font-Size: 15.5px;
+    --Category-Font-Colour: rgb(255, 255, 255);
+    --Unread-Chan-Font-Colour: rgb(255, 255, 255);
+    --Default-Channel-Text: rgb(255, 255, 255);
+    --Muted-Channel-Text: rgb(255, 255, 255);
     
     /* Home Icon */
     --home-icon-image: url('https://vnil.me/1.png');
@@ -30,6 +34,10 @@
 /* Font Is Implemented Here! */
 :not([class="hljs"]):not(code){
     font-family: var(--Chat-Font-Used)!important;
+    category-title-text-color: var(--Category-Font-Colour) !important;
+    unread-channel-text: var(--Unread-Chan-Font-Colour) !important;
+    default-channel-text: var(--Default-Channel-Text) !important;
+    muted-channel-text: var(--Muted-Channel-Text) !important;
 }
     
 .markup:not(code) {
