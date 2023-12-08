@@ -12,15 +12,23 @@
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
 
 :root{
+    /* Background */
     --background: url('https://vnil.me/spy-x-family-anya-forger-anime-desktop-wallpaper-preview.jpg');
     --backgroundposition:			center;
 	--backgroundsize:			cover;
 	--backgroundblur:			0;
+    
+    /* Font */
     --Chat-Font-Used: 'Pacifico', normal ;
     --Chat-Font-Size: 15.5px;
+    
+    /* Home Icon */
     --home-icon-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnhseDk1dmIxdXlsNWo3cDFjZWptbm1kOXR1c2FrMGhiNndwaTY1OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FD6CWy270I8j6/giphy.gif');
+    --home-icon-image-zoom: 100%;
+    --home-icon-image-position: center center;
 }
 
+/* Font Is Implemented Here! */
 :not([class="hljs"]):not(code){
     font-family: var(--Chat-Font-Used)!important;
 }
@@ -29,7 +37,7 @@
     font-size: var(--Chat-Font-Size)!important;
 }
 
-/*TopBar*/
+/* Title Bar Text (Could Be Removed If You Learn To Hate It) */
 #app-mount .typeWindows__5fa63 {
     background-color: var(--secondary3-colour); 
     border-bottom: 2px solid var(--primary3-colour); 
@@ -47,6 +55,7 @@
     left: 43.2%;
 }
 
+/* NANI SCREW OFF HOME ICON */
 .tutorialContainer__890ea .childWrapper__01b9c {
     background: var(--home-icon-image) !important;
     background-position: var(--home-icon-image-position) !important;
