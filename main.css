@@ -13,7 +13,7 @@
 
 :root{
     /* Background */
-    --background: url('https://vnil.me/spy-x-family-anya-forger-anime-desktop-wallpaper-preview.jpg');
+    --backgroundImage: url('https://vnil.me/spy-x-family-anya-forger-anime-desktop-wallpaper-preview.jpg');
     --backgroundposition:			center;
 	--backgroundsize:			cover;
 	--backgroundblur:			0;
@@ -23,9 +23,12 @@
     --Chat-Font-Size: 15.5px;
     
     /* Home Icon */
-    --home-icon-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnhseDk1dmIxdXlsNWo3cDFjZWptbm1kOXR1c2FrMGhiNndwaTY1OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FD6CWy270I8j6/giphy.gif');
+    --home-icon-image: url('https://vnil.me/1.png');
     --home-icon-image-zoom: 100%;
     --home-icon-image-position: center center;
+
+    /* Transparency */
+    opacity: 0.5;
 }
 
 /* Font Is Implemented Here! */
