@@ -80,13 +80,13 @@ body
 /* More Colour Allocation */
 .link__2e8e1
 {
-    color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
 }
 
 .layerContainer_d5a653
 {
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.281);
 
 }
 
