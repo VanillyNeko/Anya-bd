@@ -11,25 +11,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 :root{
-    /* Background */
-    --background: url('https://vnil.me/anya-darkened.jpg') !important;
-    --backgroundposition:			center;
-	--backgroundsize:			cover;
-	--backgroundblur:			10;
-    
-    /* Font */
-    --Chat-Font-Used: 'Pacifico', normal ;
-    --Chat-Font-Size: 15.5px;
-    --Category-Font-Colour: rgb(255, 255, 255);
-    --Unread-Chan-Font-Colour: rgb(255, 255, 255);
-    --Default-Channel-Text: rgb(255, 255, 255);
-    --Muted-Channel-Text: rgb(255, 255, 255);
-    
-    /* Home Icon */
-    --home-icon-image: url('https://vnil.me/1.png');
-    --home-icon-image-zoom: 100%;
-    --home-icon-image-position: center center;
-
     /* Colour Implementation */
     --text-normal: rgb(255, 255, 255);
     --header-primary: rgb(255, 255, 255);
@@ -44,10 +25,30 @@
     --background-floating: rgb(170, 0, 255);
     --font-primary: rgb(255, 255, 255);
     --transparency-color-_v: rgb(255, 255, 255);
+	
+    /* Background */
+    --background: url('https://vnil.me/anya-darkened.jpg') !important;
+    --backgroundposition:			center;
+    --backgroundsize:			         cover;
+    --backgroundblur:			            10;
+    
+    /* Font */
+    --Chat-Font-Used: 'Pacifico', normal ;
+    --Chat-Font-Size: 15.5px;
+    --Category-Font-Colour: rgb(255, 255, 255);
+    --Unread-Chan-Font-Colour: rgb(255, 255, 255);
+    --Default-Channel-Text: rgb(255, 255, 255);
+    --Muted-Channel-Text: rgb(255, 255, 255);
+    
+    /* Home Icon */
+    --home-icon-image: url('https://vnil.me/1.png');
+    --home-icon-image-zoom: 100%;
+    --home-icon-image-position: center center;
 }
 
 /* Font Is Implemented Here! */
-:not([class="hljs"]):not(code){
+:not([class="hljs"]):not(code)
+{
     font-family: var(--Chat-Font-Used)!important;
     category-title-text-color: var(--Category-Font-Colour) !important;
     unread-channel-text: var(--Unread-Chan-Font-Colour) !important;
@@ -55,12 +56,14 @@
     muted-channel-text: var(--Muted-Channel-Text) !important;
 }
     
-.markup:not(code) {
+.markup:not(code) 
+{
     font-size: var(--Chat-Font-Size)!important;
 }
 
 /* Background Variable Implemented */
-body{
+body
+{
     background: var(--background) !important;
     background-position: var(--backgroundposition) !important;
     background-repeat: no-repeat !important;
@@ -70,14 +73,16 @@ body{
 }
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
-#app-mount .typeWindows__5fa63 {
+#app-mount .typeWindows__5fa63 
+{
     background-color: var(--secondary3-colour); 
     border-bottom: 2px solid var(--primary3-colour); 
     height: 30px;
     margin: 0px;
 }
 
-#app-mount .typeWindows__5fa63:after {
+#app-mount .typeWindows__5fa63:after 
+{
     content: "Anya Theme v1 By VanillyNeko";
     color: rgb(255,255,255,0.5);
     font-weight: 500;
@@ -88,7 +93,8 @@ body{
 }
 
 /* NANI SCREW OFF HOME ICON */
-.tutorialContainer__890ea .childWrapper__01b9c {
+.tutorialContainer__890ea .childWrapper__01b9c 
+{
     background: var(--home-icon-image) !important;
     background-position: var(--home-icon-image-position) !important;
     background-repeat: no-repeat !important;
@@ -99,21 +105,26 @@ body{
 .listItem_fa7b36
 .listItemWrapper__1f93b
 .wrapper_d281dd
-svg { 
+svg 
+{ 
     display: none;
 }
 
 /* More Colour Allocation */
-.link__2e8e1{
+.link__2e8e1
+{
     color: rgb(255, 255, 255);
 }
-.layerContainer_d5a653{
+
+.layerContainer_d5a653
+{
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
 
 }
 
-.theme-light, .theme-dark, .theme-amoled {
+.theme-light, .theme-dark, .theme-amoled 
+{
 	--text-positive: rgb(var(--successcolor));
 	--text-warning: rgb(var(--warningcolor));
 	--text-danger: rgb(var(--dangercolor));
