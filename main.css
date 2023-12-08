@@ -9,8 +9,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+:root{
+    --backgroundImage: url(https://vnil.me/spy-x-family-anya-forger-anime-desktop-wallpaper-preview.jpg);
+}
+
 .message-content {font-size: 120%}
 .message-content {color: black;}
-.message-content {font-family: "Pacifico";}
+.message-content {font-family: Pacifico;}
 .message-content {line-height: 1.5;}
-.user-name {font: bold 16px/30px "Pacifico";}
+.user-name {font: bold 16px/30px Pacifico;}
+
+body {
+    background-image: var(--backgroundImage);
+  }
