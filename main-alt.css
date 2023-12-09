@@ -31,8 +31,8 @@
     --theme-1: rgba((255, 224, 25, 0.801) - 5%);
     --elevation-high: rgb(255, 255, 255); */
     /* ACCENT COLORS */
-    --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-    --hover-color: #2066b6; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --main-color: #a439b3; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #add3ff; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
     --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
     --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
     --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
