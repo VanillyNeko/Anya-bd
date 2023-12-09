@@ -55,7 +55,7 @@
     /* GENERAL */
     --main-font: Pacifico; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-    --text-normal: rgb(232, 232, 233); /* color of default discord text */
+    --text-normal: rgb(175, 175, 175); /* color of default discord text */
     --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
     --channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
     --members-width: 240px; /* member list width [default: 240px] */
@@ -63,7 +63,7 @@
     /* CHANNEL COLORS */
     --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
     --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-    --channel-text-selected: rgb(255, 255, 255); /* Selected channel text color, CV default is #fff */
+    --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
     --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* MODAL BACKDROP */
@@ -96,8 +96,8 @@
     --Chat-Font-Size: 15.5px;
     --Category-Font-Colour: rgb(255, 255, 255);
     --Unread-Chan-Font-Colour: rgb(255, 255, 255);
-    --Default-Channel-Text: rgb(255, 255, 255);
-    --Muted-Channel-Text: rgb(255, 255, 255);
+    --Default-Channel-Text: rgb(71, 71, 71);
+    --Muted-Channel-Text: rgb(88, 0, 0);
 }
 
 /* Font Is Implemented Here! */
@@ -130,7 +130,7 @@ body
 /* More Colour Allocation */
 .link__2e8e1
 {
-    color: rgb(255, 255, 255);
+    color: rgb(177, 177, 177);
 }
 
 .layerContainer_d5a653
