@@ -3,6 +3,8 @@
  This enables the capability to have fun with the theme and do with it as you please. 
  It also means that you won't have to worry about someone rickrolling you later by changing the code.
 
+ Current font set is Pacifico (Looks like cursive), Can be changed if you want to!
+
  This theme supports Vencord, BetterDiscord and Replugged. Will be adding Aliucord later on down the line!
  
  I welcome forks and stuff but be warned, if discord updates their stuff and you don't pull changes then you may lose the ability to use it. 
