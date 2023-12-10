@@ -10,4 +10,13 @@
  I welcome forks and stuff but be warned, if discord updates their stuff and you don't pull changes then you may lose the ability to use it. 
  I will be updating this theme when discord breaks it.
 
- Screenshots coming soon!
+ Screenshots:
+
+ Friends Page: 
+ ![alt text](https://vanillyneko.github.io/assets/screenshots/friends-page.jpg "Friends Page")
+
+ Settings Page: 
+ ![alt text](https://vanillyneko.github.io/assets/screenshots/settings.jpg "Settings Page")
+
+ Server Announcements: 
+ ![alt text](https://vanillyneko.github.io/assets/screenshots/discord-announcements.jpg "Server Announcements Neko Family Server")
