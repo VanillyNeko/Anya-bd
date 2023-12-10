@@ -13,10 +13,10 @@
  Screenshots:
 
  Friends Page: 
- ![alt text](https://vanillyneko.github.io/assets/screenshots/friends-page.png "Friends Page")
+ ![Friends Page](https://vanillyneko.github.io/assets/screenshots/friends-page.png)
 
  Settings Page: 
- ![alt text](https://vanillyneko.github.io/assets/screenshots/settings.png "Settings Page")
+ ![Settings Page](https://vanillyneko.github.io/assets/screenshots/settings.png)
 
  Server Announcements: 
- ![alt text](https://vanillyneko.github.io/assets/screenshots/discord-announcements.png "Server Announcements Neko Family Server")
+ ![Server Announcements Neko Family Server](https://vanillyneko.github.io/assets/screenshots/discord-announcements.png)
