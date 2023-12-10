@@ -5,7 +5,7 @@
 
  Current font set is Pacifico (Looks like cursive), Can be changed if you want to!
 
- Anya BD works on [BetterDiscord]{https://betterdiscord.app/}/[Vencord]{https://vencord.dev/}/[Replugged]{https://replugged.dev/}. Will be adding Aliucord later on down the line!
+ Anya BD works on [BetterDiscord]{https://betterdiscord.app/} , [Vencord]{https://vencord.dev/} and [Replugged]{https://replugged.dev/}. Will be adding Aliucord later on down the line!
  
  I welcome forks and stuff but be warned, if discord updates their stuff and you don't pull changes then you may lose the ability to use it. 
  I will be updating this theme when discord breaks it.
