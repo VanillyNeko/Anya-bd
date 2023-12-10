@@ -11,7 +11,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
-:root{
+:root {
     /* Colour Implementation */
     /* --text-normal: rgb(255, 255, 255);
     --header-primary: rgb(255, 255, 255);
@@ -37,7 +37,6 @@
     --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
     --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
     --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
-
     /* Transparent Discord */
     --background-primary: transparent !important;
     --background-secondary: transparent !important;
@@ -45,28 +44,24 @@
     --background-tertiary: transparent !important;
     --background-tertiary-alt: transparent !important;
     --background-accent: transparent !important;
-  
     /* STATUS COLORS */
     --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
     --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
     --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
     --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-
     /* GENERAL */
     --main-font: Pacifico; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-    --text-normal: rgb(175, 175, 175); /* color of default discord text */
+    --text-normal: rgb(192, 192, 192); /* color of default discord text */
     --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-    --channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
-    --members-width: 240px; /* member list width [default: 240px] */
-
+    --channels-width: 200px; /* channel list width (240px for Discord default) [default: 220px] */
+    --members-width: 200px; /* member list width [default: 240px] */
     /* CHANNEL COLORS */
     --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
     --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
     --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
     --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
-
     /* MODAL BACKDROP */
     --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
     --backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
@@ -80,20 +75,16 @@
     --backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
     --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(--background-grayscale)] */
     --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(--background-sepia)] */
-
     /* Background */
-    --background: url('https://vnil.me/Ellie-Wallpaper-SpyXFamily.gif');
-    --backgroundposition:			center;
-    --backgroundsize:			         cover;
-
-    
+    --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
+    --backgroundposition: center;
+    --backgroundsize: cover;
     /* HOME BUTTON ICON */
-    --home-icon-image: url(https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv);
+    --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
     --home-icon-image-zoom: 100%;
     --home-icon-image-position: center center;
-    
     /* Font */
-    --Chat-Font-Used: 'Pacifico', normal ;
+    --Chat-Font-Used: 'Pacifico', normal;
     --Chat-Font-Size: 15.5px;
     --Category-Font-Colour: rgb(255, 255, 255);
     --Unread-Chan-Font-Colour: rgb(255, 255, 255);
