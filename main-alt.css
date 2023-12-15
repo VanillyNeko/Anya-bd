@@ -13,14 +13,15 @@
 
 :root {
     /* Colour Implementation */
-    
+
     /* Accent Colours */
     --main-color: #a439b3; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
     --hover-color: #add3ff; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
     --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
     --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
     --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
-    
+    --primary3-colour: var(--main-color);
+
     /* Transparent Discord */
     --background-primary: transparent !important;
     --background-secondary: transparent !important;
@@ -28,14 +29,14 @@
     --background-tertiary: transparent !important;
     --background-tertiary-alt: transparent !important;
     --background-accent: transparent !important;
-    
+
     /* Status Colour */
     --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
     --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
     --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
     --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
-   
+
     /* General */
     --main-font: Pacifico; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
@@ -54,12 +55,14 @@
     --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
     --backgroundposition: center;
     --backgroundsize: cover;
-    
+    --backgroundOpacity: 100;
+    --backgroundBlur: 100;
+
     /* Home Button Icon */
     --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
     --home-icon-image-zoom: 100%;
     --home-icon-image-position: center center;
-    
+
     /* Font */
     --Chat-Font-Used: 'Pacifico', normal;
     --Chat-Font-Size: 15.5px;
@@ -80,10 +83,10 @@
 }
 
 /* Font Size Which Matters */
-.markup:not(code) 
+.markup:not(code)
 {
     font-size: var(--Chat-Font-Size)!important;
-    
+
 }
 
 /* Background Variable Implemented */
@@ -111,16 +114,16 @@ body
 }
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
-#app-mount .typeWindows__5fa63 
+#app-mount .typeWindows__5fa63
 {
-    background-color: rgba(234, 164, 255, 0.315); 
-    border-bottom: 2px solid var(--primary3-colour); 
+    background-color: rgba(234, 164, 255, 0.315);
+    border-bottom: 2px solid var(--primary3-colour);
     height: 30px;
     margin: 0px;
 }
 
 /* Title Bar Text */
-#app-mount .typeWindows__5fa63:after 
+#app-mount .typeWindows__5fa63:after
 {
     content: "Anya Theme v1 By VanillyNeko";
     color: rgb(85, 136, 255);
@@ -132,7 +135,7 @@ body
 }
 
 /* Discord Home Icon Replacement */
-.tutorialContainer__890ea .childWrapper__01b9c 
+.tutorialContainer__890ea .childWrapper__01b9c
 {
     background: var(--home-icon-image) !important;
     background-position: var(--home-icon-image-position) !important;
@@ -145,7 +148,7 @@ body
 .listItem_fa7b36
 .listItemWrapper__1f93b
 .wrapper_d281dd
-svg 
-{ 
+svg
+{
     display: none;
 }
