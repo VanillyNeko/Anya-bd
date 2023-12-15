@@ -5,49 +5,68 @@
  * @description A theme that I am trying to make self reliant on only itself, Its failing...
  * @donate https://paypal.me/vanillyneko
  * @website https://www.vanillyneko.com/
+ * @invite bptEdGMNfW
  * @source https://github.com/arty01238/Theme-For-CrapCord/
 **/
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
-:root{
+:root {
     /* Colour Implementation */
-    --text-normal: rgb(255, 255, 255);
-    --header-primary: rgb(255, 255, 255);
-    --header-secondary: rgb(255, 255, 255);
-    --text-muted: rgb(255, 255, 255);
-    --channels-default: rgb(255, 255, 255);
-    --interactive-active: rgb(255, 255, 255);
-    --interactive-muted: rgb(255, 255, 255);
-    --interactive-hover: rgb(255, 255, 255);
-    --interactive-normal: rgb(255, 255, 255);
-    --background-tertiary: rgba(71, 16, 99, 0.089);
-    --background-floating: rgb(170, 0, 255);
-    --bg-overlay-app-frame: rgba(255, 255, 255, 0);
-    --font-primary: rgb(255, 255, 255);
-    --transparency-color-_v: rgb(255, 255, 255);
-    --theme-h: rgb((255, 224, 25) + 5%);
-    --theme-s: rgb((75, 25, 255) + 10%);
-    --theme-1: rgba((255, 224, 25, 0.801) - 5%);
-    --elevation-high: rgb(255, 255, 255);
-	
+
+    /* Accent Colours */
+    --main-color: #a439b3; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+    --hover-color: #add3ff; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+    --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+    --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+    --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+
+    /* Transparent Discord */
+    --background-primary: transparent !important;
+    --background-secondary: transparent !important;
+    --background-secondary-alt: transparent !important;
+    --background-tertiary: transparent !important;
+    --background-tertiary-alt: transparent !important;
+    --background-accent: transparent !important;
+
+    /* Status Colour */
+    --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+    --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+    --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+    --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+    --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+    /* General */
+    --main-font: Pacifico; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+    --text-normal: rgb(192, 192, 192); /* color of default discord text */
+    --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+    --channels-width: 200px; /* channel list width (240px for Discord default) [default: 220px] */
+    --members-width: 200px; /* member list width [default: 240px] */
+
+    /* Channel Colors */
+    --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+    --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+    --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
+    --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+
     /* Background */
-    --background: url('https://vnil.me/anya-darkened.jpg') !important;
-    --backgroundposition:			center;
-    --backgroundsize:			         cover;
-    
+    --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
+    --backgroundposition: center;
+    --backgroundsize: cover;
+
+    /* Home Button Icon */
+    --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
+    --home-icon-image-zoom: 100%;
+    --home-icon-image-position: center center;
+
     /* Font */
-    --Chat-Font-Used: 'Pacifico', normal ;
+    --Chat-Font-Used: 'Pacifico', normal;
     --Chat-Font-Size: 15.5px;
     --Category-Font-Colour: rgb(255, 255, 255);
     --Unread-Chan-Font-Colour: rgb(255, 255, 255);
-    --Default-Channel-Text: rgb(255, 255, 255);
-    --Muted-Channel-Text: rgb(255, 255, 255);
-    
-    /* Home Icon */
-    --home-icon-image: url('https://vnil.me/1.png');
-    --home-icon-image-zoom: 100%;
-    --home-icon-image-position: center center;
+    --Default-Channel-Text: rgb(71, 71, 71);
+    --Muted-Channel-Text: rgb(88, 0, 0);
 }
 
 /* Font Is Implemented Here! */
@@ -59,17 +78,18 @@
     default-channel-text: var(--Default-Channel-Text) !important;
     muted-channel-text: var(--Muted-Channel-Text) !important;
 }
-    
-.markup:not(code) 
+
+/* Font Size Which Matters */
+.markup:not(code)
 {
     font-size: var(--Chat-Font-Size)!important;
-    
+
 }
 
 /* Background Variable Implemented */
 body
 {
-    background: var(--background) !important;
+    background: var(--background);
     background-position: var(--backgroundposition) !important;
     background-repeat: no-repeat !important;
     background-size: var(--backgroundsize) !important;
@@ -80,7 +100,7 @@ body
 /* More Colour Allocation */
 .link__2e8e1
 {
-    color: rgb(255, 255, 255);
+    color: rgb(177, 177, 177);
 }
 
 .layerContainer_d5a653
@@ -91,18 +111,19 @@ body
 }
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
-#app-mount .typeWindows__5fa63 
+#app-mount .typeWindows__5fa63
 {
-    background-color: rgba(234, 164, 255, 0.315); 
-    border-bottom: 2px solid var(--primary3-colour); 
+    background-color: rgba(234, 164, 255, 0.315);
+    border-bottom: 2px solid var(--primary3-colour);
     height: 30px;
     margin: 0px;
 }
 
-#app-mount .typeWindows__5fa63:after 
+/* Title Bar Text */
+#app-mount .typeWindows__5fa63:after
 {
     content: "Anya Theme v1 By VanillyNeko";
-    color: rgb(255, 255, 255);
+    color: rgb(85, 136, 255);
     font-weight: 500;
 
     position: absolute;
@@ -110,8 +131,8 @@ body
     left: 43.2%;
 }
 
-/* NANI SCREW OFF HOME ICON */
-.tutorialContainer__890ea .childWrapper__01b9c 
+/* Discord Home Icon Replacement */
+.tutorialContainer__890ea .childWrapper__01b9c
 {
     background: var(--home-icon-image) !important;
     background-position: var(--home-icon-image-position) !important;
@@ -119,11 +140,12 @@ body
     background-size: var(--home-icon-image-zoom) !important;
 }
 
+/* Makes Discord Icon Go Bye Bye */
 .tutorialContainer__890ea
 .listItem_fa7b36
 .listItemWrapper__1f93b
 .wrapper_d281dd
-svg 
-{ 
+svg
+{
     display: none;
 }
