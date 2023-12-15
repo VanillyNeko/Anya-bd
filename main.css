@@ -20,6 +20,7 @@
     --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
     --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
     --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+    --primary3-colour: var(--main-color);
 
     /* Transparent Discord */
     --background-primary: transparent !important;
@@ -54,6 +55,8 @@
     --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
     --backgroundposition: center;
     --backgroundsize: cover;
+    --backgroundOpacity: 100;
+    --backgroundBlur: 100;
 
     /* Home Button Icon */
     --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
