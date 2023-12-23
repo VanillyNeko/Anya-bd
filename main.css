@@ -76,10 +76,10 @@
 :not([class="hljs"]):not(code)
 {
     font-family: var(--Chat-Font-Used)!important;
-    category-title-text-color: var(--Category-Font-Colour) !important;
-    unread-channel-text: var(--Unread-Chan-Font-Colour) !important;
-    default-channel-text: var(--Default-Channel-Text) !important;
-    muted-channel-text: var(--Muted-Channel-Text) !important;
+    /*category-title-text-color: var(--Category-Font-Colour) !important;*/
+    /*unread-channel-text: var(--Unread-Chan-Font-Colour) !important;*/
+    /*default-channel-text: var(--Default-Channel-Text) !important;*/
+    /*muted-channel-text: var(--Muted-Channel-Text) !important;*/
 }
 
 /* Font Size Which Matters */
