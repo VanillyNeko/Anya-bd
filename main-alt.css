@@ -66,9 +66,9 @@
     /* Font */
     --Chat-Font-Used: 'Pacifico', normal;
     --Chat-Font-Size: 15px;
-    --Category-Font-Colour: rgb(255, 255, 255);
-    --Unread-Chan-Font-Colour: rgb(255, 255, 255);
-    --Default-Channel-Text: rgb(71, 71, 71);
+    --Category-Font-Colour: rgb(232, 151, 255);
+    --Unread-Chan-Font-Colour: rgb(67, 181, 149);
+    --Default-Channel-Text: rgb(87, 38, 210);
     --Muted-Channel-Text: rgb(88, 0, 0);
 }
 

@@ -40,8 +40,8 @@
     /* General */
     --main-font: Pacifico; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-    --text-normal: rgb(192, 192, 192); /* color of default discord text */
-    --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+    --text-normal: rgb(152, 157, 255); /* color of default discord text */
+    --text-muted: rgb(232, 151, 255); /* color of default discord muted text (e.g.text found in input fields before typing).*/
     --channels-width: 200px; /* channel list width (240px for Discord default) [default: 220px] */
     --members-width: 200px; /* member list width [default: 240px] */
 
@@ -66,9 +66,9 @@
     /* Font */
     --Chat-Font-Used: 'Pacifico', normal;
     --Chat-Font-Size: 15px;
-    --Category-Font-Colour: rgb(255, 255, 255);
-    --Unread-Chan-Font-Colour: rgb(255, 255, 255);
-    --Default-Channel-Text: rgb(71, 71, 71);
+    --Category-Font-Colour: rgb(232, 151, 255);
+    --Unread-Chan-Font-Colour: rgb(67, 181, 149);
+    --Default-Channel-Text: rgb(232, 151, 255);
     --Muted-Channel-Text: rgb(88, 0, 0);
 }
 
@@ -103,7 +103,7 @@ body
 /* More Colour Allocation */
 .link__2e8e1
 {
-    color: rgb(177, 177, 177);
+    color: rgb(232, 151, 255);
 }
 
 .layerContainer_d5a653
