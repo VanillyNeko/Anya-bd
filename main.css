@@ -48,8 +48,8 @@
     /* Channel Colors */
     --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
     --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-    --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
-    --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+    --channel-text-selected: rgb(232, 151, 255); /* Selected channel text color, CV default is #fff */
+    --muted-color: rgb(94, 25, 133); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* Background */
     --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
@@ -108,8 +108,8 @@ body
 
 .layerContainer_d5a653
 {
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.281);
+    color: rgb(232, 151, 255);
+    background-color: rgb(85, 136, 255);
 
 }
 
