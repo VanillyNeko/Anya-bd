@@ -23,12 +23,12 @@
     --primary3-colour: var(--main-color);
 
     /* Transparent Discord */
-    --background-primary: rgba(0, 0, 0, 0.65) !important;
-    --background-secondary: rgba(0, 0, 0, 0.66) !important;
-    --background-secondary-alt: rgba(0, 0, 0, 0.66) !important;
-    --background-tertiary: rgba(0, 0, 0, 0.66) !important;
-    --background-tertiary-alt: rgba(0, 0, 0, 0.66) !important;
-    --background-accent: rgba(0, 0, 0, 0.66) !important;
+    --background-primary: rgba(0, 0, 0, 0.25) !important;
+    --background-secondary: rgba(0, 0, 0, 0.25) !important;
+    --background-secondary-alt: rgba(0, 0, 0, 0.25) !important;
+    --background-tertiary: rgba(0, 0, 0, 0.25) !important;
+    --background-tertiary-alt: rgba(0, 0, 0, 0.25) !important;
+    --background-accent: rgba(0, 0, 0, 0.25) !important;
 
     /* Status Colour */
     --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
