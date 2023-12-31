@@ -23,12 +23,12 @@
     --primary3-colour: var(--main-color);
 
     /* Transparent Discord */
-    --background-primary: rgba(0, 0, 0, 0.05) !important;
-    --background-secondary: rgba(0, 0, 0, 0.05) !important;
-    --background-secondary-alt: rgba(0, 0, 0, 0.05) !important;
-    --background-tertiary: rgba(0, 0, 0, 0.05) !important;
-    --background-tertiary-alt: rgba(0, 0, 0, 0.05) !important;
-    --background-accent: rgba(0, 0, 0, 0.05) !important;
+    --background-primary: rgba(0, 0, 0, 0.65) !important;
+    --background-secondary: rgba(0, 0, 0, 0.66) !important;
+    --background-secondary-alt: rgba(0, 0, 0, 0.66) !important;
+    --background-tertiary: rgba(0, 0, 0, 0.66) !important;
+    --background-tertiary-alt: rgba(0, 0, 0, 0.66) !important;
+    --background-accent: rgba(0, 0, 0, 0.66) !important;
 
     /* Status Colour */
     --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -49,7 +49,7 @@
     --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
     --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
     --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
-    --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+    --muted-color: rgb(87, 87, 87); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* Background */
     /*--background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');*/
@@ -110,18 +110,18 @@ body
 .layerContainer_d5a653
 {
     color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.281);
+    background-color: rgb(138, 138, 138);
 
 }
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
-#app-mount .typeWindows__5fa63
-{
-    background-color: rgba(234, 164, 255, 0.315);
-    border-bottom: 2px solid var(--primary3-colour);
-    height: 30px;
-    margin: 0px;
-}
+/*#app-mount .typeWindows__5fa63*/
+/*{*/
+/*    background-color: rgba(234, 164, 255, 0.315);*/
+/*    border-bottom: 2px solid var(--primary3-colour);*/
+/*    height: 30px;*/
+/*    margin: 0px;*/
+/*}*/
 
 /* Title Bar Text */
 #app-mount .typeWindows__5fa63:after
