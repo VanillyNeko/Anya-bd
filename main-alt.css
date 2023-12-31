@@ -23,12 +23,12 @@
     --primary3-colour: var(--main-color);
 
     /* Transparent Discord */
-    --background-primary: rgba(0, 0, 0, 0.25) !important;
-    --background-secondary: rgba(0, 0, 0, 0.25) !important;
-    --background-secondary-alt: rgba(0, 0, 0, 0.25) !important;
-    --background-tertiary: rgba(0, 0, 0, 0.25) !important;
-    --background-tertiary-alt: rgba(0, 0, 0, 0.25) !important;
-    --background-accent: rgba(0, 0, 0, 0.25) !important;
+    --background-primary: rgba(0, 0, 0, 0.10) !important;
+    --background-secondary: rgba(0, 0, 0, 0.10) !important;
+    --background-secondary-alt: rgba(0, 0, 0, 0.10) !important;
+    --background-tertiary: rgba(0, 0, 0, 0.10) !important;
+    --background-tertiary-alt: rgba(0, 0, 0, 0.10) !important;
+    --background-accent: rgba(0, 0, 0, 0.10) !important;
 
     /* Status Colour */
     --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -56,8 +56,8 @@
     --background: url('https://64.media.tumblr.com/3483468c5dde3300c9af5f555f81d345/c7f8c5419c6e157b-d7/s540x810/a5af37d2a0e77c8d30f9086047bd36721e6827c3.gifv');
     --backgroundposition: center;
     --backgroundsize: cover;
-    --backgroundOpacity: 100;
-    --backgroundBlur: 50;
+    /*--backgroundOpacity: 100;*/
+    /*--backgroundBlur: 100;*/
 
     /* Home Button Icon */
     --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
