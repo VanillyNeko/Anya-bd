@@ -23,12 +23,12 @@
     --primary3-colour: var(--main-color);
 
     /* Transparent Discord */
-    --background-primary: transparent !important;
-    --background-secondary: transparent !important;
-    --background-secondary-alt: transparent !important;
-    --background-tertiary: transparent !important;
-    --background-tertiary-alt: transparent !important;
-    --background-accent: transparent !important;
+    --background-primary: rgba(0, 0, 0, 0.10) !important;
+    --background-secondary: rgba(0, 0, 0, 0.10) !important;
+    --background-secondary-alt: rgba(0, 0, 0, 0.10) !important;
+    --background-tertiary: rgba(0, 0, 0, 0.10) !important;
+    --background-tertiary-alt: rgba(0, 0, 0, 0.10) !important;
+    --background-accent: rgba(0, 0, 0, 0.10) !important;
 
     /* Status Colour */
     --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -40,23 +40,24 @@
     /* General */
     --main-font: 'Caveat Brush'; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-    --text-normal: rgb(152, 157, 255); /* color of default discord text */
-    --text-muted: rgb(232, 151, 255); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+    --text-normal: rgb(192, 192, 192); /* color of default discord text */
+    --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
     --channels-width: 200px; /* channel list width (240px for Discord default) [default: 220px] */
     --members-width: 200px; /* member list width [default: 240px] */
 
     /* Channel Colors */
     --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
     --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-    --channel-text-selected: rgb(232, 151, 255); /* Selected channel text color, CV default is #fff */
-    --muted-color: rgb(94, 25, 133); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+    --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
+    --muted-color: rgb(87, 87, 87); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* Background */
-    --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
+    /*--background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');*/
+    --background: url('https://64.media.tumblr.com/3483468c5dde3300c9af5f555f81d345/c7f8c5419c6e157b-d7/s540x810/a5af37d2a0e77c8d30f9086047bd36721e6827c3.gifv');
     --backgroundposition: center;
     --backgroundsize: cover;
-    --backgroundOpacity: 100;
-    --backgroundBlur: 100;
+    /*--backgroundOpacity: 100;*/
+    /*--backgroundBlur: 100;*/
 
     /* Home Button Icon */
     --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
@@ -65,10 +66,10 @@
 
     /* Font */
     --Chat-Font-Used: 'Caveat Brush', normal;
-    --Chat-Font-Size: 16px;
+    --Chat-Font-Size: 15px;
     --Category-Font-Colour: rgb(232, 151, 255);
     --Unread-Chan-Font-Colour: rgb(67, 181, 149);
-    --Default-Channel-Text: rgb(232, 151, 255);
+    --Default-Channel-Text: rgb(87, 38, 210);
     --Muted-Channel-Text: rgb(88, 0, 0);
 }
 
@@ -76,10 +77,10 @@
 :not([class="hljs"]):not(code)
 {
     font-family: var(--Chat-Font-Used)!important;
-    /*category-title-text-color: var(--Category-Font-Colour) !important;*/
-    /*unread-channel-text: var(--Unread-Chan-Font-Colour) !important;*/
-    /*default-channel-text: var(--Default-Channel-Text) !important;*/
-    /*muted-channel-text: var(--Muted-Channel-Text) !important;*/
+    category-title-text-color: var(--Category-Font-Colour) !important;
+    unread-channel-text: var(--Unread-Chan-Font-Colour) !important;
+    default-channel-text: var(--Default-Channel-Text) !important;
+    muted-channel-text: var(--Muted-Channel-Text) !important;
 }
 
 /* Font Size Which Matters */
@@ -96,31 +97,31 @@ body
     background-position: var(--backgroundposition) !important;
     background-repeat: no-repeat !important;
     background-size: var(--backgroundsize) !important;
-    opacity: var(--backgroundOpacity);
+    opacity: var(--backgroundOpacity) !important;
     filter: blur(var(--backgroundBlur));
 }
 
 /* More Colour Allocation */
 .link__2e8e1
 {
-    color: rgb(232, 151, 255);
+    color: rgb(177, 177, 177);
 }
 
 .layerContainer_d5a653
 {
-    color: rgb(232, 151, 255);
-    background-color: rgb(85, 136, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(138, 138, 138);
 
 }
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
-#app-mount .typeWindows__5fa63
-{
-    background-color: rgba(234, 164, 255, 0.315);
-    border-bottom: 2px solid var(--primary3-colour);
-    height: 30px;
-    margin: 0px;
-}
+/*#app-mount .typeWindows__5fa63*/
+/*{*/
+/*    background-color: rgba(234, 164, 255, 0.315);*/
+/*    border-bottom: 2px solid var(--primary3-colour);*/
+/*    height: 30px;*/
+/*    margin: 0px;*/
+/*}*/
 
 /* Title Bar Text */
 #app-mount .typeWindows__5fa63:after
