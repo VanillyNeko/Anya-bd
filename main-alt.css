@@ -38,7 +38,7 @@
     --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
     /* General */
-    --main-font: Pacifico; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+    --main-font: 'Caveat Brush'; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
     --text-normal: rgb(192, 192, 192); /* color of default discord text */
     --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
@@ -65,7 +65,7 @@
     --home-icon-image-position: center center;
 
     /* Font */
-    --Chat-Font-Used: 'Pacifico', normal;
+    --Chat-Font-Used: 'Caveat Brush', normal;
     --Chat-Font-Size: 15px;
     --Category-Font-Colour: rgb(232, 151, 255);
     --Unread-Chan-Font-Colour: rgb(67, 181, 149);
