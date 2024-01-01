@@ -156,6 +156,16 @@ element.style
     color: var(--main-color);
 }
 
+.button_afdfd9 .contents_fb6220
+{
+    color: var(--muted-color);
+}
+
+.app_de4237 button 
+{
+    color: var(--text-muted);
+}
+
  /*Title Bar Text (Could Be Removed If You Learn To Hate It) */
 #app-mount .typeWindows__5fa63
 {
