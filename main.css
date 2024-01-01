@@ -141,6 +141,21 @@ body
     color: var(--Category-Font-Colour);
 }
 
+.theme-dark
+{
+    color: var(--background-primary);
+}
+
+.container__11d72 *
+{
+    color: #593695;
+}
+
+.item__48dda
+{
+    color: var(--main-color);
+}
+
  /*Title Bar Text (Could Be Removed If You Learn To Hate It) */
 #app-mount .typeWindows__5fa63
 {
