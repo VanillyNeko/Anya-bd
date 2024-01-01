@@ -151,6 +151,11 @@ body
     color: var(--main-color);
 }
 
+element.style
+{
+    color: var(--main-color);
+}
+
  /*Title Bar Text (Could Be Removed If You Learn To Hate It) */
 #app-mount .typeWindows__5fa63
 {
