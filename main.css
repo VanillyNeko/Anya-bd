@@ -73,14 +73,9 @@
 }
 
 /* Font Is Implemented Here! */
-:not([class="hljs"]):not(code)
+:not([class="hljs"]):not(code) 
 {
-    font-family: var(--Chat-Font-Used)!important;
-    /*color: rgb(218, 119, 255);*/
-    category-title-text-color: var(--Category-Font-Colour) !important;
-    unread-channel-text: var(--Unread-Chan-Font-Colour) !important;
-    default-channel-text: var(--Default-Channel-Text) !important;
-    muted-channel-text: var(--Muted-Channel-Text) !important;
+    font-family: var(--Chat-Font-Used) !important;
 }
 
 /* Font Size Which Matters */
