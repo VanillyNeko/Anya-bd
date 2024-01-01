@@ -40,16 +40,16 @@
     /* General */
     --main-font: 'Caveat Brush'; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-    --text-normal: rgb(192, 192, 192); /* color of default discord text */
-    --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+    --text-normal: rgb(177, 91, 255); /* color of default discord text */
+    --text-muted: rgb(117, 164, 255); /* color of default discord muted text (e.g.text found in input fields before typing).*/
     --channels-width: 200px; /* channel list width (240px for Discord default) [default: 220px] */
     --members-width: 200px; /* member list width [default: 240px] */
 
     /* Channel Colors */
     --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-    --channel-color: rgba(93, 52, 131, 0.616); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-    --channel-text-selected: rgb(102, 102, 102); /* Selected channel text color, CV default is #fff */
-    --muted-color: rgb(87, 87, 87); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+    --channel-color: rgba(179, 105, 250, 0.62); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+    --channel-text-selected: rgb(63, 124, 255); /* Selected channel text color, CV default is #fff */
+    --muted-color: rgb(255, 169, 169); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* Background */
     --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
