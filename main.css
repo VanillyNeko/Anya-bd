@@ -1,12 +1,12 @@
 /**
  * @name Anya-BD
- * @author VanillyNeko & Leigh Magee
- * @version 0.0.1
+ * @author VanillyNeko
+ * @version 1.0.0
  * @description A theme that I am trying to make self reliant on only itself, Its failing...
  * @donate https://paypal.me/vanillyneko
  * @website https://www.vanillyneko.com/
  * @invite bptEdGMNfW
- * @source https://github.com/arty01238/Theme-For-CrapCord/
+ * @source https://github.com/VanillyNeko/Anya-bd
 **/
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Caveat+Brush&family=Pacifico&display=swap');
@@ -52,8 +52,7 @@
     --muted-color: rgb(87, 87, 87); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* Background */
-    /*--background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');*/
-    --background: url('https://vanillyneko.github.io/Anya-bd/assets/new_year_s_eve_with_anya.jpg');
+    --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');*/
     --backgroundposition: center;
     --backgroundsize: cover;
     /*--backgroundOpacity: 100;*/
@@ -126,7 +125,7 @@ body
 /* Title Bar Text */
 #app-mount .typeWindows__5fa63:after
 {
-    content: "Anya Theme v1 By VanillyNeko";
+    content: "Anya BD By VanillyNeko";
     color: rgb(85, 136, 255);
     font-weight: 500;
 
