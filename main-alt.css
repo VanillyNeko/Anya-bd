@@ -101,18 +101,6 @@ body
 }
 
 /* More Colour Allocation */
-.link__2e8e1
-{
-    color: rgb(177, 177, 177);
-}
-
-.layerContainer_d5a653
-{
-    color: rgb(255, 255, 255);
-    background-color: rgb(138, 138, 138);
-
-}
-
 .username_d30d99
 {
     color: var(--Unread-Chan-Font-Colour);
@@ -121,6 +109,11 @@ body
 .name__8d1ec
 {
     color: var(--main-color);
+}
+
+.overflow__87fe8
+{
+    color: var(--text-muted);
 }
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
