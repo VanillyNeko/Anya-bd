@@ -76,17 +76,18 @@
 :not([class="hljs"]):not(code)
 {
     font-family: var(--Chat-Font-Used)!important;
-    category-title-text-color: var(--Category-Font-Colour) !important;
-    unread-channel-text: var(--Unread-Chan-Font-Colour) !important;
-    default-channel-text: var(--Default-Channel-Text) !important;
-    muted-channel-text: var(--Muted-Channel-Text) !important;
+    color: #982929;
+    /*category-title-text-color: var(--Category-Font-Colour) !important;*/
+    /*unread-channel-text: var(--Unread-Chan-Font-Colour) !important;*/
+    /*default-channel-text: var(--Default-Channel-Text) !important;*/
+    /*muted-channel-text: var(--Muted-Channel-Text) !important;*/
 }
 
 /* Font Size Which Matters */
 .markup:not(code)
 {
     font-size: var(--Chat-Font-Size)!important;
-
+    color: #43b581;
 }
 
 /* Background Variable Implemented */
@@ -101,17 +102,17 @@ body
 }
 
 /* More Colour Allocation */
-.link__2e8e1
-{
-    color: rgb(177, 177, 177);
-}
+/*.link__2e8e1*/
+/*{*/
+/*    color: rgb(177, 177, 177);*/
+/*}*/
 
-.layerContainer_d5a653
-{
-    color: rgb(255, 255, 255);
-    background-color: rgb(138, 138, 138);
+/*.layerContainer_d5a653*/
+/*{*/
+/*    color: rgb(255, 255, 255);*/
+/*    background-color: rgb(138, 138, 138);*/
 
-}
+/*}*/
 
 /* Title Bar Text (Could Be Removed If You Learn To Hate It) */
 /*#app-mount .typeWindows__5fa63*/
