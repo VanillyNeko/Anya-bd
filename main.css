@@ -126,6 +126,21 @@ body
     color: var(--text-muted);
 }
 
+.name__02dbd
+{
+    color: var(--main-color);
+}
+
+.linkButtonIcon__2f35b
+{
+    color: var(--Muted-Channel-Text);
+}
+
+.username__81ee6
+{
+    color: var(--Category-Font-Colour);
+}
+
  /*Title Bar Text (Could Be Removed If You Learn To Hate It) */
 #app-mount .typeWindows__5fa63
 {
