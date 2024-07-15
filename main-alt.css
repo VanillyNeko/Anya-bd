@@ -138,7 +138,7 @@ body
 }
 
 /* Discord Home Icon Replacement */
-.tutorialContainer__890ea .childWrapper__01b9c
+.tutorialContainer_f9623d .childWrapper_f90abb
 {
     background: var(--home-icon-image) !important;
     background-position: var(--home-icon-image-position) !important;
@@ -147,10 +147,11 @@ body
 }
 
 /* Makes Discord Icon Go Bye Bye */
-.tutorialContainer__890ea
-.listItem_fa7b36
-.listItemWrapper__1f93b
-.wrapper_d281dd
+.tutorialContainer_f9623d
+.listItem_c96c45
+.listItemWrapper_dfb2f8
+.wrapper_c5f96a
+.svg_c5f96a
 svg
 {
     display: none;
