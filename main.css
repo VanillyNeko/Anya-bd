@@ -59,7 +59,7 @@
     --backgroundBlur: 100;
 
     /* Home Button Icon */
-    --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
+    --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');/*For Reliability Sake!*/
     --home-icon-image-zoom: 100%;
     --home-icon-image-position: center center;
 
