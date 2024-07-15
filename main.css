@@ -176,7 +176,7 @@ element.style
 }
 
 /* Title Bar Text */
-#app-mount .typeWindows__5fa63:after
+/* #app-mount .typeWindows__5fa63:after
 {
     content: "Anya BD By VanillyNeko";
     color: rgb(85, 136, 255);
@@ -185,7 +185,7 @@ element.style
     position: absolute;
     top: 8px;
     left: 43.2%;
-}
+}*/
 
 /* Discord Home Icon Replacement */
 .tutorialContainer_f9623d .childWrapper_f90abb
