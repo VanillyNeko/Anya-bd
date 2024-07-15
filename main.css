@@ -59,7 +59,7 @@
     --backgroundBlur: 100;
 
     /* Home Button Icon */
-    --home-icon-image: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
+    --home-icon-image: url('https://vnil.me/sjiEWYPu5y0Q.gif');
     --home-icon-image-zoom: 100%;
     --home-icon-image-position: center center;
 
@@ -73,7 +73,7 @@
 }
 
 /* Font Is Implemented Here! */
-:not([class="hljs"]):not(code) 
+:not([class="hljs"]):not(code)
 {
     font-family: var(--Chat-Font-Used) !important;
 }
@@ -161,12 +161,12 @@ element.style
     color: var(--muted-color);
 }
 
-.app_de4237 button 
+.app_de4237 button
 {
     color: var(--text-muted);
 }
 
- /*Title Bar Text (Could Be Removed If You Learn To Hate It) */
+/*Title Bar Text (Could Be Removed If You Learn To Hate It) */
 #app-mount .typeWindows__5fa63
 {
     background-color: rgba(234, 164, 255, 0.73);
@@ -201,6 +201,7 @@ element.style
 .listItem_c96c45
 .listItemWrapper_dfb2f8
 .wrapper_c5f96a
+.svg_c5f96a
 svg
 {
     display: none;
