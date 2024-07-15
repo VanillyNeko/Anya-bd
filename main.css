@@ -176,7 +176,7 @@ element.style
 }
 
 /* Title Bar Text */
-#app-mount .typeWindows__5fa63:after
+/* #app-mount .typeWindows__5fa63:after
 {
     content: "Anya BD By VanillyNeko";
     color: rgb(85, 136, 255);
@@ -185,10 +185,10 @@ element.style
     position: absolute;
     top: 8px;
     left: 43.2%;
-}
+}*/
 
 /* Discord Home Icon Replacement */
-.tutorialContainer__890ea .childWrapper__01b9c
+.tutorialContainer_f9623d .childWrapper_f90abb
 {
     background: var(--home-icon-image) !important;
     background-position: var(--home-icon-image-position) !important;
@@ -197,10 +197,10 @@ element.style
 }
 
 /* Makes Discord Icon Go Bye Bye */
-.tutorialContainer__890ea
-.listItem_fa7b36
-.listItemWrapper__1f93b
-.wrapper_d281dd
+.tutorialContainer_f9623d
+.listItem_c96c45
+.listItemWrapper_dfb2f8
+.wrapper_c5f96a
 svg
 {
     display: none;
