@@ -52,7 +52,8 @@
     --muted-color: rgb(255, 169, 169); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
     /* Background */
-    --background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');
+    /*--background: url('https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg');*/ /*Broken?*/
+    --background: url(https://vnil.me/QdxrKwAjWykR.jpg);
     --backgroundposition: center;
     --backgroundsize: cover;
     --backgroundOpacity: 100;
