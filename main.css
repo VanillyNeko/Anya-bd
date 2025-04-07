@@ -1,0 +1,301 @@
+/**
+ * @name        Anya-BD
+ * @version     3.1.0
+ * @description Final version with full transparency across Discord, working folder previews, and pastel theme ðŸŒ™
+ * @author      VanillyNeko
+ */
+
+ @import url("https://fonts.googleapis.com/css2?family=Single+Day&family=Pacifico&family=Permanent+Marker&display=swap");
+
+ 
+ :root {
+   --smbd-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top);
+   --smbd-overlay-color: rgba(0, 0, 0, 0.2);
+   --smbd-blur: 0px;
+   --smbd-font-primary: "Single Day", cursive;
+   --smbd-font-accent: "Pacifico", cursive;
+   --smbd-font-button: "Permanent Marker", cursive;
+   --smbd-corner-radius: 10px;
+   --smbd-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .theme-dark {
+   --background-primary: transparent;
+   --background-secondary: transparent;
+   --background-tertiary: transparent;
+   --channeltextarea-background: transparent;
+   --text-normal: #fff;
+   --text-muted: #fdd7f3;
+   --text-link: #ffe8f5;
+   --brand-experiment: #ffc0cb;
+   --status-danger: #ff7e7e;
+   --status-positive: #b4f2c0;
+   --status-warning: #fff59e;
+ }
+ 
+ /* === Background === */
+ .layers__960e4::before {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: var(--smbd-background-image) center/cover no-repeat;
+   z-index: 0;
+   pointer-events: none;
+ }
+ .layers__960e4::after {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: var(--smbd-overlay-color);
+   backdrop-filter: blur(var(--smbd-blur));
+   z-index: 1;
+   pointer-events: none;
+ }
+ 
+ /* === Transparent Content Without Folder Interference === */
+ [class*="sidebar"],
+ [class*="scroller"],
+ [class*="container"]:not(.folder__17546):not(.wrapper__3af0b),
+ [class*="chat"],
+ [class*="region"],
+ [class*="base"],
+ [class*="form"],
+ [class*="standardSidebar"],
+ [class*="content"]:not(.folder__17546):not(.wrapper__3af0b),
+ [class*="panel"],
+ [class*="main"],
+ [class*="applicationStore"],
+ [class*="nowPlaying"],
+ [class*="accountProfileCard"],
+ [class*="settings"],
+ [class*="messages"],
+ [class*="column"],
+ [class*="section"],
+ [class*="layer"] > div,
+ [class*="layer"] > section,
+ [class*="layer"] > main,
+ [class*="layer"] > [class*="flex"],
+ [class*="contentColumn"],
+ [class*="peopleColumn"],
+ [class*="contentRegion"],
+ [class*="pageWrapper"],
+ [class*="customScroller"],
+ [class*="customColumn"] {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* === DO NOT interfere with Discord's folder previews === */
+ .folderIcon__48112 foreignObject > div > div {
+   all: unset !important;
+   display: block !important;
+   border-radius: var(--smbd-corner-radius);
+ }
+ 
+ /* === Fonts === */
+ * {
+   font-family: var(--smbd-font-primary) !important;
+   border-radius: var(--smbd-corner-radius) !important;
+ }
+ h1, h2, h3, .title__1ec7e {
+   font-family: var(--smbd-font-accent) !important;
+ }
+ button, a {
+   font-family: var(--smbd-font-button) !important;
+ }
+ 
+ /* === Message Text === */
+ .markup__1c0d1,
+ .messageContent__21e69,
+ .messageContent__1dca2,
+ .markup__75297 {
+   color: white !important;
+   font-size: 15px;
+   font-weight: normal;
+   text-shadow: var(--smbd-text-shadow);
+ }
+ 
+ /* === Scrollbar === */
+ ::-webkit-scrollbar {
+   width: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.25);
+   border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ 
+ /* === FINAL OVERLAY PATCH === */
+ 
+ /* DM bar / top friends header bar */
+ .container__43554,
+ .privateChannels__9b518,
+ .scroller__89969,
+ .scroller__2e5b0,
+ .scroller__52ae7,
+ .sidebar__02e8d {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* Top section of Friends list page */
+ .header__104ca,
+ .container_f79ab4,
+ .peopleList_d2f527,
+ .nowPlayingColumn_b025fe {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* Guilds bar (left vertical sidebar with icons) */
+ .guilds__2b93a,
+ .scrollerBase_dc3aa9,
+ .wrapper__216eb,
+ .wrapper_a7e7a8,
+ .tree__7a511 {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ 
+ /* === LIVE INSPECT PATCH: DM + Friends + Server bar confirmed classes === */
+ 
+ /* Friends list right section */
+ .peopleColumn__133bf {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* DM list (left panel under user) */
+ .sidebarList_c48ade,
+ .sidebarListRounded_c48ade,
+ .itemsContainer_ef3116 {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ 
+ /* ðŸš‘ Surgical Patch: Direct class targeting from user DOM screenshot */
+ 
+ /* Server list (leftmost bar) */
+ .guilds__2b93a {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* DM Sidebar and region */
+ .sidebar_c48ade,
+ .sidebarRegion__36437 {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* Friends center and right panels */
+ .container__43554,
+ .peopleColumn__133bf {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+
+ /* 🔥 Final Nuclear Override for stubborn grey panels */
+.guilds__2b93a,
+.sidebar_c48ade,
+.sidebarRegion__36437,
+.container__43554,
+.peopleColumn__133bf {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  opacity: 1 !important;
+  isolation: isolate !important;
+  z-index: 2 !important;
+}
+
+.guilds__2b93a::before,
+.sidebar_c48ade::before,
+.sidebarRegion__36437::before,
+.container__43554::before,
+.peopleColumn__133bf::before,
+.guilds__2b93a::after,
+.sidebar_c48ade::after,
+.sidebarRegion__36437::after,
+.container__43554::after,
+.peopleColumn__133bf::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 🧨 FINAL ULTIMATE PATCH — DM List, Friends Panel, Server Bar */
+.sidebar_c48ade,
+.sidebarRegion__36437,
+.guilds__2b93a,
+.peopleColumn__133bf,
+.container__43554 {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  z-index: 2 !important;
+  isolation: isolate !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  transition: none !important;
+}
+
+/* Kill ::before and ::after */
+.sidebar_c48ade::before,
+.sidebarRegion__36437::before,
+.guilds__2b93a::before,
+.peopleColumn__133bf::before,
+.container__43554::before,
+.sidebar_c48ade::after,
+.sidebarRegion__36437::after,
+.guilds__2b93a::after,
+.peopleColumn__133bf::after,
+.container__43554::after {
+  content: none !important;
+  background: none !important;
+  display: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Disable all fallback theme vars */
+:root, .theme-dark {
+  --background-primary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-tertiary: transparent !important;
+  --channeltextarea-background: transparent !important;
+  --background-accent: transparent !important;
+  --background-floating: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --deprecated-panel-background: transparent !important;
+  --deprecated-card-bg: transparent !important;
+  --modal-background: transparent !important;
+  --background-modifier-hover: transparent !important;
+  --background-modifier-selected: transparent !important;
+  --background-modifier-accent: transparent !important;
+}
