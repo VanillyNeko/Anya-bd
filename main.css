@@ -12,11 +12,11 @@
    --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg);
    --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
    --anya-bd-theme-blur: 0px;
-   --smbd-font-primary: "Single Day", cursive;
-   --smbd-font-accent: "Pacifico", cursive;
+   --anya-bd-theme-font-primary: "Single Day", cursive;
+   --anya-bd-theme-font-accent: "Pacifico", cursive;
    --smbd-font-button: "Permanent Marker", cursive;
-   --smbd-corner-radius: 10px;
-   --smbd-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   --anya-bd-theme-corner-radius: 10px;
+   --anya-bd-theme-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
    --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
  }
  
@@ -91,19 +91,19 @@
  .folderIcon__48112 foreignObject > div > div {
    all: unset !important;
    display: block !important;
-   border-radius: var(--smbd-corner-radius);
+   border-radius: var(--anya-bd-theme-corner-radius);
  }
  
  /* === Fonts === */
  * {
-   font-family: var(--smbd-font-primary) !important;
-   border-radius: var(--smbd-corner-radius) !important;
+   font-family: var(--anya-bd-theme-font-primary) !important;
+   border-radius: var(--anya-bd-theme-corner-radius) !important;
  }
  h1, h2, h3, .title__1ec7e {
-   font-family: var(--smbd-font-accent) !important;
+   font-family: var(--anya-bd-theme-font-accent) !important;
  }
  button, a {
-   font-family: var(--smbd-font-button) !important;
+   font-family: var(--anya-bd-theme-font-button) !important;
  }
  
  /* === Message Text === */
@@ -114,7 +114,7 @@
    color: white !important;
    font-size: 15px;
    font-weight: normal;
-   text-shadow: var(--smbd-text-shadow);
+   text-shadow: var(--anya-bd-theme-text-shadow);
  }
  
  /* === Scrollbar === */
