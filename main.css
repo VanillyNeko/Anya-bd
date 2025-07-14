@@ -13,7 +13,8 @@
    --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
    --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
    --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
-   --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg);
+   --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg); /* Normal Theme */
+   /* --anya-bd-theme-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top); */ /* Holiday Theme */
    --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
    --anya-bd-theme-blur: 0px;
    --anya-bd-theme-brightness: 0.85;
