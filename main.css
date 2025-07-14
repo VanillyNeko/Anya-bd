@@ -142,16 +142,24 @@
  /* === FINAL OVERLAY PATCH === */
  
  /* DM bar / top friends header bar */
- .container__43554,
- .privateChannels__9b518,
- .scroller__89969,
- .scroller__2e5b0,
- .scroller__52ae7,
- .sidebar__02e8d {
-   background: transparent !important;
-   background-color: transparent !important;
-   box-shadow: none !important;
- }
+  .privateChannels__35e86,
+  .scroller__99e7c {
+  background-color: rgba(13, 186, 255, 0.178);
+  text-decoration-color: rgba(0, 0, 0, 0.322);
+}
+
+  .searchBar__35e86 {
+  height: 56px;
+  box-shadow: var(--popout-header-shadow);
+}
+  .searchBar__35e86 .searchBarComponent__35e86 {
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  border-radius: 14px;
+}
+
+.channel__972a0 {
+  border-radius: var(--list-item-radius);
+}
  
  /* Top section of Friends list page */
  .header__104ca,
@@ -173,7 +181,58 @@
    background-color: transparent !important;
    box-shadow: none !important;
  }
- 
+
+ /* Bottom text bar */
+ .channelTextArea__74017,
+.wrapper__44df5 {
+  --textarea-alpha: 0.1;
+  margin: 0;
+  background: rgba(var(--textarea-color), var(--textarea-alpha));
+  border-radius: var(--textarea-radius);
+}
+.channelTextArea__74017 .scrollableContainer__74017,
+.wrapper__44df5 .scrollableContainer__74017 {
+  background-color: rgba(147, 228, 255, 0.322);
+}
+.channelTextArea__74017 .placeholder__1b31f,
+.wrapper__44df5 .placeholder__1b31f {
+  color: rgba(235, 145, 197, 0.911);
+}
+.channelTextArea__74017 .editor__1b31f,
+.wrapper__44df5 .editor__1b31f {
+  color: rgb(147, 228, 255);
+}
+
+.channelTextAreaDisabled__74017 .scrollableContainer__74017 {
+  opacity: 1;
+}
+
+.wrapper__44df5 {
+  padding: 12px 0;
+}
+
+.upload_aa605f {
+  background-color: rgb(147, 228, 255);
+  border-radius: var(--message-radius);
+}
+
+.typing_b88801 {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 24px;
+  top: -12px;
+  left: unset;
+  right: unset;
+  margin-top: 0;
+  margin-right: 0 !important;
+}
+.stackedBars__74017 {
+  background-color: transparent;
+  border-bottom: 1px solid var(--background-modifier-accent);
+}
+.stackedBars__74017 .replyBar__841c8 {
+  background: transparent;
+}
  
  /* === LIVE INSPECT PATCH: DM + Friends + Server bar confirmed classes === */
  
@@ -294,20 +353,26 @@
 }
 
 /* Disable all fallback theme vars */
-:root, .theme-dark {
-  --background-primary: transparent !important;
-  --background-secondary: transparent !important;
-  --background-tertiary: transparent !important;
-  --channeltextarea-background: transparent !important;
-  --background-accent: transparent !important;
-  --background-floating: transparent !important;
-  --background-secondary-alt: transparent !important;
-  --deprecated-panel-background: transparent !important;
-  --deprecated-card-bg: transparent !important;
-  --modal-background: transparent !important;
-  --background-modifier-hover: transparent !important;
-  --background-modifier-selected: transparent !important;
-  --background-modifier-accent: transparent !important;
+
+/* ================================
+   Home Icon Replacement
+================================ */
+
+/* Hide original icon */
+.childWrapper__6e9f8 svg {
+  display: none !important;
+}
+
+.childWrapper__6e9f8 {
+  background: var(--anya-bd-theme-home-icon) center/cover no-repeat !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  flex-shrink: 0 !important;
+}
+
+.childWrapper__6e9f8 foreignObject {
+  display: none !important;
 }
 
 /* ================================
