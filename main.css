@@ -1,278 +1,443 @@
 /**
- * @name Anya Pastel Glass
- * @author VanillyNeko
- * @version 3.2.0
- * @description Full fork of CapnKitten’s Translucence — with pastel theme, custom background, home icon.
- * @license MIT
- * Original: https://github.com/CapnKitten/BetterDiscord
+ * @name        Anya-BD
+ * @version     3.1.0
+ * @description Final version with full transparency across Discord, working folder previews, and pastel theme ðŸŒ™
+ * @author      VanillyNeko
  */
 
-:root {
-  --anya-bd-theme-color-1: rgba(255, 192, 203, 0.3); /* pastel pink */
-  --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
-  --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
-  --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
+ @import url("https://fonts.googleapis.com/css2?family=Single+Day&family=Pacifico&family=Permanent+Marker&display=swap");
 
-  --anya-bd-theme-background-image: url('https://vnil.me/QdxrKwAjWykR.jpg');
-
-  --anya-bd-theme-blur: 40px;
-  --anya-bd-theme-brightness: 0.85;
-  --anya-bd-theme-saturate: 1.2;
-
-  --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
-
-  --anya-bd-theme-radius: 10px;
-  --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
+ 
+ :root {
+   --anya-bd-theme-color-1: rgba(255, 192, 203, 0.3); /* pastel pink */
+   --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
+   --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
+   --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
+   --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg); /* Normal Theme */
+   /* --anya-bd-theme-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top); */ /* Holiday Theme */
+   --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
+   --anya-bd-theme-blur: 0px;
+   --anya-bd-theme-brightness: 0.85;
+   --anya-bd-theme-saturate: 1.2;
+   --anya-bd-theme-font-primary: "Single Day", cursive;
+   --anya-bd-theme-font-accent: "Pacifico", cursive;
+   --anya-bd-theme-font-button: "Permanent Marker", cursive;
+   --anya-bd-theme-corner-radius: 10px;
+   --anya-bd-theme-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
+   --anya-bd-theme-radius: 10px;
+   --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+ 
+ .theme-dark {
+   --background-primary: transparent;
+   --background-secondary: transparent;
+   --background-tertiary: transparent;
+   --channeltextarea-background: transparent;
+   --text-normal: #fff;
+   --text-muted: #fdd7f3;
+   --text-link: #ffe8f5;
+   --brand-experiment: #ffc0cb;
+   --status-danger: #ff7e7e;
+   --status-positive: #b4f2c0;
+   --status-warning: #fff59e;
+ }
+ 
+ /* === Background === */
+ .layers__960e4::before {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: var(--anya-bd-theme-background-image) center/cover no-repeat;
+   z-index: 0;
+   pointer-events: none;
+ }
+ .layers__960e4::after {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: var(--anya-bd-theme-overlay-color);
+   backdrop-filter: blur(var(--anya-bd-theme-blur));
+   z-index: 1;
+   pointer-events: none;
+ }
+ 
+ /* === Transparent Content Without Folder Interference === */
+ [class*="sidebar"],
+ [class*="scroller"],
+ [class*="container"]:not(.folder__17546):not(.wrapper__3af0b),
+ [class*="chat"],
+ [class*="region"],
+ [class*="base"],
+ [class*="form"],
+ [class*="standardSidebar"],
+ [class*="content"]:not(.folder__17546):not(.wrapper__3af0b),
+ [class*="panel"],
+ [class*="main"],
+ [class*="applicationStore"],
+ [class*="nowPlaying"],
+ [class*="accountProfileCard"],
+ [class*="settings"],
+ [class*="messages"],
+ [class*="column"],
+ [class*="section"],
+ [class*="layer"] > div,
+ [class*="layer"] > section,
+ [class*="layer"] > main,
+ [class*="layer"] > [class*="flex"],
+ [class*="contentColumn"],
+ [class*="peopleColumn"],
+ [class*="contentRegion"],
+ [class*="pageWrapper"],
+ [class*="customScroller"],
+ [class*="customColumn"] {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* === DO NOT interfere with Discord's folder previews === */
+ .folderIcon__48112 foreignObject > div > div {
+   all: unset !important;
+   display: block !important;
+   border-radius: var(--anya-bd-theme-corner-radius);
+ }
+ 
+ /* === Fonts === */
+ * {
+   font-family: var(--anya-bd-theme-font-primary) !important;
+   border-radius: var(--anya-bd-theme-corner-radius) !important;
+ }
+ h1, h2, h3, .title__1ec7e {
+   font-family: var(--anya-bd-theme-font-accent) !important;
+ }
+ button, a {
+   font-family: var(--anya-bd-theme-font-button) !important;
+ }
+ 
+ /* === Message Text === */
+ .markup__1c0d1,
+ .messageContent__21e69,
+ .messageContent__1dca2,
+ .markup__75297 {
+   color: white !important;
+   font-size: 15px;
+   font-weight: normal;
+   text-shadow: var(--anya-bd-theme-text-shadow);
+ }
+ 
+ /* === Scrollbar === */
+ ::-webkit-scrollbar {
+   width: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.25);
+   border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ 
+ /* === FINAL OVERLAY PATCH === */
+ 
+ /* DM bar / top friends header bar */
+  .privateChannels__35e86,
+  .scroller__99e7c {
+  background-color: rgba(13, 186, 255, 0.178);
+  text-decoration-color: rgba(0, 0, 0, 0.322);
 }
 
-/* ================================
-   Body background image
-================================ */
-
-body {
-  background: var(--anya-bd-theme-background-image) center/cover no-repeat fixed !important;
+  .searchBar__35e86 {
+  height: 56px;
+  box-shadow: var(--popout-header-shadow);
+}
+  .searchBar__35e86 .searchBarComponent__35e86 {
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  border-radius: 14px;
 }
 
-/* ================================
-   Base app layers
-================================ */
+.channel__972a0 {
+  border-radius: var(--list-item-radius);
+}
+ 
+ /* Top section of Friends list page */
+ .header__104ca,
+ .container_f79ab4,
+ .peopleList_d2f527,
+ .nowPlayingColumn_b025fe {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* Guilds bar (left vertical sidebar with icons) */
+ .guilds__2b93a,
+ .scrollerBase_dc3aa9,
+ .wrapper__216eb,
+ .wrapper_a7e7a8,
+ .tree__7a511 {
+   background: rgb(147, 228, 255);
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
 
-body,
-.appMount-3lHmkl,
-.app-2CXKsg {
-  background: var(--anya-bd-theme-background-image) center/cover no-repeat fixed !important;
+ /* Bottom text bar */
+ .channelTextArea__74017,
+.wrapper__44df5 {
+  --textarea-alpha: 0.1;
+  margin: 0;
+  background: rgba(79, 181, 214, 0.062);
+  border-radius: var(--textarea-radius);
+}
+.channelTextArea__74017 .scrollableContainer__74017,
+.wrapper__44df5 .scrollableContainer__74017 {
+  background-color: rgba(147, 228, 255, 0.322);
+}
+.channelTextArea__74017 .placeholder__1b31f,
+.wrapper__44df5 .placeholder__1b31f {
+  color: rgba(218, 146, 188, 0.911);
+}
+.channelTextArea__74017 .editor__1b31f,
+.wrapper__44df5 .editor__1b31f {
+  color: rgba(218, 146, 188, 0.911);
 }
 
-.layers-3iHuyZ,
-.layer-86YKbF {
-  background-color: rgba(255, 192, 203, 0.3) !important; /* pastel pink with transparency */
-  backdrop-filter: blur(40px) brightness(0.85) saturate(1.2);
-  -webkit-backdrop-filter: blur(40px) brightness(0.85) saturate(1.2);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.channelTextAreaDisabled__74017 .scrollableContainer__74017 {
+  opacity: 100%;
 }
 
-/* Fallback for no backdrop-filter support */
-@supports not ((backdrop-filter: blur(1px))) {
-  .appMount-3lHmkl,
-  .app-2CXKsg,
-  .layers-3iHuyZ,
-  .layer-86YKbF {
-    background: rgba(255, 255, 255, 0.85) !important;
-  }
+.wrapper__44df5 {
+  padding: 12px 0;
 }
 
-/* ================================
-   Guilds bar (server list)
-================================ */
-
-.guilds-2JjMmN,
-.guildsWrapper-5TJh6A {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-right: var(--anya-bd-theme-border);
+.upload_aa605f {
+  background-color: rgb(147, 228, 255);
+  border-radius: var(--message-radius);
 }
 
-/* ================================
-   Channels list sidebar
-================================ */
+.typing_b88801 {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 24px;
+  top: -12px;
+  left: unset;
+  right: unset;
+  margin-top: 0;
+  margin-right: 0 !important;
+}
+.stackedBars__74017 {
+  background-color: rgba(218, 146, 188, 0.911);
+  border-bottom: 1px solid var(--background-modifier-accent);
+}
+.stackedBars__74017 .replyBar__841c8 {
+  background: rgba(218, 146, 188, 0.911);
+}
+ 
+ /* === LIVE INSPECT PATCH: DM + Friends + Server bar confirmed classes === */
+ 
+ /* Friends list right section */
+ .peopleColumn__133bf {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* DM list (left panel under user) */
+ .sidebarList_c48ade,
+ .sidebarListRounded_c48ade,
+ .itemsContainer_ef3116 {
+   background: transparent;
+   background-color: rgba(76, 183, 216, 0.267); /* colours the groups bar*/
+   box-shadow: none !important;
+ }
 
-.sidebar-1tnWFu {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-right: var(--anya-bd-theme-border);
+ /*Discord groups sidebar*/
+.stack_dbd263, 
+.scroller_ef3116, 
+.none_d125d2, 
+.scrollerBase_d125d2{
+  background-color:rgba(84, 154, 177, 0.308);
+}
+  .wrapper_ef3116 {
+  background-color: var(--sidebar-color);
+}
+.wrapper_ef3116 .tree_ef3116:focus {
+  outline: none;
 }
 
-/* ================================
-   Chat background
-================================ */
-
-.chat-2ZfjoI {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
+.scroller_ef3116 {
+  background-color: transparent !important;
+}
+.scroller_ef3116::-webkit-scrollbar {
+  width: 0 !important;
 }
 
-.scrollerInner-2PPAp2 {
-  background: transparent !important;
-}
-/* ================================
-   User Popouts
-================================ */
-
-.userPopout-3XzG_A,
-.userPanelInnerThemed-2xZFjl,
-.userPopoutOuter-1OHwPL {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.listItem__650eb svg {
+  filter: none;
 }
 
-/* ================================
-   Popouts (general)
-================================ */
-
-.popout-15UxD6,
-.submenu-3ycVEH,
-.tooltip-14MtrL,
-.container-3baos1,
-.container-2O1UgZ {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.childWrapper__6e9f8,
+.circleIconButton__5bc7e {
+  background-color: rgba(50, 134, 161, 0.356);
+  color: var(--accent-text-color) !important;
 }
 
-/* ================================
-   Context Menus
-================================ */
-
-.contextMenu-HLZMGh {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.mention_c10249 {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: var(--accent-text-color);
 }
 
-/* ================================
-   Modals & Overlays
-================================ */
-
-.modal-3Crloo,
-.overlayBackground-3K8IuP,
-.overlayTitle-2efoIF {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.numberBadge__2b1f5 {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity)) !important;
+  color: var(--accent-text-color) !important;
 }
 
-/* ================================
-   Search Popouts
-================================ */
-
-.searchResultsWrap-5RVOkx,
-.searchResultsContainer-1ma_dc {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.iconBadge__650eb.participating__64cf0 {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+}
+.iconBadge__650eb.participating__64cf0 path {
+  fill: var(--accent-text-color);
 }
 
-.reactionTooltip-2E_doa {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.item__58105 {
+  background-color: var(--notification-color);
 }
 
-/* ================================
-   Miscellaneous overlays
-================================ */
-
-.container-2o3qEW {
-  background: var(--anya-bd-theme-color-4) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-/* ================================
-   Threads Sidebar
-================================ */
-
-.threadSidebar-1o3BTy {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-left: var(--anya-bd-theme-border);
+.footer__214dc {
+  margin-top: 8px;
+  padding-top: 0;
+  background-color: transparent;
 }
 
-/* ================================
-   Pins & Pinned Messages Popout
-================================ */
-
-.messagesPopoutWrap-3zryHW {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+.gradient__214dc {
+  display: none;
 }
 
-/* ================================
-   Mentions Highlight
-================================ */
+ /* DM Sidebar and region */
+ .sidebar_c48ade,
+ .sidebarRegion__36437 {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* Friends center and right panels */
+ .container__43554,
+ .peopleColumn__133bf {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
 
-.mentioned-Tre-dv {
-  background: rgba(255, 192, 203, 0.3) !important;
+ /* 🔥 Final Nuclear Override for stubborn grey panels */
+.guilds__2b93a,
+.sidebar_c48ade,
+.sidebarRegion__36437,
+.container__43554,
+.peopleColumn__133bf {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  opacity: 1 !important;
+  isolation: isolate !important;
+  z-index: 2 !important;
 }
 
-.mentioned-Tre-dv .mention {
-  color: #ff99cc !important;
+.guilds__2b93a::before,
+.sidebar_c48ade::before,
+.sidebarRegion__36437::before,
+.container__43554::before,
+.peopleColumn__133bf::before,
+.guilds__2b93a::after,
+.sidebar_c48ade::after,
+.sidebarRegion__36437::after,
+.container__43554::after,
+.peopleColumn__133bf::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
-/* ================================
-   Voice & Video Containers
-================================ */
-
-.callContainer-HtHELf,
-.video-1FfuMD {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
+/* 🧨 FINAL ULTIMATE PATCH — DM List, Friends Panel, Server Bar */
+.sidebar_c48ade,
+.sidebarRegion__36437,
+.guilds__2b93a,
+.peopleColumn__133bf,
+.container__43554 {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  z-index: 2 !important;
+  isolation: isolate !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+  transition: none !important;
 }
 
-.panels-3wFtMD,
-.nowPlayingColumn-1eCBCN {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-top: var(--anya-bd-theme-border);
+/*Channels List */
+.platform-win .sidebar_c48ade {
+  border-radius: 0;
 }
 
-/* ================================
-   Member List (right sidebar)
-================================ */
-
-.members-3WRCEx,
-.membersWrap-3NUR2t {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-left: var(--anya-bd-theme-border);
+.sidebar_c48ade,
+.container__2637a,
+.link__2ea32,
+.voiceChannelsButton__29444:hover,
+.sidebar_c48ade  {
+  background-color: rgba(84, 154, 177, 0.308);
 }
 
-/* ================================
-   Individual Members
-================================ */
-
-.member-2gU6Ar {
-  background: transparent !important;
+.header_f37cb1 {
+  background-color: rgba(84, 154, 177, 0.308);
+  box-shadow: var(--popout-header-shadow);
+}
+.header_f37cb1 .communityInfoPill_f37cb1 {
+  background-color: rgba(84, 154, 177, 0.308);
+  border-radius: var(--card-radius);
 }
 
-.container-1r6BKw,
-.container-ZMc96U,
-.content-yTz4x3 {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
+.content__07f91 {
+  background-color: rgba(84, 154, 177, 0.308);
+  border-radius: var(--list-item-radius);
 }
 
-.content-1jQy2l {
-  background: transparent !important;
+.container_e88f3f {
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+  border: none;
 }
+
+/* Kill ::before and ::after */
+.sidebar_c48ade::before,
+.sidebarRegion__36437::before,
+.guilds__2b93a::before,
+.peopleColumn__133bf::before,
+.container__43554::before,
+.sidebar_c48ade::after,
+.sidebarRegion__36437::after,
+.guilds__2b93a::after,
+.peopleColumn__133bf::after,
+.container__43554::after {
+  content: none !important;
+  background: none !important;
+  display: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Disable all fallback theme vars */
 
 /* ================================
    Home Icon Replacement
@@ -294,404 +459,3 @@ body,
 .childWrapper__6e9f8 foreignObject {
   display: none !important;
 }
-/* ================================
-   DM Sidebar (Friends List)
-================================ */
-
-.container-2cd8Mz,
-.privateChannels-1nO12o {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-right: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Inbox & Mentions Popout
-================================ */
-
-.container-3ayLPN {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Status Picker Popout
-================================ */
-
-.status-1AY8sU,
-.statusItem-2hiCNB {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Emoji Picker
-================================ */
-
-.emojiPicker-6YCk8a {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   User Settings
-================================ */
-
-.standardSidebarView-E9Pc3j {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-.contentColumnDefault-1VQkGM,
-.contentColumnMinimal-2gRsiU {
-  background: transparent !important;
-}
-
-/* ================================
-   User Settings Modal Popouts
-================================ */
-
-.contentRegion-3HkfJJ {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Member List Popout
-================================ */
-
-.membersGroup-2eiWxl {
-  background: transparent !important;
-}
-
-.containerDefault-YUSmu3,
-.containerDragAfter-1F4fgZ,
-.containerDragBefore-3zlQ2d {
-  background: transparent !important;
-}
-
-/* ================================
-   Typing Indicator Bar
-================================ */
-
-.typing-2J1mQU {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--anya-bd-theme-radius);
-}
-/* ================================
-   Tooltips
-================================ */
-
-.tooltip-14MtrL {
-  background: var(--anya-bd-theme-color-4) !important;
-  backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Reactions Popout
-================================ */
-
-.reactionTooltip-2E_doa {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Quick Switcher
-================================ */
-
-.quickswitcher-pKcM9U {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(30px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(30px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Nitro Modal & Gift Screens
-================================ */
-
-.premiumPromotion-1eU6wU,
-.promotionCard-2J5YHn {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(30px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(30px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Upload Popouts & Drag Drop
-================================ */
-
-.uploadModal-2ifh8j,
-.uploadDropModal-2kTwbc {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(40px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(40px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-  border: var(--anya-bd-theme-border);
-}
-
-/* ================================
-   Scrollbar Styling
-================================ */
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--anya-bd-theme-color-1);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-/* ================================
-   Fallback for unsupported features
-================================ */
-
-@supports not ((backdrop-filter: blur(1px))) {
-  .tooltip-14MtrL,
-  .reactionTooltip-2E_doa,
-  .quickswitcher-pKcM9U,
-  .premiumPromotion-1eU6wU,
-  .promotionCard-2J5YHn,
-  .uploadModal-2ifh8j,
-  .uploadDropModal-2kTwbc {
-    background: rgba(255, 255, 255, 0.9) !important;
-  }
-}
-/* ================================
-   Search Bar & Popouts
-================================ */
-
-.searchBar-3TnChZ,
-.searchAnswer-3Dz2-q,
-.searchFilter-2UfsDk {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-.searchBarComponent-3N7dCG {
-  background: var(--anya-bd-theme-color-1) !important;
-  backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(20px) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-.option-96V44q:after {
-  background: none !important;
-}
-
-/* ================================
-   Reaction List
-================================ */
-
-.reactions-12N0jA,
-.reaction-3vwAF2 {
-  background: transparent !important;
-}
-
-.reaction-3vwAF2:hover {
-  background: var(--anya-bd-theme-color-1) !important;
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-/* ================================
-   Status Indicators
-================================ */
-
-.status-oxiHuE {
-  background: var(--anya-bd-theme-color-1) !important;
-}
-
-.status-oxiHuE[style*="green"] {
-  background: #77dd77 !important; /* pastel green */
-}
-
-.status-oxiHuE[style*="yellow"] {
-  background: #fff799 !important; /* pastel yellow */
-}
-
-.status-oxiHuE[style*="red"] {
-  background: #ff6961 !important; /* pastel red */
-}
-
-/* ================================
-   Buttons & Mentions Inline
-================================ */
-
-.button-38aScr {
-  background: var(--anya-bd-theme-color-1) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-.mention {
-  background: rgba(255, 192, 203, 0.2) !important;
-}
-
-.mention:hover {
-  background: rgba(255, 192, 203, 0.4) !important;
-}
-
-/* ================================
-   Pinned Threads
-================================ */
-
-.pinnedMessages-1Ikjii {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-/* ================================
-   Popout Footers & Misc Buttons
-================================ */
-
-.footer-31IekZ {
-  background: transparent !important;
-}
-
-.lookFilled-yCfaCM.colorBrand-3pXr91 {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-/* ================================
-   Backdrop Filter Fallback
-================================ */
-
-@supports not ((backdrop-filter: blur(1px))) {
-  .searchBar-3TnChZ,
-  .searchAnswer-3Dz2-q,
-  .searchFilter-2UfsDk,
-  .searchBarComponent-3N7dCG,
-  .pinnedMessages-1Ikjii {
-    background: rgba(255, 255, 255, 0.8) !important;
-  }
-}
-/* ================================
-   Scroll Containers & Edge Cases
-================================ */
-
-/* Generic scroll containers that might slip through */
-.scroller-1Bvpku,
-.scroller-1bVxF5,
-.auto-2TJ1RH,
-.thin-RnSY0a,
-.scrollerBase-_bVAAt {
-  background: transparent !important;
-}
-
-.popout-1KHNAq {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  -webkit-backdrop-filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness));
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-.hiddenScrollbar-1qPUZa {
-  background: transparent !important;
-}
-
-.overflowRolesPopout-1Puiuq {
-  background: var(--anya-bd-theme-color-2) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-.autocomplete-3NRXG8 {
-  background: var(--anya-bd-theme-color-3) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-.autocomplete-3NRXG8 .sectionTag-28mLyE {
-  background: transparent !important;
-}
-
-/* Misc inline button tweaks */
-.button-f2h6uQ {
-  background: var(--anya-bd-theme-color-1) !important;
-  border-radius: var(--anya-bd-theme-radius);
-}
-
-/* ================================
-   Force base text & link colors
-================================ */
-
-.theme-dark {
-  --text-normal: #ffffff;
-  --text-muted: #dddddd;
-}
-
-.theme-light {
-  --text-normal: #000000;
-  --text-muted: #333333;
-}
-
-a {
-  color: #ff99cc !important;
-}
-
-a:hover {
-  color: #ff69b4 !important;
-}
-
-/* ================================
-   Final license & attribution
-================================ */
-
-/**
- * -----------------------------------------------------------
- * Anya Pastel Glass - A full fork of Translucence by CapnKitten
- *
- * Original Author: CapnKitten (https://github.com/CapnKitten)
- * Fork Author: VanillyNeko (https://github.com/VanillyNeko)
- * License: MIT
- * Original: https://github.com/CapnKitten/BetterDiscord
- * -----------------------------------------------------------
- */
