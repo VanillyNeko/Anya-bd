@@ -48,7 +48,7 @@
    content: "";
    position: fixed;
    inset: 0;
-   background: var(--smbd-background-image) center/cover no-repeat;
+   background: var(--anya-bd-theme-background-image) center/cover no-repeat;
    z-index: 0;
    pointer-events: none;
  }
@@ -56,8 +56,8 @@
    content: "";
    position: fixed;
    inset: 0;
-   background: var(--smbd-overlay-color);
-   backdrop-filter: blur(var(--smbd-blur));
+   background: var(--anya-bd-theme-overlay-color);
+   backdrop-filter: blur(var(--anya-bd-theme-blur));
    z-index: 1;
    pointer-events: none;
  }
@@ -100,19 +100,19 @@
  .folderIcon__48112 foreignObject > div > div {
    all: unset !important;
    display: block !important;
-   border-radius: var(--smbd-corner-radius);
+   border-radius: var(--anya-bd-theme-corner-radius);
  }
  
  /* === Fonts === */
  * {
-   font-family: var(--smbd-font-primary) !important;
-   border-radius: var(--smbd-corner-radius) !important;
+   font-family: var(--anya-bd-theme-font-primary) !important;
+   border-radius: var(--anya-bd-theme-corner-radius) !important;
  }
  h1, h2, h3, .title__1ec7e {
-   font-family: var(--smbd-font-accent) !important;
+   font-family: var(--anya-bd-theme-font-accent) !important;
  }
  button, a {
-   font-family: var(--smbd-font-button) !important;
+   font-family: var(--anya-bd-theme-font-button) !important;
  }
  
  /* === Message Text === */
@@ -123,7 +123,7 @@
    color: white !important;
    font-size: 15px;
    font-weight: normal;
-   text-shadow: var(--smbd-text-shadow);
+   text-shadow: var(--anya-bd-theme-text-shadow);
  }
  
  /* === Scrollbar === */
