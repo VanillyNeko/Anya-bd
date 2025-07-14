@@ -9,14 +9,15 @@
 
  
  :root {
-   --smbd-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top);
-   --smbd-overlay-color: rgba(0, 0, 0, 0.2);
-   --smbd-blur: 0px;
+   --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg);
+   --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
+   --anya-bd-theme-blur: 0px;
    --smbd-font-primary: "Single Day", cursive;
    --smbd-font-accent: "Pacifico", cursive;
    --smbd-font-button: "Permanent Marker", cursive;
    --smbd-corner-radius: 10px;
    --smbd-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
  }
  
  .theme-dark {
@@ -38,7 +39,7 @@
    content: "";
    position: fixed;
    inset: 0;
-   background: var(--smbd-background-image) center/cover no-repeat;
+   background: var(--anya-bd-theme-background-image) center/cover no-repeat;
    z-index: 0;
    pointer-events: none;
  }
@@ -46,8 +47,8 @@
    content: "";
    position: fixed;
    inset: 0;
-   background: var(--smbd-overlay-color);
-   backdrop-filter: blur(var(--smbd-blur));
+   background: var(--anya-bd-theme-overlay-color);
+   backdrop-filter: blur(var(--anya-bd-theme-blur));
    z-index: 1;
    pointer-events: none;
  }
@@ -298,4 +299,25 @@
   --background-modifier-hover: transparent !important;
   --background-modifier-selected: transparent !important;
   --background-modifier-accent: transparent !important;
+}
+
+/* ================================
+   Home Icon Replacement
+================================ */
+
+/* Hide original icon */
+.childWrapper__6e9f8 svg {
+  display: none !important;
+}
+
+.childWrapper__6e9f8 {
+  background: var(--anya-bd-theme-home-icon) center/cover no-repeat !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  flex-shrink: 0 !important;
+}
+
+.childWrapper__6e9f8 foreignObject {
+  display: none !important;
 }
