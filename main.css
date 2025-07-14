@@ -9,15 +9,23 @@
 
  
  :root {
+   --anya-bd-theme-color-1: rgba(255, 192, 203, 0.3); /* pastel pink */
+   --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
+   --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
+   --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
    --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg);
    --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
    --anya-bd-theme-blur: 0px;
+   --anya-bd-theme-brightness: 0.85;
+   --anya-bd-theme-saturate: 1.2;
    --anya-bd-theme-font-primary: "Single Day", cursive;
    --anya-bd-theme-font-accent: "Pacifico", cursive;
-   --smbd-font-button: "Permanent Marker", cursive;
+   --anya-bd-theme-font-button: "Permanent Marker", cursive;
    --anya-bd-theme-corner-radius: 10px;
    --anya-bd-theme-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
    --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
+   --anya-bd-theme-radius: 10px;
+   --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
  }
  
  .theme-dark {
