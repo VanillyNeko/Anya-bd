@@ -374,24 +374,3 @@
 .childWrapper__6e9f8 foreignObject {
   display: none !important;
 }
-
-/* ================================
-   Home Icon Replacement
-================================ */
-
-/* Hide original icon */
-.childWrapper__6e9f8 svg {
-  display: none !important;
-}
-
-.childWrapper__6e9f8 {
-  background: var(--anya-bd-theme-home-icon) center/cover no-repeat !important;
-  border-radius: 50% !important;
-  width: 48px !important;
-  height: 48px !important;
-  flex-shrink: 0 !important;
-}
-
-.childWrapper__6e9f8 foreignObject {
-  display: none !important;
-}
