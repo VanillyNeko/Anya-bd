@@ -1,6 +1,6 @@
 /**
  * @name        Anya-BD
- * @version     3.1.0
+ * @version     3.2.0
  * @description Final version with full transparency across Discord, working folder previews, and pastel theme ðŸŒ™
  * @author      VanillyNeko
  */
@@ -23,7 +23,7 @@
    --anya-bd-theme-font-accent: "Pacifico", cursive;
    --anya-bd-theme-font-button: "Permanent Marker", cursive;
    --anya-bd-theme-corner-radius: 10px;
-   --anya-bd-theme-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   --anya-bd-theme-text-shadow: 0px 0px 0px rgb(135, 255, 193);
    --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
    --anya-bd-theme-radius: 10px;
    --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
@@ -66,7 +66,7 @@
  .messageContent__21e69,
  .messageContent__1dca2,
  .markup__75297 {
-   color: rgb(255, 168, 229); /* Changes text colour in main text body */
+   color: rgb(202, 155, 255); /* Changes text colour in main text body */
    font-size: 15px;
    font-weight: normal;
    text-shadow: var(--anya-bd-theme-text-shadow);
@@ -153,7 +153,7 @@
      Friends list right section 
   ================================ */
  .peopleColumn__133bf {
-   background-color: rgba(255, 82, 183, 0.911);
+   background-color: rgba(255, 82, 183, 0.253);
    box-shadow: none !important;
  }
 
@@ -167,7 +167,7 @@
   .wrapper_ef3116,
 .wrapper_ef3116 .tree_ef3116:focus,
 .scroller_ef3116 {
-  background-color: rgba(50, 133, 161, 0.363); /* Changes the groups background colour */
+  background-color: rgba(50, 133, 161, 0.105); /* Changes the groups background colour */
 }
 .scroller_ef3116::-webkit-scrollbar {
   width: 0 !important;
@@ -181,7 +181,7 @@
 .iconBadge__650eb.participating__64cf0,
 .iconBadge__650eb.participating__64cf0 path,
 .item__58105 {
-  background-color: rgba(121, 204, 243, 0.363); /*changes colour of the group holders*/
+  background-color: rgba(164, 121, 243, 0); /*changes colour of the group holders*/
 }
  
    /* ================================
@@ -191,8 +191,9 @@
 .memberInner__5d473,
 .container__133bf,
 .tabBody__133bf {
-  background-color: rgba(50, 133, 161, 0.411); /* Changes the main friends list background colour */
+  background-color: rgba(255, 0, 0, 0); /* Changes the main friends list background colour */
 }
+
 .contentWrapper__08434 .container_a45028 {
   border: none;
 }
