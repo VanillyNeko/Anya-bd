@@ -20,6 +20,19 @@
    --anya-bd-theme-radius: 10px;
    --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
  }
+
+ .theme-dark {
+   --background-secondary: transparent;
+   --background-tertiary: transparent;
+   --channeltextarea-background: transparent;
+   --text-normal: rgba(255, 112, 219, 0.37);
+   --text-muted: rgba(255, 112, 219, 0.37);
+   --text-link: rgba(255, 112, 219, 0.37);
+   --brand-experiment: rgba(255, 112, 219, 0.37);
+   --status-danger: rgba(255, 112, 219, 0.37);
+   --status-positive: rgba(255, 112, 219, 0.37);
+   --status-warning: rgba(255, 112, 219, 0.37);
+ }
  
  /* === Background === */
  .layers__960e4::before {
