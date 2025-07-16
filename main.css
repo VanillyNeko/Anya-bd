@@ -9,16 +9,8 @@
 
  
  :root {
-   --anya-bd-theme-color-1: rgba(255, 192, 203, 0.3); /* pastel pink */
-   --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
-   --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
-   --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
    --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg); /* Normal Theme */
    /* --anya-bd-theme-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top); */ /* Holiday Theme */
-   --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
-   --anya-bd-theme-blur: 0px;
-   --anya-bd-theme-brightness: 0.85;
-   --anya-bd-theme-saturate: 1.2;
    --anya-bd-theme-font-primary: "Single Day", cursive;
    --anya-bd-theme-font-accent: "Pacifico", cursive;
    --anya-bd-theme-font-button: "Permanent Marker", cursive;
@@ -27,19 +19,6 @@
    --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
    --anya-bd-theme-radius: 10px;
    --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
- }
- 
- .theme-dark {
-   --background-secondary: transparent;
-   --background-tertiary: transparent;
-   --channeltextarea-background: transparent;
-   --text-normal: rgba(255, 112, 219, 0.37);
-   --text-muted: rgba(255, 112, 219, 0.37);
-   --text-link: rgba(255, 112, 219, 0.37);
-   --brand-experiment: rgba(255, 112, 219, 0.37);
-   --status-danger: rgba(255, 112, 219, 0.37);
-   --status-positive: rgba(255, 112, 219, 0.37);
-   --status-warning: rgba(255, 112, 219, 0.37);
  }
  
  /* === Background === */
@@ -53,7 +32,7 @@
    content: "";
    position: fixed;
    inset: 0;
-   background: rgba(100, 24, 136, 0.37); /* Changes entire backdrop colour */
+   background: rgba(255, 255, 255, 0.082); /* Changes entire backdrop colour */
    backdrop-filter: blur(var(--anya-bd-theme-blur));
    z-index: 1;
    pointer-events: none;
@@ -71,45 +50,39 @@
    font-weight: normal;
    text-shadow: var(--anya-bd-theme-text-shadow);
  }
- 
+
   /* ================================
      Scrollbar
   ================================ */
  ::-webkit-scrollbar {
-   background-color: rgba(221, 99, 191, 0.493); /* scroll bar colour */
+   background-color: rgba(221, 99, 191, 0.384); /* scroll bar colour */
    width: 8px;
  }
  ::-webkit-scrollbar-thumb {
-   background-color: rgba(13, 186, 255, 0.342);
+   background-color: rgba(255, 103, 235, 0.425);
    border-radius: 10px;
  }
  ::-webkit-scrollbar-track {
-   background: rgba(255, 138, 255, 0.459); /* Small band on far right of text input UI */
+   background: rgba(255, 182, 255, 0.342); /* Small band on far right of text input UI */
  }
 
  
   /* ================================
      DM Variables
   ================================ */
-  .privateChannels__35e86,
-  .scroller__99e7c,
-  .searchBar__35e86,
-  .searchBar__35e86 .searchBarComponent__35e86,
-  .channel__972a0 {
-  background-color: rgba(15, 172, 224, 0.281); /*Controlls background colour of DMs */
-  border-radius: var(--list-item-radius);
+.privateChannels__35e86,
+.scroller__99e7c {
+  background-color: rgba(15, 172, 224, 0.281);
 }
- 
-  /* ================================
-     Top section of Friends list page 
-  ================================ */
- .header__104ca,
- .container_f79ab4,
- .peopleList_d2f527,
- .nowPlayingColumn_b025fe {
-   background: rgb(147, 228, 255);
-   background-color: rgb(147, 228, 255);
-   box-shadow: none !important;
+
+.searchBar__35e86 {
+  height: 56px;
+  color: rgba(15, 172, 224, 0.281);
+  box-shadow: var(--popout-header-shadow);
+}
+ .wrapper_c19a55 {
+  background-color: rgba(255, 130, 234, 0.253);  /* Container for messaging text. */
+  border-radius: var(--message-radius);
  }
 
   /* ================================
@@ -135,7 +108,7 @@
 .channelTextAreaDisabled__74017 .scrollableContainer__74017, 
 .wrapper__44df5, 
 .upload_aa605f {
-    background-color: rgba(15, 172, 224, 0); /* Controlls the colour of text box input*/
+    background-color: rgba(218, 146, 188, 0); /* Controlls the colour of text box input*/
   padding: 12px 0;
 }
 
@@ -152,7 +125,7 @@
 .stackedBars__74017,
 .stackedBars__74017, 
 .replyBar__841c8 {
-  background: rgba(218, 146, 188, 0.911);
+  background: rgb(218, 146, 188);
 }
  
   /* ================================
@@ -173,7 +146,7 @@
   .wrapper_ef3116,
 .wrapper_ef3116 .tree_ef3116:focus,
 .scroller_ef3116 {
-  background-color: rgba(50, 133, 161, 0.363);
+  background-color: rgba(50, 133, 161, 0.363); /* Changes the groups background colour */
 }
 .scroller_ef3116::-webkit-scrollbar {
   width: 0 !important;
@@ -187,7 +160,7 @@
 .iconBadge__650eb.participating__64cf0,
 .iconBadge__650eb.participating__64cf0 path,
 .item__58105 {
-  background-color: rgba(243, 121, 217, 0.247); /*changes colour of the group holders*/
+  background-color: rgba(121, 204, 243, 0.363); /*changes colour of the group holders*/
 }
  
    /* ================================
@@ -275,7 +248,7 @@
   background: var(--anya-bd-theme-home-icon) center/cover no-repeat !important;
   border-radius: 50% !important;
   width: 48px !important;
-  height: 48px !important;
+  height: 46px !important;
   flex-shrink: 0 !important;
 }
 
