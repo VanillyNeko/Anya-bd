@@ -1,0 +1,373 @@
+/**
+ * @name        Anya-BD
+ * @version     3.1.0
+ * @description Final version with full transparency across Discord, working folder previews, and pastel theme ðŸŒ™
+ * @author      VanillyNeko
+ */
+
+ @import url("https://fonts.googleapis.com/css2?family=Single+Day&family=Pacifico&family=Permanent+Marker&display=swap");
+
+ 
+ :root {
+   --anya-bd-theme-color-1: rgba(255, 192, 203, 0.3); /* pastel pink */
+   --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
+   --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
+   --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
+   --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg); /* Normal Theme */
+   /* --anya-bd-theme-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top); */ /* Holiday Theme */
+   --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
+   --anya-bd-theme-blur: 0px;
+   --anya-bd-theme-brightness: 0.85;
+   --anya-bd-theme-saturate: 1.2;
+   --anya-bd-theme-font-primary: "Single Day", cursive;
+   --anya-bd-theme-font-accent: "Pacifico", cursive;
+   --anya-bd-theme-font-button: "Permanent Marker", cursive;
+   --anya-bd-theme-corner-radius: 10px;
+   --anya-bd-theme-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
+   --anya-bd-theme-radius: 10px;
+   --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+ 
+ .theme-dark {
+   --background-secondary: transparent;
+   --background-tertiary: transparent;
+   --channeltextarea-background: transparent;
+   --text-normal: rgba(255, 112, 219, 0.37);
+   --text-muted: rgba(255, 112, 219, 0.37);
+   --text-link: rgba(255, 112, 219, 0.37);
+   --brand-experiment: rgba(255, 112, 219, 0.37);
+   --status-danger: rgba(255, 112, 219, 0.37);
+   --status-positive: rgba(255, 112, 219, 0.37);
+   --status-warning: rgba(255, 112, 219, 0.37);
+ }
+ 
+ /* === Background === */
+ .layers__960e4::before {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: url(https://vnil.me/QdxrKwAjWykR.jpg) center/cover no-repeat;
+ }
+ .layers__960e4::after {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: rgba(100, 24, 136, 0.37); /* Changes entire backdrop colour */
+   backdrop-filter: blur(var(--anya-bd-theme-blur));
+   z-index: 1;
+   pointer-events: none;
+ }
+ 
+  /* ================================
+     Message Text 
+  ================================ */
+ .markup__1c0d1,
+ .messageContent__21e69,
+ .messageContent__1dca2,
+ .markup__75297 {
+   color: rgb(255, 168, 229); /* Changes text colour in main text body */
+   font-size: 15px;
+   font-weight: normal;
+   text-shadow: var(--anya-bd-theme-text-shadow);
+ }
+ 
+  /* ================================
+     Scrollbar
+  ================================ */
+ ::-webkit-scrollbar {
+   background-color: rgba(221, 99, 191, 0.493); /* scroll bar colour */
+   width: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background-color: rgba(13, 186, 255, 0.342);
+   border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track {
+   background: rgba(255, 138, 255, 0.459); /* Small band on far right of text input UI */
+ }
+
+ 
+  /* ================================
+     DM Variables
+  ================================ */
+  .privateChannels__35e86,
+  .scroller__99e7c,
+  .searchBar__35e86,
+  .searchBar__35e86 .searchBarComponent__35e86,
+  .channel__972a0 {
+  background-color: rgba(15, 172, 224, 0.281); /*Controlls background colour of DMs */
+  border-radius: var(--list-item-radius);
+}
+ 
+  /* ================================
+     Top section of Friends list page 
+  ================================ */
+ .header__104ca,
+ .container_f79ab4,
+ .peopleList_d2f527,
+ .nowPlayingColumn_b025fe {
+   background: rgb(147, 228, 255);
+   background-color: rgb(147, 228, 255);
+   box-shadow: none !important;
+ }
+
+  /* ================================
+     Bottom text bar 
+  ================================ */
+ .channelTextArea__74017,
+.wrapper__44df5 {
+  --textarea-alpha: 0.1;
+  margin: 0;
+  background: rgba(79, 181, 214, 0.062);
+  border-radius: var(--textarea-radius);
+}
+.channelTextArea__74017 .scrollableContainer__74017,
+.wrapper__44df5 .scrollableContainer__74017 {
+  background-color: rgba(105, 218, 255, 0.322); /* Changes footer bar colour main message window */
+}
+.channelTextArea__74017 .placeholder__1b31f,
+.wrapper__44df5 .placeholder__1b31f {
+  color: rgba(218, 146, 188, 0.911); /* Cotrolls the text displayed in input zone*/
+}
+.channelTextArea__74017 .editor__1b31f,
+.wrapper__44df5 .editor__1b31f,
+.channelTextAreaDisabled__74017 .scrollableContainer__74017, 
+.wrapper__44df5, 
+.upload_aa605f {
+    background-color: rgba(15, 172, 224, 0); /* Controlls the colour of text box input*/
+  padding: 12px 0;
+}
+
+.typing_b88801 {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 24px;
+  top: -12px;
+  left: unset;
+  right: unset;
+  margin-top: 0;
+  margin-right: 0 !important;
+}
+.stackedBars__74017,
+.stackedBars__74017, 
+.replyBar__841c8 {
+  background: rgba(218, 146, 188, 0.911);
+}
+ 
+  /* ================================
+     Friends list right section 
+  ================================ */
+ .peopleColumn__133bf {
+   background-color: rgba(255, 82, 183, 0.911);
+   box-shadow: none !important;
+ }
+
+  /* ================================
+     Discord groups sidebar
+  ================================ */
+.stack_dbd263, 
+.scroller_ef3116, 
+.none_d125d2, 
+.scrollerBase_d125d2,
+  .wrapper_ef3116,
+.wrapper_ef3116 .tree_ef3116:focus,
+.scroller_ef3116 {
+  background-color: rgba(50, 133, 161, 0.363);
+}
+.scroller_ef3116::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.listItem__650eb svg,
+.childWrapper__6e9f8,
+.circleIconButton__5bc7e,
+.mention_c10249,
+.numberBadge__2b1f5,
+.iconBadge__650eb.participating__64cf0,
+.iconBadge__650eb.participating__64cf0 path,
+.item__58105 {
+  background-color: rgba(243, 121, 217, 0.247); /*changes colour of the group holders*/
+}
+ 
+   /* ================================
+     Friends list variables 
+  ================================ */
+.container__0f2e8.selected__0f2e8,
+.memberInner__5d473,
+.container__133bf,
+.tabBody__133bf {
+  background-color: rgba(50, 133, 161, 0.411); /* Changes the main friends list background colour */
+}
+.contentWrapper__08434 .container_a45028 {
+  border: none;
+}
+.emojiPicker_c0e32c {
+  background-color:  white;
+}
+.header_c0e32c,
+.header__8ef02,
+.header_fed6d3 {
+  background-color:  white;
+}
+.wrapper__4e6ce {
+  background-color: var(--sidebar-color);
+}
+.wrapper__14245,
+.inspector_aeaaeb,
+.membersWrap_c8ffbb {
+  background-color: white;
+  border-left: none;
+}
+
+ /* ================================
+     Footer Profile Menu
+ ================================ */
+
+.avatarSpeaking__07f91 {
+  box-shadow: inset 0 0 0 2px hsl(var(--accent-hsl)), inset 0 0 0 3px var(--background-base-lower);
+}
+
+.avatarWrapper__37e49 {
+  background: rgba(73, 189, 228, 0.356); /* Changes small box located around avatar. */
+  margin-left: -4px;
+  padding-left: 4px;
+}
+.avatarWrapper__37e49:hover {
+  background: rgba(73, 189, 228, 0.356); /* Changes hover of small box around avatar */
+  border-radius: 20px;
+}
+
+ /* ================================
+   Channels List 
+ ================================ */
+.platform-win,
+.sidebar_c48ade,
+.container__2637a,
+.voiceChannelsButton__29444:hover {
+  background-color: rgba(82, 212, 255, 0.247); /* Colour for individual channels */
+}
+.sidebar_c48ade .link__2ea32 {
+  Background: rgba(82, 212, 255, 0.247); /* Changes colour for other channels */
+  border-radius: var(--list-item-radius);
+}
+.header_f37cb1,
+.header_f37cb1, 
+.communityInfoPill_f37cb1,
+.content__07f91, 
+.container_e88f3f {
+  background-color: rgba(82, 212, 255, 0.247); /* Changes background colour for group header */
+  border-radius: var(--card-radius);
+  border: none;
+}
+
+
+ /* ================================
+   Home Icon Replacement
+ ================================ */
+
+/* Hide original icon */
+.childWrapper__6e9f8 svg {
+  display: none !important;
+}
+
+.childWrapper__6e9f8 {
+  background: var(--anya-bd-theme-home-icon) center/cover no-repeat !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  flex-shrink: 0 !important;
+}
+
+.childWrapper__6e9f8 foreignObject {
+  display: none !important;
+}
+
+ /* ================================
+   IMPORTANT Do not remove.
+ ================================ */
+
+ /* === Transparent Content Without Folder Interference === */
+ [class*="sidebar"],
+ [class*="scroller"],
+ [class*="container"]:not(.folder__17546):not(.wrapper__3af0b),
+ [class*="chat"],
+ [class*="region"],
+ [class*="base"],
+ [class*="form"],
+ [class*="standardSidebar"],
+ [class*="content"]:not(.folder__17546):not(.wrapper__3af0b),
+ [class*="panel"],
+ [class*="main"],
+ [class*="applicationStore"],
+ [class*="nowPlaying"],
+ [class*="accountProfileCard"],
+ [class*="settings"],
+ [class*="messages"],
+ [class*="column"],
+ [class*="section"],
+ [class*="layer"] > div,
+ [class*="layer"] > section,
+ [class*="layer"] > main,
+ [class*="layer"] > [class*="flex"],
+ [class*="contentColumn"],
+ [class*="peopleColumn"],
+ [class*="contentRegion"],
+ [class*="pageWrapper"],
+ [class*="customScroller"],
+ [class*="customColumn"] {
+   background: transparent !important;
+   background-color: transparent !important;
+   box-shadow: none !important;
+ }
+ 
+ /* === DO NOT interfere with Discord's folder previews === */
+ .folderIcon__48112 foreignObject > div > div {
+   all: unset !important;
+   display: block !important;
+   border-radius: var(--anya-bd-theme-corner-radius);
+ }
+
+.guilds__2b93a::before,
+.sidebar_c48ade::before,
+.sidebarRegion__36437::before,
+.container__43554::before,
+.peopleColumn__133bf,
+.guilds__2b93a::after,
+.sidebar_c48ade::after,
+.sidebarRegion__36437::after,
+.container__43554::after,
+.peopleColumn__133bf::after {
+  content: transparent;
+  display: transparent;
+  background: transparent;
+}
+
+.sidebar_c48ade::before,
+.sidebarRegion__36437::before,
+.guilds__2b93a::before,
+.peopleColumn__133bf::before,
+.container__43554::before,
+.sidebar_c48ade::after,
+.sidebarRegion__36437::after,
+.guilds__2b93a::after,
+.peopleColumn__133bf::after,
+.container__43554::after {
+  content: none !important;
+  background: none !important;
+  display: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* === Fonts === */
+ * {
+   font-family: var(--anya-bd-theme-font-primary) !important;
+   border-radius: var(--anya-bd-theme-corner-radius) !important;
+ }
+ h1, h2, h3, .title__1ec7e {
+   font-family: var(--anya-bd-theme-font-accent) !important;
+ }
+ button, a {
+   font-family: var(--anya-bd-theme-font-button) !important;
+ }
