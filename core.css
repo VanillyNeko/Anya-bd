@@ -70,7 +70,8 @@
   --uadt-bubble-strength: 16%;  /* message bubble tint: 0% turns bubbles off */
   --uadt-radius: 10px;
 
-  --uadt-backdrop-overlay: rgb(255 255 255 / 0.06);
+  --uadt-backdrop-dim: 55%;     /* black mask over the background art: 0% is off, 100% is black */
+  --uadt-backdrop-overlay: rgb(0 0 0 / var(--uadt-backdrop-dim));
   --uadt-backdrop-blur: 0px;
   --uadt-backdrop-brightness: 0.85;
   --uadt-backdrop-saturate: 1.2;

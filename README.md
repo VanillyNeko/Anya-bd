@@ -28,7 +28,8 @@
  Put overrides after the theme (or in Quick CSS / Custom CSS). The knobs are listed at the top of [`core.css`](core.css), for example:
  ```css
  :root {
-   --uadt-glass-strength: 60%;  /* darker panels */
+   --uadt-backdrop-dim: 70%;    /* darker background art */
+  --uadt-glass-strength: 60%;  /* darker panels */
    --uadt-bubble-strength: 0%;  /* no message bubbles */
    --uadt-font-body: "gg sans"; /* Discord's normal font for message text */
  }
