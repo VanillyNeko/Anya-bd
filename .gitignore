@@ -5,6 +5,10 @@
 /.vs/slnx.sqlite
 *.vsidx
 
+# Release kit output (scripts/package.py)
+dist/
+__pycache__/
+
 # Editor folders
 .idea/
 .vs/

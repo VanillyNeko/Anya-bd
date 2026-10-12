@@ -9,9 +9,15 @@
  I welcome forks and stuff but be warned, if discord updates their stuff and you don't pull changes then you may lose the ability to use it.
  I will be updating this theme when discord breaks it.
 
+## Download
+
+ Grab the zip from the [latest release](https://github.com/VanillyNeko/The-Best-Anime-Discord-Theme/releases/latest), unzip it, and run `install.bat` (Windows) or `./install.sh` (Linux / macOS).
+ It copies every character into Vencord, Vesktop and BetterDiscord (whichever you have), plus the character switcher plugin for BetterDiscord.
+ Then open Discord settings > Themes and turn on one character.
+
 ## Picking a character
 
- Browse everyone with their art in the [gallery](https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/gallery.html) or the list in [CHARACTERS.md](CHARACTERS.md), then either:
+ Rather pick just one? Browse everyone with their art in the [gallery](https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/gallery.html) or the list in [CHARACTERS.md](CHARACTERS.md), then either:
 
  - **Vencord / Vesktop:** paste the character's link into Themes > Online Themes, or download its `.theme.css` into your themes folder and turn it on in the Themes tab.
  - **BetterDiscord:** download the `.theme.css` files you want into your themes folder and turn one on. Install [`plugins/UltimateAnimeSwitcher.plugin.js`](plugins/UltimateAnimeSwitcher.plugin.js) to switch between them from a dropdown in its settings.
@@ -29,7 +35,7 @@
  ```css
  :root {
    --uadt-backdrop-dim: 70%;    /* darker background art */
-  --uadt-glass-strength: 60%;  /* darker panels */
+   --uadt-glass-strength: 60%;  /* darker panels */
    --uadt-bubble-strength: 0%;  /* no message bubbles */
    --uadt-font-body: "gg sans"; /* Discord's normal font for message text */
  }
@@ -49,6 +55,16 @@
    Don't like a pick? Paste a different Tenor GIF's media link into `art.json` and set `"locked": true` so the script never replaces it, or rerun the script for just that character.
  - **Your own art:** drop `background.jpg` (or png/webp/gif) and/or `home-icon.gif` (or png/jpg/webp) into `assets/characters/<series-id>/<character-id>/`. Files there always win over `art.json`.
    Images must come from this repo, Tenor, Giphy or Imgur: Vencord blocks every other site.
+
+## Releasing
+
+ Bump `version` in [`roster.json`](roster.json), run `python3 scripts/build.py`, commit and push, then tag that version:
+ ```sh
+ git tag v6.0.0
+ git push origin v6.0.0
+ ```
+ GitHub Actions checks the generated files are up to date, packs the kit with `scripts/package.py` and publishes it as a release.
+ Run `python3 scripts/package.py` yourself to get the same zip in `dist/`.
 
 ## Screenshots
 

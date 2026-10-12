@@ -1,0 +1,50 @@
+name: Release
+
+# Push a tag matching roster.json's version (git tag v6.0.0 && git push origin v6.0.0)
+# to publish a GitHub release with the one-stop download kit attached.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check the tag matches roster.json
+        run: |
+          version=$(python3 -c 'import json; print(json.load(open("roster.json"))["version"])')
+          if [ "$GITHUB_REF_NAME" != "v$version" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME doesn't match roster.json version $version"
+            exit 1
+          fi
+
+      - name: Check generated files are up to date
+        run: |
+          python3 scripts/build.py
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --short
+            echo "::error::Generated files are stale; run python3 scripts/build.py and commit the result"
+            exit 1
+          fi
+
+      - name: Pack the kit
+        run: python3 scripts/package.py
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            --title "The Ultimate Anime Discord Theme $GITHUB_REF_NAME" \
+            --notes-file dist/RELEASE_NOTES.md \
+            dist/*.zip \
+            plugins/UltimateAnimeSwitcher.plugin.js

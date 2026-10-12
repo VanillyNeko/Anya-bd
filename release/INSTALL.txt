@@ -1,0 +1,29 @@
+The Ultimate Anime Discord Theme {version}
+{total} characters from {series} series. See CHARACTERS.md for everyone, or the gallery with art:
+{base_url}gallery.html
+
+QUICK INSTALL
+  Windows:        double-click install.bat
+  Linux / macOS:  run ./install.sh in a terminal
+
+  The installer copies every character into Vencord, Vesktop and BetterDiscord (whichever you have),
+  plus the character switcher plugin for BetterDiscord. Then open Discord settings > Themes and
+  turn on ONE character. Turning on more than one mixes them.
+
+  Using another client mod? Pass its themes folder: install.bat "C:\path\to\themes" or ./install.sh ~/path/to/themes
+
+MANUAL INSTALL
+  Copy the .theme.css files you want from themes\ into your client mod's themes folder:
+    Vencord:        %APPDATA%\Vencord\themes          ~/.config/Vencord/themes
+    Vesktop:        %APPDATA%\vesktop\themes          ~/.config/vesktop/themes
+    BetterDiscord:  %APPDATA%\BetterDiscord\themes    ~/.config/BetterDiscord/themes
+  (On macOS replace ~/.config with ~/Library/Application Support.)
+
+  BetterDiscord: also copy plugins\UltimateAnimeSwitcher.plugin.js into BetterDiscord\plugins
+  and turn it on to pick your character from a dropdown in its settings.
+
+UPDATES
+  The theme files load their styles and art from {base_url}
+  so fixes for Discord updates reach you automatically. Download a new release to get new characters.
+
+Source, issues and tweaks: https://github.com/VanillyNeko/The-Best-Anime-Discord-Theme
