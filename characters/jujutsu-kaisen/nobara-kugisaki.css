@@ -1,9 +1,9 @@
 /* Nobara Kugisaki - Jujutsu Kaisen */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/-KGzQiMihX8AAAAx/nobara-nobara-kugisaki.webp);
+  --uadt-home-icon: url(https://media.tenor.com/8CmjRJ2YDYYAAAA1/nobara-eating-watermelon-nobara-kugisaki.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e8945a;
   --uadt-accent-alt: #e05050;

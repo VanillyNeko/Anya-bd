@@ -1,9 +1,9 @@
 /* Power - Chainsaw Man */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/ApKGAgDYx6IAAAAx/power-chainsaw-man-chainsaw-man-power.webp);
+  --uadt-home-icon: url(https://media.tenor.com/NiHF9ex_AR0AAAA1/chainsaw-man-power-csm.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f05a5a;
   --uadt-accent-alt: #f2c94c;

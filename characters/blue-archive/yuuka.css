@@ -1,9 +1,9 @@
 /* Hayase Yuuka - Blue Archive */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/AuHlZ7k8AMwAAAAx/blue-archive-yuuka-blue-archive.webp);
+  --uadt-home-icon: url(https://media.tenor.com/vBJUUjeW2ToAAAA1/hayase-yuuka-yuuka.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7f8ff0;
   --uadt-accent-alt: #e6e6ff;

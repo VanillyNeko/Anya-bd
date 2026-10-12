@@ -1,9 +1,9 @@
 /* Stark - Frieren: Beyond Journey's End */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/oFJuTMEGuggAAAAx/frieren-stark.webp);
+  --uadt-home-icon: url(https://media.tenor.com/5CyuwR4eYqEAAAA1/stark-sousou-no-frieren.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e05a5a;
   --uadt-accent-alt: #e6a04a;

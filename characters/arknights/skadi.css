@@ -1,9 +1,9 @@
 /* Skadi - Arknights */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/5MuQEH7LCZYAAAAx/skadi-gif-skadi.webp);
+  --uadt-home-icon: url(https://media.tenor.com/1aFEg73ufUcAAAA1/arknights-skadi.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d0506a;
   --uadt-accent-alt: #5f7fd6;

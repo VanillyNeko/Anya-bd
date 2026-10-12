@@ -1,9 +1,9 @@
 /* Trafalgar Law - One Piece */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/S6b2-ljRlo0AAAAx/law-trafalgar-law.webp);
+  --uadt-home-icon: url(https://media.tenor.com/2sORRdL4F1oAAAA1/eating-trafalgar-law.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2c94c;
   --uadt-accent-alt: #6f85b0;

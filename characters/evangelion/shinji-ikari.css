@@ -1,9 +1,9 @@
 /* Shinji Ikari - Neon Genesis Evangelion */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/DIjsYumIaRYAAAAx/shinji-evangelion.webp);
+  --uadt-home-icon: url(https://media.tenor.com/2tmFzIpCJTYAAAA1/shinji-shinji-ikari.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8a7ff0;
   --uadt-accent-alt: #8fe06f;

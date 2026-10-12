@@ -1,9 +1,9 @@
 /* Senshi - Delicious in Dungeon */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/b4lG_MYjvuEAAAAx/delicious-in-dungeon-dungeon-meshi.webp);
+  --uadt-home-icon: url(https://media.tenor.com/7xsxr-1tdU0AAAA1/dungeon-meshi-delicious-in-dungeon.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e0a84a;
   --uadt-accent-alt: #a08a6a;

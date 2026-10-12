@@ -1,9 +1,9 @@
 /* Maki Zenin - Jujutsu Kaisen */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/M-LXrM4Q_bUAAAAx/maki-maki-zenin.webp);
+  --uadt-home-icon: url(https://media.tenor.com/NV12sZe78EQAAAA1/makiyuta-yutamaki.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6fb07f;
   --uadt-accent-alt: #e6c27a;

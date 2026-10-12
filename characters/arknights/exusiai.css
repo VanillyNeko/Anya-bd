@@ -1,9 +1,9 @@
 /* Exusiai - Arknights */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/X1pVDUSWmf4AAAAx/exusiai-waving.webp);
+  --uadt-home-icon: url(https://media.tenor.com/RHw5oCcAtFoAAAA1/exusiai-the-new-covenant.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff6b6b;
   --uadt-accent-alt: #ffd27f;

@@ -1,9 +1,9 @@
 /* Makima - Chainsaw Man */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/gq8idcUwAk0AAAAx/chainsaw-man-makima-hands-chainsaw-man.webp);
+  --uadt-home-icon: url(https://media.tenor.com/sRo7fB6X_e4AAAA1/makima-huh.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d0606a;
   --uadt-accent-alt: #f2c94c;

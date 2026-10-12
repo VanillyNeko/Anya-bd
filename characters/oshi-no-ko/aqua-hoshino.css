@@ -1,9 +1,9 @@
 /* Aquamarine Hoshino - Oshi no Ko */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/WD4BysB7GL0AAAAx/oshi-no-ko-hoshino-aqua.webp);
+  --uadt-home-icon: url(https://media.tenor.com/tFVfAzso9PIAAAA1/aqua-hoshino-aquamarine-hoshino.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6f8ff0;
   --uadt-accent-alt: #7fd3ff;

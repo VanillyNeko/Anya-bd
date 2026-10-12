@@ -1,9 +1,9 @@
 /* Kana Arima - Oshi no Ko */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/Ny4rTli2_NQAAAAx/oshi-no-ko-kana.webp);
+  --uadt-home-icon: url(https://media.tenor.com/aj-1zn21KtkAAAA1/kana-arima-oshi-no-ko.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e85a5a;
   --uadt-accent-alt: #ffb0b0;

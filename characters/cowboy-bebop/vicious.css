@@ -1,9 +1,9 @@
 /* Vicious - Cowboy Bebop */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/Km8zDeyMs5sAAAAx/vicious-cowboy-bebop.webp);
+  --uadt-home-icon: url(https://media.tenor.com/QNY-czujA1MAAAA1/ready-to-fight-vicious.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #c8c8e0;
   --uadt-accent-alt: #d0405a;

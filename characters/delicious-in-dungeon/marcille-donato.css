@@ -1,9 +1,9 @@
 /* Marcille Donato - Delicious in Dungeon */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/0D2jQeD-N8wAAAAx/marcille-donato.webp);
+  --uadt-home-icon: url(https://media.tenor.com/fFSaPKJ-Q94AAAA1/anime-anime-girl.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2d16b;
   --uadt-accent-alt: #6fb39f;

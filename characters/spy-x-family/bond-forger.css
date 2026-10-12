@@ -1,9 +1,9 @@
 /* Bond Forger - Spy x Family */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/qvZw4t1UfQoAAAAx/spy-x-family-spyxfamily.webp);
+  --uadt-home-icon: url(https://media.tenor.com/WwV0DQnO-8EAAAA1/spy-x-family-dance.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #9cc4ff;
   --uadt-accent-alt: #ffe9b8;

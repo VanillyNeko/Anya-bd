@@ -1,9 +1,9 @@
 /* Texas - Arknights */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/MWgUj5Je_UsAAAAx/arknights-texas.webp);
+  --uadt-home-icon: url(https://media.tenor.com/YWYmoajuKDUAAAA1/who-asked-arknights.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e05a5a;
   --uadt-accent-alt: #f2c94c;

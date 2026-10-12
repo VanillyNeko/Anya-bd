@@ -392,7 +392,7 @@
       "characters": [
         { "id": "hiroshi-odokawa", "name": "Hiroshi Odokawa", "accent": "#e6c27a", "alt": "#6fa88f", "tint": "#12110c", "style": "clean" },
         { "id": "miho-shirakawa", "name": "Miho Shirakawa", "accent": "#8fc2f0", "alt": "#ffffff", "style": "clean" },
-        { "id": "dobu", "name": "Dobu", "accent": "#d04a5a", "alt": "#f2c94c", "style": "bold" }
+        { "id": "haruhito-yano", "name": "Haruhito Yano", "accent": "#d6b25a", "alt": "#7f9fc0", "tint": "#101216", "style": "bold" }
       ]
     },
     {

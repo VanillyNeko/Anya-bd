@@ -1,9 +1,9 @@
 /* Raiden Shogun - Genshin Impact */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/jZFGK2PX7x0AAAAx/genshin-impact-genshin-impact-5th-anniversary.webp);
+  --uadt-home-icon: url(https://media.tenor.com/zAdHmUCOoxYAAAA1/raiden-raiden-shogun.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #b48cff;
   --uadt-accent-alt: #e8c4ff;

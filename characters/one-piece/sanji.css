@@ -1,9 +1,9 @@
 /* Sanji - One Piece */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/IpimchDCe50AAAAx/sanji-one-piece.webp);
+  --uadt-home-icon: url(https://media.tenor.com/U0Vp0D4UcMEAAAA1/one-piece-sanji.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2d16b;
   --uadt-accent-alt: #6f85b0;

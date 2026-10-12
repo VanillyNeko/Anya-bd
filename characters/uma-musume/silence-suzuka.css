@@ -1,9 +1,9 @@
 /* Silence Suzuka - Uma Musume Pretty Derby */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/1E8E7dhIPBMAAAAx/suzuka-silence.webp);
+  --uadt-home-icon: url(https://media.tenor.com/i1NyX4o_N2sAAAA1/uma-musume-silence-suzuka.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #4fc28f;
   --uadt-accent-alt: #f2d16b;

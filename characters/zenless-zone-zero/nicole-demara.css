@@ -1,9 +1,9 @@
 /* Nicole Demara - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/zWYGMruxjN8AAAAx/nicole-demara-cunning-hares.webp);
+  --uadt-home-icon: url(https://media.tenor.com/tJaT2whYnggAAAA1/nicole-demara-zzz.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff7ab8;
   --uadt-accent-alt: #6fd0ff;

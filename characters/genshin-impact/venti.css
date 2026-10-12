@@ -1,9 +1,9 @@
 /* Venti - Genshin Impact */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/myneUmdmUukAAAAx/venti-skeleton-shield.webp);
+  --uadt-home-icon: url(https://media.tenor.com/U0A8l-Q90y0AAAA1/venti-venti-impact.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #5fd6b4;
   --uadt-accent-alt: #e8dcb0;

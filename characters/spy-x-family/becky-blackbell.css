@@ -1,9 +1,9 @@
 /* Becky Blackbell - Spy x Family */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/4w6_CH2w1QsAAAAx/becky-shocked.webp);
+  --uadt-home-icon: url(https://media.tenor.com/FXHG-dCGMZgAAAA1/anime-spy-x-family.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f0b860;
   --uadt-accent-alt: #ff9cc0;

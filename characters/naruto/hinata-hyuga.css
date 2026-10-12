@@ -1,9 +1,9 @@
 /* Hinata Hyuga - Naruto */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/LJi4LzkaXA4AAAAx/hinata-hinata-hyuga.webp);
+  --uadt-home-icon: url(https://media.tenor.com/xSA5I6I1f8cAAAA1/hyueris-hinata.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #aaa8f0;
   --uadt-accent-alt: #6f75b0;

@@ -1,9 +1,9 @@
 /* Ai Hoshino - Oshi no Ko */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/6lNMq5kbeQ4AAAAx/ai-hoshino-oshi-no-ko.webp);
+  --uadt-home-icon: url(https://media.tenor.com/9g7g8Om_AbsAAAA1/oshi-no-ko-ai-hoshino.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #b07fef;
   --uadt-accent-alt: #ffd27f;

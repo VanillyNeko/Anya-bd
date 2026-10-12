@@ -1,9 +1,9 @@
 /* Jeanne d'Arc (Alter) - Fate/Grand Order */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/nkJ8km2fNosAAAAx/jalter-fate-apocrypha.webp);
+  --uadt-home-icon: url(https://media.tenor.com/1vmE5jdN58AAAAA1/jalter-jeanne-d-arc.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8f95c0;
   --uadt-accent-alt: #f06050;

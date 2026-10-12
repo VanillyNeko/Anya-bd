@@ -1,9 +1,9 @@
 /* Chito - Girls' Last Tour */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/hNPP7zfVPqMAAAAx/girls-last-tour-shoujo-shuumatsu-ryokou.webp);
+  --uadt-home-icon: url(https://media.tenor.com/OZWOc8xMDmoAAAA1/chito-girls%27-last-tour.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #a8b8b0;
   --uadt-accent-alt: #e6c27a;

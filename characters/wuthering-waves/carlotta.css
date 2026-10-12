@@ -1,9 +1,9 @@
 /* Carlotta - Wuthering Waves */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/GmPyjp6F66MAAAAx/wutheringwaves-wuwa.webp);
+  --uadt-home-icon: url(https://media.tenor.com/pLgKFugCt8wAAAA1/cartethyia-carlotta.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #a8c8ff;
   --uadt-accent-alt: #d0b0ff;

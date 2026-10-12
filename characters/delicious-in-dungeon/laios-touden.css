@@ -1,9 +1,9 @@
 /* Laios Touden - Delicious in Dungeon */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/mb6zvJ2F7iMAAAAx/laios-touden-delicious-in-dungeon.webp);
+  --uadt-home-icon: url(https://media.tenor.com/7O0LW3q7XqIAAAA1/laios-touden-laios-dunmeshi.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7fa8e0;
   --uadt-accent-alt: #e6c27a;

@@ -1,9 +1,9 @@
 /* Inosuke Hashibira - Demon Slayer */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/GKd6xLEQGwsAAAAx/inosuke-demon-slayer.webp);
+  --uadt-home-icon: url(https://media.tenor.com/YoM8sJTWvkUAAAA1/inosuke-kny.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7f95e0;
   --uadt-accent-alt: #c0a07a;

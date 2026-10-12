@@ -1,9 +1,9 @@
 /* Rintaro Okabe - Steins;Gate */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/j6a4epc01UgAAAAx/okabe-rintaro-okabe-laugh.webp);
+  --uadt-home-icon: url(https://media.tenor.com/LAY4jLAcOwAAAAA1/steins-gate-meme.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff9f4a;
   --uadt-accent-alt: #e6e6e6;

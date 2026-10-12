@@ -1,9 +1,9 @@
 /* Falin Touden - Delicious in Dungeon */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/65T5jndfa4sAAAAx/dungeon-meshi-fight.webp);
+  --uadt-home-icon: url(https://media.tenor.com/785jEUCxEGEAAAA1/falin-falin-touden.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e6c27a;
   --uadt-accent-alt: #8fd3a8;

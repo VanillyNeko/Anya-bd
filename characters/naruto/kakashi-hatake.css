@@ -1,9 +1,9 @@
 /* Kakashi Hatake - Naruto */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/m379KpoeZq4AAAAx/kakashi-minato.webp);
+  --uadt-home-icon: url(https://media.tenor.com/oCJIQXF0DDEAAAA1/kakashi-hatake-kakashi.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #b0b8c8;
   --uadt-accent-alt: #6f85c0;

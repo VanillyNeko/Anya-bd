@@ -1,9 +1,9 @@
 /* Naruto Uzumaki - Naruto */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/B2I7F_9rUcUAAAAx/minato-minato-namikaze.webp);
+  --uadt-home-icon: url(https://media.tenor.com/4P_OT4-AwM0AAAA1/rizz-naruto-rizz.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff8a2a;
   --uadt-accent-alt: #6f85c0;

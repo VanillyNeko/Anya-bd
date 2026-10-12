@@ -1,9 +1,9 @@
 /* Nico Robin - One Piece */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/Ei6k8QuWynQAAAAx/nico-robin-one-piece.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Hf96NrPBrcYAAAA1/nico-robin-monday.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #9a8fd0;
   --uadt-accent-alt: #e6c27a;

@@ -1,9 +1,9 @@
 /* Tanjiro Kamado - Demon Slayer */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/ye2gBll58csAAAAx/demon-slayer-kimetsu-no-yaiba.webp);
+  --uadt-home-icon: url(https://media.tenor.com/SPYH5q8rKXAAAAA1/demon-slayer-demon-slayer-funny.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #4fb87f;
   --uadt-accent-alt: #e05050;

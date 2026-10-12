@@ -1,9 +1,9 @@
 /* Armin Arlert - Attack on Titan */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/VhCMPkz4GbYAAAAx/armin-arlert.webp);
+  --uadt-home-icon: url(https://media.tenor.com/jGxIeVbKjtsAAAA1/armin-armin-arlert.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2d16b;
   --uadt-accent-alt: #6f95e0;

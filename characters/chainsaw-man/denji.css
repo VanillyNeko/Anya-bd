@@ -1,9 +1,9 @@
 /* Denji - Chainsaw Man */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/Ib9QHJZJxbwAAAAx/denji-chainsaw-man.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Edl5qJz7bAoAAAA1/denji-chainsaw-man.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2a03a;
   --uadt-accent-alt: #e05050;

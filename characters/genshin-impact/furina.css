@@ -1,9 +1,9 @@
 /* Furina - Genshin Impact */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/hkhSarcw7wMAAAAx/furina-anniversary.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Le2Ln_jbCfAAAAA1/furina-genshin-impact.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7fb2ff;
   --uadt-accent-alt: #f2e3b3;

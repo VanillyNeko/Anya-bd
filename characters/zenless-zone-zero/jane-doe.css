@@ -1,9 +1,9 @@
 /* Jane Doe - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/KF2lUBXBvPAAAAAx/zenless-zone-zero-jane-doe.webp);
+  --uadt-home-icon: url(https://media.tenor.com/9nwpWGwZf0kAAAA1/zenless-zone-zero-zzz.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d04a66;
   --uadt-accent-alt: #d8b4ff;

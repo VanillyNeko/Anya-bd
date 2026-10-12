@@ -1,9 +1,9 @@
 /* Himiko Toga - My Hero Academia */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/k3klPdV7yF8AAAAx/himiko-toga-toga.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Sjoit5vnqL0AAAA1/himiko-toga-himiko-toga-mha.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2d16b;
   --uadt-accent-alt: #e85a5a;

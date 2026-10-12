@@ -1,9 +1,9 @@
 /* Claudia Hodgins - Violet Evergarden */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/AIutx690yPIAAAAx/violet-evergarden-claudia.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Fpv87WQZsGAAAAA1/violet-evergarden-claudia-hodgins.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e8904a;
   --uadt-accent-alt: #6f85c0;

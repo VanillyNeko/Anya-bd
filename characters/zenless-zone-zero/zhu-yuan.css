@@ -1,9 +1,9 @@
 /* Zhu Yuan - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/00uiUX7SmbEAAAAx/zhu-yuan-zenless-zone-zero.webp);
+  --uadt-home-icon: url(https://media.tenor.com/0ntqYspQi04AAAA1/zhu-yuan-zhu-yuan-edit.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6f8ff0;
   --uadt-accent-alt: #f2c94c;

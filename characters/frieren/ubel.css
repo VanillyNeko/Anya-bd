@@ -1,9 +1,9 @@
 /* Ubel - Frieren: Beyond Journey's End */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/a4t-xXksyJIAAAAx/ubel-mommy-mommo.webp);
+  --uadt-home-icon: url(https://media.tenor.com/XnEJz5agU1QAAAA1/anime-ubel.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6fb08f;
   --uadt-accent-alt: #c0a0ff;

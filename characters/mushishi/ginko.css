@@ -1,9 +1,9 @@
 /* Ginko - Mushishi */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/XYMkH4QW_9AAAAAx/ginko-mushishi.webp);
+  --uadt-home-icon: url(https://media.tenor.com/iGpJltQ3RYcAAAA1/mushishi-ginko.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8fd8a8;
   --uadt-accent-alt: #c0c0b0;

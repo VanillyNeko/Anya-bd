@@ -1,9 +1,9 @@
 /* All Might - My Hero Academia */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/bCtKVK_y0akAAAAx/all-might-mha.webp);
+  --uadt-home-icon: url(https://media.tenor.com/rAq1HjhbklsAAAA1/all-might-smile.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2c94c;
   --uadt-accent-alt: #6f8ff0;

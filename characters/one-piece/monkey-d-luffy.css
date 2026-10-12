@@ -1,9 +1,9 @@
 /* Monkey D. Luffy - One Piece */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/LFf0G85oi34AAAAx/luffy-weve-been-waiting-for-you.webp);
+  --uadt-home-icon: url(https://media.tenor.com/taV0M3xaqKEAAAA1/luffy-monkey-d-luffy.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e85a5a;
   --uadt-accent-alt: #f2c94c;

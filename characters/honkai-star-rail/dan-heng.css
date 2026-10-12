@@ -1,9 +1,9 @@
 /* Dan Heng - Honkai: Star Rail */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/zUjNkS02oscAAAAx/imbibitor-lunae-yinyue-jun.webp);
+  --uadt-home-icon: url(https://media.tenor.com/1-lGYKIlxOwAAAA1/astral-express-honkai-star-rail.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #4fc2a8;
   --uadt-accent-alt: #b0e0d0;

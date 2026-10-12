@@ -1,9 +1,9 @@
 /* Sasuke Uchiha - Naruto */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/GQBDJadcXgcAAAAx/naruto-sasuke.webp);
+  --uadt-home-icon: url(https://media.tenor.com/PtsWLfvCZI8AAAA1/sasuke-sasuke-uchiha.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8a85d0;
   --uadt-accent-alt: #e0405a;

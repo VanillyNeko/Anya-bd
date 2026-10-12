@@ -1,9 +1,9 @@
 /* Firefly - Honkai: Star Rail */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/23aBDZ5oyR4AAAAx/firefly-hsr.webp);
+  --uadt-home-icon: url(https://media.tenor.com/NIYQLeAinkEAAAA1/firefly-hsr.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6fe0c8;
   --uadt-accent-alt: #ff9b6a;

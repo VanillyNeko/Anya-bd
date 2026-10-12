@@ -1,9 +1,9 @@
 /* Levi Ackerman - Attack on Titan */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/FavFrpFfiVkAAAAx/levi-levi-ackerman.webp);
+  --uadt-home-icon: url(https://media.tenor.com/ZC1s95Pvg6EAAAA1/levi-ackerman-levi.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #b0b0c8;
   --uadt-accent-alt: #5f7fa0;

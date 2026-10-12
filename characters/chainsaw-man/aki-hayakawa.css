@@ -1,9 +1,9 @@
 /* Aki Hayakawa - Chainsaw Man */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/ht9nyWTWczMAAAAx/aki-aki-hayakawa.webp);
+  --uadt-home-icon: url(https://media.tenor.com/fHaL_1Gs-S0AAAA1/aki-hayakawa-aki.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7f95c0;
   --uadt-accent-alt: #e6e6e6;

@@ -1,9 +1,9 @@
 /* Radical Edward - Cowboy Bebop */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/NTRMrPjjvPMAAAAx/nodding-head.webp);
+  --uadt-home-icon: url(https://media.tenor.com/znShopEjE-YAAAA1/cowboy-bebop-cowboy.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff8a3a;
   --uadt-accent-alt: #7fcf9f;

@@ -1,9 +1,9 @@
 /* Hange Zoe - Attack on Titan */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/rVcepY6Q0x0AAAAx/attack-on-titan-hange.webp);
+  --uadt-home-icon: url(https://media.tenor.com/yOh8sIocmAcAAAA1/attack-on-titan-hange.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d09a6a;
   --uadt-accent-alt: #7fa87f;

@@ -1,9 +1,9 @@
 /* Nadeko Sengoku - Monogatari */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/wa1F2nEq_14AAAAx/nadeko-nadeko-sengoku.webp);
+  --uadt-home-icon: url(https://media.tenor.com/LynIAnfz_5EAAAA1/nadeko-sengoku.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff8ac0;
   --uadt-accent-alt: #7fcf9f;

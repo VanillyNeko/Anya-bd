@@ -1,9 +1,9 @@
 /* Akane Kurokawa - Oshi no Ko */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/m9Vm_XxHbhgAAAAx/akane-kurokawa-oshi-no-ko-akane-oshi-no-ko.webp);
+  --uadt-home-icon: url(https://media.tenor.com/WxyoxbvUYTMAAAA1/oshi-no-ko-akane-kurokawa.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6f8fc0;
   --uadt-accent-alt: #8fc2f0;

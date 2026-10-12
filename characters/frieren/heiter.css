@@ -1,9 +1,9 @@
 /* Heiter - Frieren: Beyond Journey's End */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/yQraZSkUODcAAAAx/sousou-no-frieren-frieren-anime.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Z69o8C-4sS0AAAA1/sousou-no-frieren-frieren.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d6c08a;
   --uadt-accent-alt: #7f9fb8;

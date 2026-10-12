@@ -1,9 +1,9 @@
 /* Kafka - Honkai: Star Rail */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/ohGFZ5rSIGcAAAAx/kafka-honkai-star-rail.webp);
+  --uadt-home-icon: url(https://media.tenor.com/mplk70YyAr0AAAA1/honkai-star-rail-kafka.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d0507a;
   --uadt-accent-alt: #a07ae0;

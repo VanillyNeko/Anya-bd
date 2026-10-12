@@ -1,9 +1,9 @@
 /* Ch'en - Arknights */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/2TX9a2JRg8sAAAAx/arknights-ch%27en.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Kctp68ameJ4AAAA1/chen-arknights.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e04a4a;
   --uadt-accent-alt: #4fb07f;

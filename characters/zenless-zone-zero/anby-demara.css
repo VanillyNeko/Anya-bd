@@ -1,9 +1,9 @@
 /* Anby Demara - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/wgv1hWtWuHsAAAAx/anby-anby-demara.webp);
+  --uadt-home-icon: url(https://media.tenor.com/j3v53vzPyjMAAAA1/zzz-zenless-zone-zero.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7fd8a8;
   --uadt-accent-alt: #f2d16b;

@@ -1,9 +1,9 @@
 /* Loid Forger - Spy x Family */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/jrfoYF03C_oAAAAx/loid-loid-forger.webp);
+  --uadt-home-icon: url(https://media.tenor.com/b7_XrUroLvkAAAA1/spy-x-family-loid-forger.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #5fb8a8;
   --uadt-accent-alt: #e6d2a4;

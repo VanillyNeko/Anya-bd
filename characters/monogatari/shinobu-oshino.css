@@ -1,9 +1,9 @@
 /* Shinobu Oshino - Monogatari */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/EFY6SCnFtfEAAAAx/shinobu-oshino-monogatari.webp);
+  --uadt-home-icon: url(https://media.tenor.com/KwF3I4380K8AAAA1/monogatari-hmm.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2c94c;
   --uadt-accent-alt: #e85a5a;

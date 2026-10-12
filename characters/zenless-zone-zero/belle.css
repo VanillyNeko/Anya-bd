@@ -1,9 +1,9 @@
 /* Belle - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/BNvVauEd6tkAAAAx/zzz-belle.webp);
+  --uadt-home-icon: url(https://media.tenor.com/ahn-mNcMlmEAAAA1/belle-zzz.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #59b6ff;
   --uadt-accent-alt: #ffcc66;

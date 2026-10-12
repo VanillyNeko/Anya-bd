@@ -1,9 +1,9 @@
 /* Jinhsi - Wuthering Waves */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/N-AMpvi6CYgAAAAx/ellie-loves-jinhsi-elysia-loves-jinhsi.webp);
+  --uadt-home-icon: url(https://media.tenor.com/I6G_11xMxaQAAAA1/jinhsi-flying-jinhsi.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2d16b;
   --uadt-accent-alt: #8fd3e6;

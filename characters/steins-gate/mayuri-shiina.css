@@ -1,9 +1,9 @@
 /* Mayuri Shiina - Steins;Gate */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/l1sKVbchY_AAAAAx/steins-gate-mayuri-shiina.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Yztjgd_3oSYAAAA1/mayuri-shiina-steins-gate.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8fc0ff;
   --uadt-accent-alt: #ffd27f;

@@ -1,9 +1,9 @@
 /* Rei Ayanami - Neon Genesis Evangelion */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/BnZZlprFteoAAAAx/rei-ayanami-evangelion.webp);
+  --uadt-home-icon: url(https://media.tenor.com/nPwuWaa_uxsAAAA1/rei-ayanami-rei.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #9fc0ff;
   --uadt-accent-alt: #e85a5a;

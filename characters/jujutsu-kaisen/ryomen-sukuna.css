@@ -1,9 +1,9 @@
 /* Ryomen Sukuna - Jujutsu Kaisen */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/CSYhuMePrc8AAAAx/sukuna-ryomen-sukuna.webp);
+  --uadt-home-icon: url(https://media.tenor.com/t8M-HiMum0UAAAA1/ryomensukuna-blackandwhite.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #d0405a;
   --uadt-accent-alt: #f2c0a0;

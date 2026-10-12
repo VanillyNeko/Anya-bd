@@ -1,9 +1,9 @@
 /* Tanyuu - Mushishi */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/EnlVpbJcyjQAAAAx/mushishi-anime.webp);
+  --uadt-home-icon: url(https://media.tenor.com/EnlVpbJcyjQAAAAx/mushishi-anime.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #c86070;
   --uadt-accent-alt: #e6c27a;

@@ -1,9 +1,9 @@
 /* Yuuri - Girls' Last Tour */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/GOUJlSo5hjcAAAAx/sealyx-girls-last-tour.webp);
+  --uadt-home-icon: url(https://media.tenor.com/TI_9VU9o6mEAAAA1/yuuri-girls-last-tour.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e6c27a;
   --uadt-accent-alt: #8f9f7f;

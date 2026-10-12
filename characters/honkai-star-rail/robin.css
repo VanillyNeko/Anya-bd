@@ -1,9 +1,9 @@
 /* Robin - Honkai: Star Rail */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/L58dPpCX-UgAAAAx/sad-hsr.webp);
+  --uadt-home-icon: url(https://media.tenor.com/kHcpS7ARtV0AAAA1/robin-robin-hsr.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #9ec7ff;
   --uadt-accent-alt: #ffd27f;

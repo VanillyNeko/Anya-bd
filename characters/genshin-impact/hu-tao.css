@@ -1,9 +1,9 @@
 /* Hu Tao - Genshin Impact */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/tcpx1JWqC1YAAAAx/hu-tao-genshin-impact.webp);
+  --uadt-home-icon: url(https://media.tenor.com/DbS3rq1VNAAAAAA1/monkey-thinking-hu-tao.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff6a4d;
   --uadt-accent-alt: #f2b84a;

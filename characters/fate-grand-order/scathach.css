@@ -1,9 +1,9 @@
 /* Scathach - Fate/Grand Order */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/OpHfKINQbDgAAAAx/lostbelt-shatter-glass.webp);
+  --uadt-home-icon: url(https://media.tenor.com/5SBy6CuAILEAAAA1/ashinas-nashiya.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #c04a7a;
   --uadt-accent-alt: #e05a5a;

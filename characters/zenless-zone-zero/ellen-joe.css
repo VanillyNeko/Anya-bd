@@ -1,9 +1,9 @@
 /* Ellen Joe - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/CIK01SHUm3wAAAAx/zenless-zone-zero-zzz.webp);
+  --uadt-home-icon: url(https://media.tenor.com/TvFmWg_XGKUAAAA1/ellen-joe-zenless-zone-zero.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e8606f;
   --uadt-accent-alt: #f2f2f2;

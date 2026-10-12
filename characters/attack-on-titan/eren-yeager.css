@@ -1,9 +1,9 @@
 /* Eren Yeager - Attack on Titan */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/suM3GgZr7w0AAAAx/attack-on-titan-final-season.webp);
+  --uadt-home-icon: url(https://media.tenor.com/mPCKqnu8AUYAAAA1/eren-yaeger-shut-up.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #5fb07f;
   --uadt-accent-alt: #c0a07a;

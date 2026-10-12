@@ -1,9 +1,9 @@
 /* Yor Forger - Spy x Family */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/x7or36qp3fcAAAAx/yor-forger-smile.webp);
+  --uadt-home-icon: url(https://media.tenor.com/7hCH4IRMgvkAAAA1/anime-spy-x-family.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e0456b;
   --uadt-accent-alt: #e8c27a;

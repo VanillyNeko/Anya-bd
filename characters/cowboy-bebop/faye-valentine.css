@@ -1,9 +1,9 @@
 /* Faye Valentine - Cowboy Bebop */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/8sxH919XR8AAAAAx/anime-looking-cautiously.webp);
+  --uadt-home-icon: url(https://media.tenor.com/tnCZ0nu7WiYAAAA1/cowboy-bebop-smile.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f2d16b;
   --uadt-accent-alt: #c05a75;

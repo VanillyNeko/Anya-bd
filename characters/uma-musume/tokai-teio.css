@@ -1,9 +1,9 @@
 /* Tokai Teio - Uma Musume Pretty Derby */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/hcJIeKa_QKwAAAAx/lr-super-gogeta-agl-super-gogeta.webp);
+  --uadt-home-icon: url(https://media.tenor.com/npqcm75heGAAAAA1/tokai-teio-teio-teio.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6f8ff0;
   --uadt-accent-alt: #ff6b8a;

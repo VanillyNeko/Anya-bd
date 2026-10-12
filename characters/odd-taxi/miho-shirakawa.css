@@ -1,9 +1,9 @@
 /* Miho Shirakawa - Odd Taxi */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/ZRc3Vb9rHTkAAAAx/odd-taxi-%E3%82%AA%E3%83%83%E3%83%89%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC.webp);
+  --uadt-home-icon: url(https://media.tenor.com/wgVxFv5FPw8AAAA1/koffee-pick-a-number.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8fc2f0;
   --uadt-accent-alt: #ffffff;

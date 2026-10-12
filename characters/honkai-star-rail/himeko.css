@@ -1,9 +1,9 @@
 /* Himeko - Honkai: Star Rail */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/sn649TF_LDgAAAAx/himeko-himeko-murata.webp);
+  --uadt-home-icon: url(https://media.tenor.com/F2SuLvGIVf8AAAA1/annoyed-anime.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e05a48;
   --uadt-accent-alt: #f0c27a;

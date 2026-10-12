@@ -1,9 +1,9 @@
 /* MEM-cho - Oshi no Ko */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/O-xtGk8yA08AAAAx/mem-cho-oshi-no-ko.webp);
+  --uadt-home-icon: url(https://media.tenor.com/evnP6Sa8euAAAAA1/shocked-anime.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ffd27f;
   --uadt-accent-alt: #ff8ac0;

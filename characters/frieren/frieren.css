@@ -1,9 +1,9 @@
 /* Frieren - Frieren: Beyond Journey's End */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/GYd_7VlDq_4AAAAx/anime-elf.webp);
+  --uadt-home-icon: url(https://media.tenor.com/MbGblFmhqiEAAAA1/frieren-frieren-anime.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8fd8b0;
   --uadt-accent-alt: #e6c27a;

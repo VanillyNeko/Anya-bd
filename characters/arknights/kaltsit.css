@@ -1,9 +1,9 @@
 /* Kal'tsit - Arknights */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/b36yNGnYcuoAAAAx/arknights-kaltsit.webp);
+  --uadt-home-icon: url(https://media.tenor.com/82B-Hd5izO0AAAA1/%E3%82%B1%E3%83%AB%E3%82%B7%E3%83%BC-%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7fd6a8;
   --uadt-accent-alt: #e6e6e6;

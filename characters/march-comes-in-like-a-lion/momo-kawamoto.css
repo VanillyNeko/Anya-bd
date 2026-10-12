@@ -1,9 +1,9 @@
 /* Momo Kawamoto - March Comes in Like a Lion */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/Tdf1HTl_xT4AAAAx/momo-kawamoto-3gatsu-no-lion.webp);
+  --uadt-home-icon: url(https://media.tenor.com/iSEr6Bz_l8wAAAA1/march-comes-in-like-a-lion-sangatsu-no-lion.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ffb0d0;
   --uadt-accent-alt: #ffd27f;

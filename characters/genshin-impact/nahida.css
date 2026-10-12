@@ -1,9 +1,9 @@
 /* Nahida - Genshin Impact */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/R7wQkMJuDlgAAAAx/nahida-kusanali.webp);
+  --uadt-home-icon: url(https://media.tenor.com/WZuthjVjxUUAAAA1/nahida-genshin-impact.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8fe08f;
   --uadt-accent-alt: #f2f2e6;

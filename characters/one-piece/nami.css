@@ -1,9 +1,9 @@
 /* Nami - One Piece */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/TEtidfcCngIAAAAx/nami-one-piece.webp);
+  --uadt-home-icon: url(https://media.tenor.com/68Ncceu1BVkAAAA1/nami-cat-burglar.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff944a;
   --uadt-accent-alt: #5fb0e6;

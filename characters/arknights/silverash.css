@@ -1,9 +1,9 @@
 /* SilverAsh - Arknights */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/b6uUSY15jRAAAAAx/arknights-%E9%93%B6%E7%81%B0.webp);
+  --uadt-home-icon: url(https://media.tenor.com/9yRY37CGkWgAAAA1/enciodes-silverash-arknights.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #c9d6e6;
   --uadt-accent-alt: #5f8ae0;

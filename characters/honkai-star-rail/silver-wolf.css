@@ -1,9 +1,9 @@
 /* Silver Wolf - Honkai: Star Rail */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/azzZp4avalkAAAAx/silver-wolf-lv999.webp);
+  --uadt-home-icon: url(https://media.tenor.com/4GMiAyw7bIEAAAA1/hsr-hsr-sw.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8a7cff;
   --uadt-accent-alt: #6fe6ff;

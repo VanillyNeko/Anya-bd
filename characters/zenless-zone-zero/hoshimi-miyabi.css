@@ -1,9 +1,9 @@
 /* Hoshimi Miyabi - Zenless Zone Zero */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/7vJK_c7p2bcAAAAx/zzz-zenless-zone-zero.webp);
+  --uadt-home-icon: url(https://media.tenor.com/NPDFX3GPpjwAAAA1/zzz-zenless-zone-zero.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6fb4f0;
   --uadt-accent-alt: #e6e6ff;

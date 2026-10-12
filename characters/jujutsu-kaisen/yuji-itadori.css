@@ -1,9 +1,9 @@
 /* Yuji Itadori - Jujutsu Kaisen */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/o-VzEPxGLycAAAAx/jujutsu-kaisen-jjk.webp);
+  --uadt-home-icon: url(https://media.tenor.com/QeFf4SGvEFMAAAA1/yuji-itadori-itadori-yuji.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff8a9b;
   --uadt-accent-alt: #e05050;

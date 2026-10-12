@@ -1,9 +1,9 @@
 /* Reg - Made in Abyss */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/BmReLImH-rAAAAAx/made-in-abyss-anime.webp);
+  --uadt-home-icon: url(https://media.tenor.com/wW0NuDrF3fEAAAA1/reg-made-in-abyss.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e05a5a;
   --uadt-accent-alt: #e6c27a;

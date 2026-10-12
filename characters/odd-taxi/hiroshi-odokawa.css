@@ -1,9 +1,9 @@
 /* Hiroshi Odokawa - Odd Taxi */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/iMxflWAs93IAAAAx/odd-taxi-odokawa.webp);
+  --uadt-home-icon: url(https://media.tenor.com/aubWXtD6I5gAAAA1/odokawa-my-beloved-odokawa.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e6c27a;
   --uadt-accent-alt: #6fa88f;

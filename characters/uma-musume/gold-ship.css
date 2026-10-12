@@ -1,9 +1,9 @@
 /* Gold Ship - Uma Musume Pretty Derby */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/sk7BouLkaWwAAAAx/gold-ship-gold-ship-uma-musume.webp);
+  --uadt-home-icon: url(https://media.tenor.com/O3nzDiqDl_MAAAA1/jerma985-jerma.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e05a5a;
   --uadt-accent-alt: #f2c94c;

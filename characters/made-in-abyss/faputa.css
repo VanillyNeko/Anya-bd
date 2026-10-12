@@ -1,9 +1,9 @@
 /* Faputa - Made in Abyss */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/13sVDjCsCjkAAAAx/faputa-smile.webp);
+  --uadt-home-icon: url(https://media.tenor.com/PpOP5hmP-RwAAAA1/faputa-made-in-abyss.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e6e6ff;
   --uadt-accent-alt: #e05a5a;

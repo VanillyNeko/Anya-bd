@@ -1,9 +1,9 @@
 /* Misono Mika - Blue Archive */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/CFETbvCRLDMAAAAx/misono-mika-mika-misano.webp);
+  --uadt-home-icon: url(https://media.tenor.com/miIIkUNWcXUAAAA1/mika-fish.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ffb0d0;
   --uadt-accent-alt: #ffe48a;

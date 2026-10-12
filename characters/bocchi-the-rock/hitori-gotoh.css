@@ -1,9 +1,9 @@
 /* Hitori Gotoh - Bocchi the Rock! */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/7XwcFNembSoAAAAx/bocchi-the-rock-hitori-gotoh.webp);
+  --uadt-home-icon: url(https://media.tenor.com/pOQdnYcg078AAAA1/bocchi-the-rock-hitori-gotoh.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff8ac0;
   --uadt-accent-alt: #ffd27f;

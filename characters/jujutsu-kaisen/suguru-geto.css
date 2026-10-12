@@ -1,9 +1,9 @@
 /* Suguru Geto - Jujutsu Kaisen */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/o8LDmKManM0AAAAx/juju-jjk-memes.webp);
+  --uadt-home-icon: url(https://media.tenor.com/MBixGOpWDu0AAAA1/geto-suguru-jjk.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #9a8fe0;
   --uadt-accent-alt: #c9a0ff;

@@ -1,9 +1,9 @@
 /* Mash Kyrielight - Fate/Grand Order */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/6QbBXTBYDZ0AAAAx/fate-grand-order-babylon-mash-kyrielight.webp);
+  --uadt-home-icon: url(https://media.tenor.com/qgPLHPgy-ZMAAAA1/mashu-kyrielight-fate.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #a88ff0;
   --uadt-accent-alt: #e6e6ff;

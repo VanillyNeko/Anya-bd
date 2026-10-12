@@ -1,9 +1,9 @@
 /* Tendou Aris - Blue Archive */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/33Uu3hFGN30AAAAx/blue-archive-arisu-blue-archive.webp);
+  --uadt-home-icon: url(https://media.tenor.com/5v7PdeWLQ-IAAAA1/blue-archive-arisu.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6fa8ff;
   --uadt-accent-alt: #ffd27f;

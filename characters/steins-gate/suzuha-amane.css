@@ -1,9 +1,9 @@
 /* Suzuha Amane - Steins;Gate */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/wRlEsLUH1fkAAAAx/steins-gate-amane-suzuha.webp);
+  --uadt-home-icon: url(https://media.tenor.com/s3jpTCvGX2IAAAA1/steins-gate-suzuha-amane.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e8a84a;
   --uadt-accent-alt: #6fa88f;

@@ -1,9 +1,9 @@
 /* Satoru Gojo - Jujutsu Kaisen */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/YskJHexRTQsAAAAx/gojo-satoru-gojo.webp);
+  --uadt-home-icon: url(https://media.tenor.com/aXjsDEqdersAAAA1/gojo-satoru-gojo.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7fd3ff;
   --uadt-accent-alt: #f2f2f2;

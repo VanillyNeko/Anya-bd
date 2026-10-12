@@ -1,9 +1,9 @@
 /* Giyu Tomioka - Demon Slayer */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/bMn64qAJSxwAAAAx/tomioka-demon-slayer.webp);
+  --uadt-home-icon: url(https://media.tenor.com/xNssJWRMV48AAAA1/giyuu-tomioka-giyuu.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #6f8fc0;
   --uadt-accent-alt: #e05a5a;

@@ -1,9 +1,9 @@
 /* Tsuyu Asui - My Hero Academia */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/dVp2Sc8o6j0AAAAx/tsuyu-asui-fumikage-tokoyami.webp);
+  --uadt-home-icon: url(https://media.tenor.com/-3hUVPrVkWMAAAA1/sirius-mha-sirius-bnha.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #7fc27f;
   --uadt-accent-alt: #e6e6ff;

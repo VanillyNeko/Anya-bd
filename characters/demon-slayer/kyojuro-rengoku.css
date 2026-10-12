@@ -1,9 +1,9 @@
 /* Kyojuro Rengoku - Demon Slayer */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/z1P4ccPzl9MAAAAx/demon-slayer-demon-slayer-season-2.webp);
+  --uadt-home-icon: url(https://media.tenor.com/tSmg6eMJHZsAAAA1/rengoku-kny.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #ff7f2a;
   --uadt-accent-alt: #f2c94c;

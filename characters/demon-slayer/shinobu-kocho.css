@@ -1,9 +1,9 @@
 /* Shinobu Kocho - Demon Slayer */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/vzpGSgUH6KAAAAAx/shinobu-kocho-insect-breathing.webp);
+  --uadt-home-icon: url(https://media.tenor.com/AXI6_8RYIAcAAAA1/shinobu-shinobu-kocho.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #a88ff0;
   --uadt-accent-alt: #6fd3c0;

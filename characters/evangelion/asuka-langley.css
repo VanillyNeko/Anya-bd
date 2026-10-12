@@ -1,9 +1,9 @@
 /* Asuka Langley - Neon Genesis Evangelion */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/Foq1VNjtgxEAAAAx/asuka-asuka-langley-soryu.webp);
+  --uadt-home-icon: url(https://media.tenor.com/Dhzt0v8Yi3kAAAA1/asuka-evangelion.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #f05a40;
   --uadt-accent-alt: #ff9f4a;

@@ -1,9 +1,9 @@
 /* Jeanne d'Arc - Fate/Grand Order */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/D-SIWHjn7q4AAAAx/jeanne-darc-fate-france.webp);
+  --uadt-home-icon: url(https://media.tenor.com/sj0atE2g2DkAAAA1/jeanne-d%27arc-fate-jeanne-d%27arc.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #e6d6a0;
   --uadt-accent-alt: #6f8fe0;

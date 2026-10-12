@@ -1,9 +1,9 @@
 /* The Shorekeeper - Wuthering Waves */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/el4CnBiSEyUAAAAx/shore-keeper-shorekeeper-eating.webp);
+  --uadt-home-icon: url(https://media.tenor.com/43b2oqyTYCUAAAA1/shorekeeper-wuwa.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #8fb0ff;
   --uadt-accent-alt: #e6d6ff;

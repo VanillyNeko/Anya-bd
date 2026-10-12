@@ -1,9 +1,9 @@
 /* Reze - Chainsaw Man */
 /* Generated from roster.json by scripts/build.py - edit roster.json instead. */
 :root {
-  --uadt-background-image: none;
-  --uadt-home-icon: none;
-  --uadt-home-logo: visible;
+  --uadt-background-image: url(https://media.tenor.com/c-4n_c4jVsUAAAAx/reze-bomb-devil.webp);
+  --uadt-home-icon: url(https://media.tenor.com/3Sykma8la9gAAAA1/reze-tongue-out-reze-chainsaw-man-moving-her-head.webp);
+  --uadt-home-logo: hidden;
 
   --uadt-accent: #9a8fe0;
   --uadt-accent-alt: #7fd6a0;
