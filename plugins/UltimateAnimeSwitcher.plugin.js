@@ -6,7 +6,7 @@
  * @donate https://paypal.me/vanillyneko
  * @website https://www.vanillyneko.com/
  * @invite bptEdGMNfW
- * @source https://github.com/VanillyNeko/Anya-bd
+ * @source https://github.com/VanillyNeko/The-Best-Anime-Discord-Theme
  */
 
 const THEME_PREFIX = "Ultimate Anime - ";

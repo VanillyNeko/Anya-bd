@@ -11,14 +11,14 @@
 
 ## Picking a character
 
- Browse everyone with their art in the [gallery](https://vanillyneko.github.io/Anya-bd/gallery.html) or the list in [CHARACTERS.md](CHARACTERS.md), then either:
+ Browse everyone with their art in the [gallery](https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/gallery.html) or the list in [CHARACTERS.md](CHARACTERS.md), then either:
 
  - **Vencord / Vesktop:** paste the character's link into Themes > Online Themes, or download its `.theme.css` into your themes folder and turn it on in the Themes tab.
  - **BetterDiscord:** download the `.theme.css` files you want into your themes folder and turn one on. Install [`plugins/UltimateAnimeSwitcher.plugin.js`](plugins/UltimateAnimeSwitcher.plugin.js) to switch between them from a dropdown in its settings.
  - **Quick CSS:** paste these two lines and swap the second for any file in [`characters/`](characters/):
    ```css
-   @import url("https://vanillyneko.github.io/Anya-bd/core.css");
-   @import url("https://vanillyneko.github.io/Anya-bd/characters/spy-x-family/anya-forger.css");
+   @import url("https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/core.css");
+   @import url("https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/characters/spy-x-family/anya-forger.css");
    ```
 
  Only turn on one character at a time.
@@ -53,10 +53,10 @@
 ## Screenshots
 
  Friends Page:
- ![Friends Page](https://vanillyneko.github.io/Anya-bd/assets/screenshots/friends-page.png)
+ ![Friends Page](https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/assets/screenshots/friends-page.png)
 
  Settings Page:
- ![Settings Page](https://vanillyneko.github.io/Anya-bd/assets/screenshots/settings.png)
+ ![Settings Page](https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/assets/screenshots/settings.png)
 
  Server Announcements:
- ![Server Announcements Neko Family Server](https://vanillyneko.github.io/Anya-bd/assets/screenshots/discord-announcements.png)
+ ![Server Announcements Neko Family Server](https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/assets/screenshots/discord-announcements.png)

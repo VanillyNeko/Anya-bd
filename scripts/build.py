@@ -21,7 +21,7 @@ import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE_URL = "https://vanillyneko.github.io/Anya-bd/"
+BASE_URL = "https://vanillyneko.github.io/The-Best-Anime-Discord-Theme/"
 THEME_PREFIX = "Ultimate Anime - "
 IMAGE_EXTS = ("jpg", "jpeg", "png", "webp", "gif")
 HEX = re.compile(r"^#[0-9a-fA-F]{6}$")
@@ -39,7 +39,7 @@ META = """\
  * @donate https://paypal.me/vanillyneko
  * @website https://www.vanillyneko.com/
  * @invite bptEdGMNfW
- * @source https://github.com/VanillyNeko/Anya-bd"""
+ * @source https://github.com/VanillyNeko/The-Best-Anime-Discord-Theme"""
 
 
 def fail(message):
