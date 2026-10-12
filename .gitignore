@@ -4,3 +4,7 @@
 
 /.vs/slnx.sqlite
 *.vsidx
+
+# Editor folders
+.idea/
+.vs/

@@ -1,0 +1,19 @@
+/* Loid Forger - Agent Twilight navy, teal and tan */
+:root {
+  --anya-bd-background-image: none; /* e.g. url(https://vanillyneko.github.io/Anya-bd/assets/characters/loid/background.jpg) */
+  --anya-bd-home-icon: none;
+  --anya-bd-home-logo: visible;
+
+  --anya-bd-tint: #0f1a26;
+  --anya-bd-accent: #5fb8a8;
+  --anya-bd-accent-alt: #e6d2a4;
+
+  --anya-bd-text: #e4eef0;
+  --anya-bd-text-strong: #ffffff;
+  --anya-bd-text-muted: #98aeb4;
+  --anya-bd-link: #7fd6c6;
+
+  --anya-bd-font-body: "gg sans"; /* the spy keeps it professional */
+  --anya-bd-font-heading: "Permanent Marker";
+  --anya-bd-font-button: "Permanent Marker";
+}

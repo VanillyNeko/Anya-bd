@@ -1,0 +1,19 @@
+/* Bond Forger - fluffy white, sky blue and cream */
+:root {
+  --anya-bd-background-image: none; /* e.g. url(https://vanillyneko.github.io/Anya-bd/assets/characters/bond/background.jpg) */
+  --anya-bd-home-icon: none;
+  --anya-bd-home-logo: visible;
+
+  --anya-bd-tint: #1a2132;
+  --anya-bd-accent: #9cc4ff;
+  --anya-bd-accent-alt: #ffe9b8;
+
+  --anya-bd-text: #eef3ff;
+  --anya-bd-text-strong: #ffffff;
+  --anya-bd-text-muted: #a9b6cf;
+  --anya-bd-link: #b3d3ff;
+
+  --anya-bd-font-body: "Single Day";
+  --anya-bd-font-heading: "Pacifico";
+  --anya-bd-font-button: "Permanent Marker";
+}

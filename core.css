@@ -1,0 +1,321 @@
+/**
+ * Anya-BD core
+ * Shared structure for every Anya-BD character. On its own it looks like Anya;
+ * a file in characters/ loaded after it swaps the colors, images and fonts.
+ *
+ * How this theme stays alive across Discord updates:
+ *
+ * 1. Colors, fonts and corner radii go through Discord's design tokens
+ *    (--background-base-lower, --text-default, --font-primary, --radius-md, ...).
+ *    Discord's own CSS reads these thousands of times, so they only change in
+ *    full redesigns, not in weekly builds.
+ * 2. Structure is targeted with hooks Discord does not hash: element ids
+ *    (message-content-*, chat-messages-*), data-* attributes (guildsnav) and
+ *    ARIA roles (article, menu, dialog).
+ * 3. Where a class is unavoidable, match its readable prefix and never the hash:
+ *    [class^="sidebar_"], [class*=" sidebar_"] matches sidebar__5e434 today and
+ *    sidebar__xxxxx tomorrow. Never paste a class like .sidebar__5e434 here.
+ * 4. Images and fonts are served from this repo's GitHub Pages site. Vencord
+ *    and Vesktop block images/fonts from hosts outside their allowlist
+ *    (*.github.io, i.imgur.com, cdn.discordapp.com, ...), and fonts.gstatic.com
+ *    is not on it, so Google Fonts and most image hosts silently fail there.
+ */
+
+@font-face {
+  font-family: "Single Day";
+  font-display: swap;
+  src: url("https://vanillyneko.github.io/Anya-bd/assets/fonts/single-day-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pacifico";
+  font-display: swap;
+  src: url("https://vanillyneko.github.io/Anya-bd/assets/fonts/pacifico-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Permanent Marker";
+  font-display: swap;
+  src: url("https://vanillyneko.github.io/Anya-bd/assets/fonts/permanent-marker-latin.woff2") format("woff2");
+}
+
+/* ================================
+   Character palette
+   Every characters/*.css file overrides these. Defaults are Anya.
+================================ */
+:root {
+  /* Images must come from a host Vencord allows (see note 4 above). Use none for no image. */
+  --anya-bd-background-image: url(https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg);
+  --anya-bd-home-icon: url(https://vanillyneko.github.io/Anya-bd/assets/home-icon.gif);
+  --anya-bd-home-logo: hidden; /* visible keeps Discord's logo on top of the home icon */
+
+  --anya-bd-tint: #2a1638;        /* base of every glass panel and popout */
+  --anya-bd-accent: #ff8ad8;      /* hover, selection, buttons, message bubbles */
+  --anya-bd-accent-alt: #7fdcff;  /* message box outline, secondary highlights */
+
+  --anya-bd-text: #f0dcff;
+  --anya-bd-text-strong: #ffd6f3;
+  --anya-bd-text-muted: #c9a6de;
+  --anya-bd-link: #ff9fe0;
+
+  --anya-bd-font-body: "Single Day";
+  --anya-bd-font-heading: "Pacifico";
+  --anya-bd-font-button: "Permanent Marker";
+}
+
+/* ================================
+   Knobs - tweak these
+================================ */
+:root {
+  --anya-bd-glass-strength: 45%;   /* how dark the panels are: 0% is see-through, 100% is solid */
+  --anya-bd-bubble-strength: 16%;  /* message bubble tint: 0% turns bubbles off */
+  --anya-bd-radius: 10px;
+
+  --anya-bd-backdrop-overlay: rgb(255 255 255 / 0.06);
+  --anya-bd-backdrop-blur: 0px;
+  --anya-bd-backdrop-brightness: 0.85;
+  --anya-bd-backdrop-saturate: 1.2;
+
+  --anya-bd-text-shadow: 0 1px 2px rgb(0 0 0 / 0.55); /* keeps text readable over busy art */
+}
+
+/* ================================
+   Derived colors - normally left alone
+================================ */
+:root {
+  --anya-bd-glass: color-mix(in srgb, var(--anya-bd-tint) var(--anya-bd-glass-strength), transparent);
+  --anya-bd-glass-strong: color-mix(in srgb, var(--anya-bd-tint) calc(var(--anya-bd-glass-strength) + 20%), transparent);
+  --anya-bd-surface: color-mix(in srgb, var(--anya-bd-tint) 92%, transparent);
+  --anya-bd-hover: color-mix(in srgb, var(--anya-bd-accent) 14%, transparent);
+  --anya-bd-selected: color-mix(in srgb, var(--anya-bd-accent) 28%, transparent);
+  --anya-bd-bubble: color-mix(in srgb, var(--anya-bd-accent) var(--anya-bd-bubble-strength), transparent);
+  --anya-bd-border: color-mix(in srgb, var(--anya-bd-accent) 22%, transparent);
+  --anya-bd-accent-strong: color-mix(in srgb, var(--anya-bd-accent) 80%, black);
+}
+
+/* ================================
+   Design tokens
+   Discord defines its tokens on every .theme-* element (popouts and layers
+   repeat the class), so override on all of them, with !important to beat
+   Nitro gradient and profile themes that set the same tokens.
+================================ */
+:root,
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.theme-light {
+  /* App backgrounds: clear so the backdrop shows through */
+  --background-base-lowest: transparent !important;
+  --background-base-lower: transparent !important;
+  --background-base-low: transparent !important;
+  --background-gradient-app-frame: transparent !important;
+  --background-gradient-lowest: transparent !important;
+  --background-gradient-lower: transparent !important;
+  --background-gradient-low: transparent !important;
+  --background-gradient-high: transparent !important;
+  --background-gradient-chat: transparent !important;
+  --chat-background-default: transparent !important;
+  --custom-channel-members-bg: transparent !important;
+
+  /* Floating surfaces: popouts, menus, modals, emoji picker */
+  --background-surface-high: var(--anya-bd-surface) !important;
+  --background-surface-higher: var(--anya-bd-surface) !important;
+  --background-surface-highest: var(--anya-bd-surface) !important;
+  --modal-background: var(--anya-bd-surface) !important;
+  --card-background-default: var(--anya-bd-glass) !important;
+
+  /* Message box */
+  --input-background-default: var(--anya-bd-glass-strong) !important;
+  --background-gradient-highest: var(--anya-bd-glass-strong) !important;
+  --channeltextarea-background: var(--anya-bd-glass-strong) !important;
+  --input-placeholder-text-default: var(--anya-bd-text-muted) !important;
+
+  /* Text */
+  --text-default: var(--anya-bd-text) !important;
+  --text-strong: var(--anya-bd-text-strong) !important;
+  --text-muted: var(--anya-bd-text-muted) !important;
+  --text-subtle: var(--anya-bd-text-muted) !important;
+  --text-link: var(--anya-bd-link) !important;
+  --chat-text-muted: var(--anya-bd-text-muted) !important;
+  --channels-default: var(--anya-bd-text-muted) !important;
+  --interactive-text-default: var(--anya-bd-text-muted) !important;
+  --interactive-text-hover: var(--anya-bd-text-strong) !important;
+  --interactive-text-active: var(--anya-bd-text-strong) !important;
+
+  /* Accent: buttons, toggles, mentions, the home button hover */
+  --brand-500: var(--anya-bd-accent) !important;
+  --brand-560: var(--anya-bd-accent-strong) !important;
+  --background-brand: var(--anya-bd-accent) !important;
+  --text-brand: var(--anya-bd-accent) !important;
+  --control-brand-foreground: var(--anya-bd-accent) !important;
+  --control-brand-foreground-new: var(--anya-bd-accent) !important;
+  --control-primary-background-default: var(--anya-bd-accent-strong) !important;
+  --control-primary-background-hover: var(--anya-bd-accent) !important;
+  --control-primary-background-active: var(--anya-bd-accent-strong) !important;
+  --mention-background: color-mix(in srgb, var(--anya-bd-accent) 30%, transparent) !important;
+  --mention-foreground: var(--anya-bd-text-strong) !important;
+
+  /* Hover / selected states */
+  --background-mod-subtle: var(--anya-bd-hover) !important;
+  --background-mod-muted: var(--anya-bd-hover) !important;
+  --background-mod-normal: var(--anya-bd-selected) !important;
+  --background-mod-strong: var(--anya-bd-selected) !important;
+  --interactive-background-hover: var(--anya-bd-hover) !important;
+  --interactive-background-active: var(--anya-bd-selected) !important;
+  --interactive-background-selected: var(--anya-bd-selected) !important;
+  --message-background-hover: var(--anya-bd-hover) !important;
+
+  /* Borders */
+  --border-subtle: var(--anya-bd-border) !important;
+  --border-muted: var(--anya-bd-border) !important;
+  --app-frame-border: var(--anya-bd-border) !important;
+  --app-border-frame: var(--anya-bd-border) !important;
+
+  /* Scrollbars */
+  --scrollbar-thin-thumb: var(--anya-bd-selected) !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-thumb: var(--anya-bd-selected) !important;
+  --scrollbar-auto-track: transparent !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--anya-bd-selected) !important;
+  --scrollbar-auto-scrollbar-color-track: transparent !important;
+
+  /* Fonts. Each list ends in Discord's own fonts so non-Latin text still renders. */
+  --font-primary: var(--anya-bd-font-body), "gg sans", "Noto Sans", sans-serif !important;
+  --font-headline: var(--anya-bd-font-heading), var(--anya-bd-font-body), "gg sans", sans-serif !important;
+
+  /* Corners */
+  --radius-sm: var(--anya-bd-radius) !important;
+  --radius-md: calc(var(--anya-bd-radius) + 4px) !important;
+  --radius-lg: calc(var(--anya-bd-radius) + 8px) !important;
+}
+
+/* ================================
+   Backdrop
+   Lives on <html>, which Discord can never rename. Its own root layers
+   (body, #app-mount, the layers bg) paint --background-base-lowest, cleared above.
+   Without an image, a gradient in the character's colors shows instead.
+================================ */
+html {
+  background: var(--anya-bd-tint);
+}
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--anya-bd-backdrop-overlay), var(--anya-bd-backdrop-overlay)),
+    var(--anya-bd-background-image) center / cover no-repeat,
+    radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--anya-bd-accent) 45%, transparent), transparent 55%),
+    radial-gradient(circle at 85% 90%, color-mix(in srgb, var(--anya-bd-accent-alt) 40%, transparent), transparent 55%),
+    var(--anya-bd-tint);
+  filter: blur(var(--anya-bd-backdrop-blur)) brightness(var(--anya-bd-backdrop-brightness)) saturate(var(--anya-bd-backdrop-saturate));
+}
+body,
+#app-mount {
+  background: transparent !important;
+}
+
+/* ================================
+   Regions
+   One glass tint everywhere so the art stays the focus;
+   the accent color only shows on hover, selection and bubbles.
+================================ */
+
+/* Server list */
+[data-list-id="guildsnav"],
+nav[class^="guilds_"],
+nav[class*=" guilds_"] {
+  background-color: var(--anya-bd-glass) !important;
+}
+[data-list-id="guildsnav"]::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Channel list and DM list */
+[class^="sidebarList_"],
+[class*=" sidebarList_"],
+[class^="privateChannels_"],
+[class*=" privateChannels_"] {
+  background-color: var(--anya-bd-glass) !important;
+}
+
+/* Member list and the friends page "Active Now" column */
+[class^="membersWrap_"],
+[class*=" membersWrap_"],
+[class^="peopleColumn_"],
+[class*=" peopleColumn_"] {
+  background-color: var(--anya-bd-glass) !important;
+  box-shadow: none !important;
+}
+
+/* User panel (bottom left) */
+:is([class^="sidebar_"], [class*=" sidebar_"]) :is([class^="panels_"], [class*=" panels_"]) {
+  background: var(--anya-bd-glass-strong) !important;
+  border: 1px solid var(--anya-bd-border);
+}
+
+/* Full-screen layers stacked over the app, such as settings */
+:is([class^="layers_"], [class*=" layers_"]) > :is([class^="layer_"], [class*=" layer_"]) ~ :is([class^="layer_"], [class*=" layer_"]) {
+  background-color: var(--anya-bd-glass-strong) !important;
+}
+
+/* ================================
+   Messages
+================================ */
+li[id^="chat-messages-"] > [role="article"]:not([class*="mentioned_"]) {
+  background-color: var(--anya-bd-bubble);
+  border-radius: var(--anya-bd-radius);
+}
+li[id^="chat-messages-"] > [role="article"]:not([class*="mentioned_"]):hover {
+  background-color: color-mix(in srgb, var(--anya-bd-accent) calc(var(--anya-bd-bubble-strength) + 8%), transparent);
+}
+
+[id^="message-content-"],
+[class^="markup_"],
+[class*=" markup_"] {
+  color: var(--anya-bd-text);
+  text-shadow: var(--anya-bd-text-shadow);
+}
+
+/* Message box */
+[class^="channelTextArea_"],
+[class*=" channelTextArea_"] {
+  border: 1px solid color-mix(in srgb, var(--anya-bd-accent-alt) 35%, transparent);
+  border-radius: calc(var(--anya-bd-radius) + 4px);
+}
+
+/* ================================
+   Popouts, menus, modals
+   Floating layers sit over the backdrop, so blur what is behind them.
+================================ */
+[role="menu"],
+[role="dialog"],
+[role="listbox"],
+[role="tooltip"] {
+  backdrop-filter: blur(12px);
+}
+
+/* ================================
+   Home icon
+   Scoped to the Home button only, so the add-server and discover buttons
+   keep their icons. With no icon set, Discord's logo sits on an accent gradient.
+================================ */
+[data-list-item-id="guildsnav___home"] [class*="childWrapper_"] {
+  background:
+    var(--anya-bd-home-icon) center / cover no-repeat,
+    linear-gradient(135deg, var(--anya-bd-accent), var(--anya-bd-accent-alt)) !important;
+}
+[data-list-item-id="guildsnav___home"] [class*="childWrapper_"] > * {
+  visibility: var(--anya-bd-home-logo) !important;
+}
+
+/* ================================
+   Fonts
+   Body text comes from --font-primary above; these elements get the accent fonts.
+================================ */
+h1, h2, h3 {
+  font-family: var(--anya-bd-font-heading), var(--anya-bd-font-body), "gg sans", sans-serif !important;
+}
+button {
+  font-family: var(--anya-bd-font-button), var(--anya-bd-font-body), "gg sans", sans-serif !important;
+}
