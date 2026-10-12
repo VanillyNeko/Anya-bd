@@ -1,368 +1,289 @@
 /**
  * @name        Anya-BD
- * @version     3.2.0
- * @description Final version with full transparency across Discord, working folder previews, and pastel theme ðŸŒ™
+ * @version     4.0.0
+ * @description Pastel, see-through Anya theme. Built on Discord's design tokens and stable DOM hooks instead of hashed class names, so it survives Discord's routine class reshuffles.
  * @author      VanillyNeko
  */
 
- @import url("https://fonts.googleapis.com/css2?family=Single+Day&family=Pacifico&family=Permanent+Marker&display=swap");
+/*
+ * How this theme stays alive across Discord updates:
+ *
+ * 1. Colors go through Discord's design tokens (--background-base-lower,
+ *    --text-default, ...). Discord's own CSS reads these hundreds of times, so
+ *    they only change in full redesigns, not in weekly builds.
+ * 2. Structure is targeted with hooks Discord does not hash: element ids
+ *    (message-content-*, chat-messages-*), data-* attributes (guildsnav) and
+ *    ARIA roles (article, menu, dialog).
+ * 3. Where a class is unavoidable, match its readable prefix and never the hash:
+ *    [class^="sidebar_"], [class*=" sidebar_"] matches sidebar__5e434 today and
+ *    sidebar__xxxxx tomorrow. Never paste a class like .sidebar__5e434 here.
+ * 4. Images and fonts are served from this repo's GitHub Pages site. Vencord
+ *    and Vesktop block images/fonts from hosts outside their allowlist
+ *    (*.github.io, i.imgur.com, cdn.discordapp.com, ...), and fonts.gstatic.com
+ *    is not on it, so Google Fonts and most image hosts silently fail there.
+ */
 
- 
- :root {
-   --anya-bd-theme-color-1: rgba(255, 192, 203, 0.3); /* pastel pink */
-   --anya-bd-theme-color-2: rgba(221, 160, 221, 0.3); /* pastel purple */
-   --anya-bd-theme-color-3: rgba(173, 216, 230, 0.3); /* pastel blue */
-   --anya-bd-theme-color-4: rgba(255, 255, 255, 0.3); /* soft white fallback */
-   --anya-bd-theme-background-image: url(https://vnil.me/QdxrKwAjWykR.jpg); /* Normal Theme */
-   /* --anya-bd-theme-background-image: url(https://hips.hearstapps.com/hmg-prod/images/screenshot-2022-12-21-at-16-32-03-1671640479.png?crop=0.999767711962834xw:1xh;center,top); */ /* Holiday Theme */
-   --anya-bd-theme-overlay-color: rgba(0, 0, 0, 0.2);
-   --anya-bd-theme-blur: 0px;
-   --anya-bd-theme-brightness: 0.85;
-   --anya-bd-theme-saturate: 1.2;
-   --anya-bd-theme-font-primary: "Single Day", cursive;
-   --anya-bd-theme-font-accent: "Pacifico", cursive;
-   --anya-bd-theme-font-button: "Permanent Marker", cursive;
-   --anya-bd-theme-corner-radius: 10px;
-   --anya-bd-theme-text-shadow: 0px 0px 0px rgb(135, 255, 193);
-   --anya-bd-theme-home-icon: url('https://64.media.tumblr.com/65f4b9128c7a90f98ebb2528d96970dd/2b71a519f05cca0b-3e/s500x750/eae3529add68ff64e541b970284abae52de9e191.gifv');
-   --anya-bd-theme-radius: 10px;
-   --anya-bd-theme-border: 1px solid rgba(255, 255, 255, 0.1);
- }
-
- .theme-dark {
-   --background-secondary: transparent;
-   --background-tertiary: transparent;
-   --channeltextarea-background: transparent;
-   --text-normal: rgba(255, 112, 219, 0.37);
-   --text-muted: rgba(255, 112, 219, 0.37);
-   --text-link: rgba(255, 112, 219, 0.37);
-   --brand-experiment: rgba(255, 112, 219, 0.37);
-   --status-danger: rgba(255, 112, 219, 0.37);
-   --status-positive: rgba(255, 112, 219, 0.37);
-   --status-warning: rgba(255, 112, 219, 0.37);
- }
- 
- /* === Background === */
- .layers__960e4::before {
-   content: "";
-   position: fixed;
-   inset: 0;
-   background: url(https://vnil.me/QdxrKwAjWykR.jpg) center/cover no-repeat;
- }
- .layers__960e4::after {
-   content: "";
-   position: fixed;
-   inset: 0;
-   background: rgba(255, 255, 255, 0.082); /* Changes entire backdrop colour */
-   backdrop-filter: blur(var(--anya-bd-theme-blur));
-   z-index: 1;
-   pointer-events: none;
- }
- 
-  /* ================================
-     Message Text 
-  ================================ */
- .markup__1c0d1,
- .messageContent__21e69,
- .messageContent__1dca2,
- .markup__75297 {
-   color: rgb(202, 155, 255); /* Changes text colour in main text body */
-   font-size: 15px;
-   font-weight: normal;
-   text-shadow: var(--anya-bd-theme-text-shadow);
- }
-
-  /* ================================
-     Scrollbar
-  ================================ */
- ::-webkit-scrollbar {
-   background-color: rgba(221, 99, 191, 0.384); /* scroll bar colour */
-   width: 8px;
- }
- ::-webkit-scrollbar-thumb {
-   background-color: rgba(255, 103, 235, 0.425);
-   border-radius: 10px;
- }
- ::-webkit-scrollbar-track {
-   background: rgba(255, 182, 255, 0.342); /* Small band on far right of text input UI */
- }
-
- 
-  /* ================================
-     DM Variables
-  ================================ */
-.privateChannels__35e86,
-.scroller__99e7c {
-  background-color: rgba(15, 172, 224, 0.281);
+@font-face {
+  font-family: "Single Day";
+  font-display: swap;
+  src: url("https://vanillyneko.github.io/Anya-bd/assets/fonts/single-day-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pacifico";
+  font-display: swap;
+  src: url("https://vanillyneko.github.io/Anya-bd/assets/fonts/pacifico-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Permanent Marker";
+  font-display: swap;
+  src: url("https://vanillyneko.github.io/Anya-bd/assets/fonts/permanent-marker-latin.woff2") format("woff2");
 }
 
-.searchBar__35e86 {
-  height: 56px;
-  color: rgba(15, 172, 224, 0.281);
-  box-shadow: var(--popout-header-shadow);
-}
- .wrapper_c19a55 {
-  background-color: rgba(255, 130, 234, 0.253);  /* Container for messaging text. */
-  border-radius: var(--message-radius);
- }
+/* ================================
+   Settings - tweak these
+================================ */
+:root {
+  /* Custom images must come from a host Vencord allows (see note 4 above) */
+  --anya-bd-theme-background-image: url(https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg); /* Normal Theme */
+  /* --anya-bd-theme-background-image: url(https://vanillyneko.github.io/Anya-bd/assets/new_year_s_eve_with_anya.jpg); */ /* Holiday Theme */
+  --anya-bd-theme-home-icon: url(https://vanillyneko.github.io/Anya-bd/assets/home-icon.gif);
 
-  /* ================================
-     Bottom text bar 
-  ================================ */
- .channelTextArea__74017,
-.wrapper__44df5 {
-  --textarea-alpha: 0.1;
-  margin: 0;
-  background: rgba(79, 181, 214, 0.062);
-  border-radius: var(--textarea-radius);
-}
-.channelTextArea__74017 .scrollableContainer__74017,
-.wrapper__44df5 .scrollableContainer__74017 {
-  background-color: rgba(105, 218, 255, 0.322); /* Changes footer bar colour main message window */
-}
-.channelTextArea__74017 .placeholder__1b31f,
-.wrapper__44df5 .placeholder__1b31f {
-  color: rgba(218, 146, 188, 0.911); /* Cotrolls the text displayed in input zone*/
-}
-.channelTextArea__74017 .editor__1b31f,
-.wrapper__44df5 .editor__1b31f,
-.channelTextAreaDisabled__74017 .scrollableContainer__74017, 
-.wrapper__44df5, 
-.upload_aa605f {
-    background-color: rgba(218, 146, 188, 0); /* Controlls the colour of text box input*/
-  padding: 12px 0;
+  --anya-bd-theme-overlay-color: rgba(255, 255, 255, 0.082); /* tint over the whole backdrop */
+  --anya-bd-theme-blur: 0px;
+  --anya-bd-theme-brightness: 0.85;
+  --anya-bd-theme-saturate: 1.2;
+
+  --anya-bd-theme-font-primary: "Single Day", cursive;
+  --anya-bd-theme-font-accent: "Pacifico", cursive;
+  --anya-bd-theme-font-button: "Permanent Marker", cursive;
+  --anya-bd-theme-corner-radius: 10px;
+  --anya-bd-theme-text-shadow: 0px 0px 0px rgb(135, 255, 193);
+
+  /* Text */
+  --anya-bd-theme-text: rgb(202, 155, 255);          /* message and body text */
+  --anya-bd-theme-text-strong: rgb(255, 196, 240);   /* headers, names */
+  --anya-bd-theme-text-muted: rgba(255, 170, 230, 0.75);
+  --anya-bd-theme-link: rgb(255, 112, 219);
+
+  /* Regions */
+  --anya-bd-theme-guilds: rgba(50, 133, 161, 0.105);      /* server list */
+  --anya-bd-theme-channels: rgba(82, 212, 255, 0.247);    /* channel / DM list */
+  --anya-bd-theme-members: rgba(255, 82, 183, 0.253);     /* member list, active-now column */
+  --anya-bd-theme-message: rgba(255, 130, 234, 0.253);    /* each message bubble */
+  --anya-bd-theme-input: rgba(105, 218, 255, 0.322);      /* message box */
+  --anya-bd-theme-panel: rgba(73, 189, 228, 0.356);       /* user panel, headers, cards */
+  --anya-bd-theme-surface: rgba(48, 26, 62, 0.88);        /* popouts, menus, modals - keep fairly opaque to stay readable */
+
+  /* Interaction */
+  --anya-bd-theme-hover: rgba(255, 182, 255, 0.15);
+  --anya-bd-theme-selected: rgba(255, 130, 234, 0.28);
+  --anya-bd-theme-border: rgba(255, 255, 255, 0.1);
+
+  /* Scrollbars */
+  --anya-bd-theme-scrollbar-thumb: rgba(255, 103, 235, 0.425);
+  --anya-bd-theme-scrollbar-track: rgba(255, 182, 255, 0.342);
 }
 
-.typing_b88801 {
-  position: absolute;
-  width: calc(100% - 32px);
-  height: 24px;
-  top: -12px;
-  left: unset;
-  right: unset;
-  margin-top: 0;
-  margin-right: 0 !important;
-}
-.stackedBars__74017,
-.stackedBars__74017, 
-.replyBar__841c8 {
-  background: rgb(218, 146, 188);
-}
- 
-  /* ================================
-     Friends list right section 
-  ================================ */
- .peopleColumn__133bf {
-   background-color: rgba(255, 82, 183, 0.253);
-   box-shadow: none !important;
- }
+/* ================================
+   Design tokens
+   Discord defines its tokens on every .theme-* element (popouts and layers
+   repeat the class), so override on all of them, with !important to beat
+   Nitro gradient and profile themes that set the same tokens.
+================================ */
+:root,
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.theme-light {
+  /* App backgrounds: clear so the backdrop shows through */
+  --background-base-lowest: transparent !important;
+  --background-base-lower: transparent !important;
+  --background-base-low: transparent !important;
+  --background-gradient-app-frame: transparent !important;
+  --background-gradient-lowest: transparent !important;
+  --background-gradient-lower: transparent !important;
+  --background-gradient-low: transparent !important;
+  --background-gradient-chat: transparent !important;
+  --chat-background-default: transparent !important;
+  --custom-channel-members-bg: transparent !important;
 
-  /* ================================
-     Discord groups sidebar
-  ================================ */
-.stack_dbd263, 
-.scroller_ef3116, 
-.none_d125d2, 
-.scrollerBase_d125d2,
-  .wrapper_ef3116,
-.wrapper_ef3116 .tree_ef3116:focus,
-.scroller_ef3116 {
-  background-color: rgba(50, 133, 161, 0.105); /* Changes the groups background colour */
+  /* Floating surfaces: popouts, menus, modals, emoji picker */
+  --background-surface-high: var(--anya-bd-theme-surface) !important;
+  --background-surface-higher: var(--anya-bd-theme-surface) !important;
+  --background-surface-highest: var(--anya-bd-theme-surface) !important;
+  --modal-background: var(--anya-bd-theme-surface) !important;
+  --card-background-default: var(--anya-bd-theme-panel) !important;
+
+  /* Message box */
+  --input-background-default: var(--anya-bd-theme-input) !important;
+  --background-gradient-highest: var(--anya-bd-theme-input) !important;
+  --channeltextarea-background: var(--anya-bd-theme-input) !important;
+  --input-placeholder-text-default: rgba(218, 146, 188, 0.911) !important;
+
+  /* Text */
+  --text-default: var(--anya-bd-theme-text) !important;
+  --text-strong: var(--anya-bd-theme-text-strong) !important;
+  --text-muted: var(--anya-bd-theme-text-muted) !important;
+  --text-subtle: var(--anya-bd-theme-text-muted) !important;
+  --text-link: var(--anya-bd-theme-link) !important;
+  --chat-text-muted: var(--anya-bd-theme-text-muted) !important;
+  --channels-default: var(--anya-bd-theme-text-muted) !important;
+  --interactive-text-default: var(--anya-bd-theme-text-muted) !important;
+  --interactive-text-hover: var(--anya-bd-theme-text-strong) !important;
+  --interactive-text-active: var(--anya-bd-theme-text-strong) !important;
+
+  /* Hover / selected states */
+  --background-mod-subtle: var(--anya-bd-theme-hover) !important;
+  --background-mod-muted: var(--anya-bd-theme-hover) !important;
+  --background-mod-normal: var(--anya-bd-theme-selected) !important;
+  --background-mod-strong: var(--anya-bd-theme-selected) !important;
+  --interactive-background-hover: var(--anya-bd-theme-hover) !important;
+  --interactive-background-active: var(--anya-bd-theme-selected) !important;
+  --interactive-background-selected: var(--anya-bd-theme-selected) !important;
+  --message-background-hover: var(--anya-bd-theme-hover) !important;
+
+  /* Borders */
+  --border-subtle: var(--anya-bd-theme-border) !important;
+  --border-muted: var(--anya-bd-theme-border) !important;
+  --app-frame-border: var(--anya-bd-theme-border) !important;
+  --app-border-frame: var(--anya-bd-theme-border) !important;
+
+  /* Scrollbars */
+  --scrollbar-thin-thumb: var(--anya-bd-theme-scrollbar-thumb) !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-thumb: var(--anya-bd-theme-scrollbar-thumb) !important;
+  --scrollbar-auto-track: var(--anya-bd-theme-scrollbar-track) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--anya-bd-theme-scrollbar-thumb) !important;
+  --scrollbar-auto-scrollbar-color-track: var(--anya-bd-theme-scrollbar-track) !important;
 }
-.scroller_ef3116::-webkit-scrollbar {
+
+/* ================================
+   Backdrop
+   Lives on <html>, which Discord can never rename. Its own root layers
+   (body, #app-mount, the layers bg) paint --background-base-lowest, cleared above.
+================================ */
+html {
+  background: #1a1020;
+}
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--anya-bd-theme-overlay-color), var(--anya-bd-theme-overlay-color)),
+    var(--anya-bd-theme-background-image) center / cover no-repeat;
+  filter: blur(var(--anya-bd-theme-blur)) brightness(var(--anya-bd-theme-brightness)) saturate(var(--anya-bd-theme-saturate));
+}
+body,
+#app-mount {
+  background: transparent !important;
+}
+
+/* ================================
+   Regions
+================================ */
+
+/* Server list */
+[data-list-id="guildsnav"],
+nav[class^="guilds_"],
+nav[class*=" guilds_"] {
+  background-color: var(--anya-bd-theme-guilds) !important;
+}
+[data-list-id="guildsnav"]::-webkit-scrollbar {
   width: 0 !important;
 }
 
-.listItem__650eb svg,
-.childWrapper__6e9f8,
-.circleIconButton__5bc7e,
-.mention_c10249,
-.numberBadge__2b1f5,
-.iconBadge__650eb.participating__64cf0,
-.iconBadge__650eb.participating__64cf0 path,
-.item__58105 {
-  background-color: rgba(164, 121, 243, 0); /*changes colour of the group holders*/
-}
- 
-   /* ================================
-     Friends list variables 
-  ================================ */
-.container__0f2e8.selected__0f2e8,
-.memberInner__5d473,
-.container__133bf,
-.tabBody__133bf {
-  background-color: rgba(255, 0, 0, 0); /* Changes the main friends list background colour */
+/* Channel list and DM list */
+[class^="sidebarList_"],
+[class*=" sidebarList_"],
+[class^="privateChannels_"],
+[class*=" privateChannels_"] {
+  background-color: var(--anya-bd-theme-channels) !important;
 }
 
-.contentWrapper__08434 .container_a45028 {
-  border: none;
-}
-.emojiPicker_c0e32c {
-  background-color:  white;
-}
-.header_c0e32c,
-.header__8ef02,
-.header_fed6d3 {
-  background-color:  white;
-}
-.wrapper__4e6ce {
-  background-color: var(--sidebar-color);
-}
-.wrapper__14245,
-.inspector_aeaaeb,
-.membersWrap_c8ffbb {
-  background-color: white;
-  border-left: none;
-}
-
- /* ================================
-     Footer Profile Menu
- ================================ */
-
-.avatarSpeaking__07f91 {
-  box-shadow: inset 0 0 0 2px hsl(var(--accent-hsl)), inset 0 0 0 3px var(--background-base-lower);
-}
-
-.avatarWrapper__37e49 {
-  background: rgba(73, 189, 228, 0.356); /* Changes small box located around avatar. */
-  margin-left: -4px;
-  padding-left: 4px;
-}
-.avatarWrapper__37e49:hover {
-  background: rgba(73, 189, 228, 0.356); /* Changes hover of small box around avatar */
-  border-radius: 20px;
-}
-
- /* ================================
-   Channels List 
- ================================ */
-.platform-win,
-.sidebar_c48ade,
-.container__2637a,
-.voiceChannelsButton__29444:hover {
-  background-color: rgba(82, 212, 255, 0.247); /* Colour for individual channels */
-}
-.sidebar_c48ade .link__2ea32 {
-  Background: rgba(82, 212, 255, 0.247); /* Changes colour for other channels */
-  border-radius: var(--list-item-radius);
-}
-.header_f37cb1,
-.header_f37cb1, 
-.communityInfoPill_f37cb1,
-.content__07f91, 
-.container_e88f3f {
-  background-color: rgba(82, 212, 255, 0.247); /* Changes background colour for group header */
-  border-radius: var(--card-radius);
-  border: none;
-}
-
-
- /* ================================
-   Home Icon Replacement
- ================================ */
-
-/* Hide original icon */
-.childWrapper__6e9f8 svg {
-  display: none !important;
-}
-
-.childWrapper__6e9f8 {
-  background: var(--anya-bd-theme-home-icon) center/cover no-repeat !important;
-  border-radius: 50% !important;
-  width: 48px !important;
-  height: 46px !important;
-  flex-shrink: 0 !important;
-}
-
-.childWrapper__6e9f8 foreignObject {
-  display: none !important;
-}
-
- /* ================================
-   IMPORTANT Do not remove.
- ================================ */
-
- /* === Transparent Content Without Folder Interference === */
- [class*="sidebar"],
- [class*="scroller"],
- [class*="container"]:not(.folder__17546):not(.wrapper__3af0b),
- [class*="chat"],
- [class*="region"],
- [class*="base"],
- [class*="form"],
- [class*="standardSidebar"],
- [class*="content"]:not(.folder__17546):not(.wrapper__3af0b),
- [class*="panel"],
- [class*="main"],
- [class*="applicationStore"],
- [class*="nowPlaying"],
- [class*="accountProfileCard"],
- [class*="settings"],
- [class*="messages"],
- [class*="column"],
- [class*="section"],
- [class*="layer"] > div,
- [class*="layer"] > section,
- [class*="layer"] > main,
- [class*="layer"] > [class*="flex"],
- [class*="contentColumn"],
- [class*="peopleColumn"],
- [class*="contentRegion"],
- [class*="pageWrapper"],
- [class*="customScroller"],
- [class*="customColumn"] {
-   background: transparent !important;
-   background-color: transparent !important;
-   box-shadow: none !important;
- }
- 
- /* === DO NOT interfere with Discord's folder previews === */
- .folderIcon__48112 foreignObject > div > div {
-   all: unset !important;
-   display: block !important;
-   border-radius: var(--anya-bd-theme-corner-radius);
- }
-
-.guilds__2b93a::before,
-.sidebar_c48ade::before,
-.sidebarRegion__36437::before,
-.container__43554::before,
-.peopleColumn__133bf,
-.guilds__2b93a::after,
-.sidebar_c48ade::after,
-.sidebarRegion__36437::after,
-.container__43554::after,
-.peopleColumn__133bf::after {
-  content: transparent;
-  display: transparent;
-  background: transparent;
-}
-
-.sidebar_c48ade::before,
-.sidebarRegion__36437::before,
-.guilds__2b93a::before,
-.peopleColumn__133bf::before,
-.container__43554::before,
-.sidebar_c48ade::after,
-.sidebarRegion__36437::after,
-.guilds__2b93a::after,
-.peopleColumn__133bf::after,
-.container__43554::after {
-  content: none !important;
-  background: none !important;
-  display: none !important;
+/* Member list and the friends page "Active Now" column */
+[class^="membersWrap_"],
+[class*=" membersWrap_"],
+[class^="peopleColumn_"],
+[class*=" peopleColumn_"] {
+  background-color: var(--anya-bd-theme-members) !important;
   box-shadow: none !important;
-  border: none !important;
 }
 
-/* === Fonts === */
- * {
-   font-family: var(--anya-bd-theme-font-primary) !important;
-   border-radius: var(--anya-bd-theme-corner-radius) !important;
- }
- h1, h2, h3, .title__1ec7e {
-   font-family: var(--anya-bd-theme-font-accent) !important;
- }
- button, a {
-   font-family: var(--anya-bd-theme-font-button) !important;
- }
+/* User panel (bottom left) */
+:is([class^="sidebar_"], [class*=" sidebar_"]) :is([class^="panels_"], [class*=" panels_"]) {
+  background: var(--anya-bd-theme-panel) !important;
+}
+
+/* ================================
+   Messages
+================================ */
+li[id^="chat-messages-"] > [role="article"] {
+  background-color: var(--anya-bd-theme-message);
+  border-radius: var(--anya-bd-theme-corner-radius);
+}
+
+[id^="message-content-"],
+[class^="markup_"],
+[class*=" markup_"] {
+  color: var(--anya-bd-theme-text);
+  font-size: 15px;
+  text-shadow: var(--anya-bd-theme-text-shadow);
+}
+
+/* ================================
+   Popouts, menus, modals
+   Floating layers sit over the backdrop, so blur what is behind them.
+================================ */
+[role="menu"],
+[role="dialog"],
+[role="listbox"],
+[role="tooltip"] {
+  backdrop-filter: blur(12px);
+}
+
+/* ================================
+   Scrollbars (fallback for scrollers that skip the tokens)
+================================ */
+::-webkit-scrollbar {
+  background-color: rgba(221, 99, 191, 0.384);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--anya-bd-theme-scrollbar-thumb);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--anya-bd-theme-scrollbar-track);
+}
+
+/* ================================
+   Home icon replacement
+   Scoped to the Home button only, so the add-server and discover buttons
+   keep their icons.
+================================ */
+[data-list-item-id="guildsnav___home"] [class*="childWrapper_"] {
+  background: var(--anya-bd-theme-home-icon) center / cover no-repeat !important;
+}
+[data-list-item-id="guildsnav___home"] [class*="childWrapper_"] > * {
+  visibility: hidden !important;
+}
+
+/* ================================
+   Fonts and corners
+================================ */
+* {
+  font-family: var(--anya-bd-theme-font-primary) !important;
+  border-radius: var(--anya-bd-theme-corner-radius) !important;
+}
+h1, h2, h3 {
+  font-family: var(--anya-bd-theme-font-accent) !important;
+}
+button, a {
+  font-family: var(--anya-bd-theme-font-button) !important;
+}
+code, pre, code *, pre *, [class*="codeBlock"] * {
+  font-family: var(--font-code, monospace) !important;
+}
