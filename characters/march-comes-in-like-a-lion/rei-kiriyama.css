@@ -1,0 +1,15 @@
+/* Rei Kiriyama - March Comes in Like a Lion */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #7fa8e0;
+  --uadt-accent-alt: #e6e6e6;
+  --uadt-tint: #0e1420;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

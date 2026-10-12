@@ -1,0 +1,14 @@
+/* Dan Heng - Honkai: Star Rail */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #4fc2a8;
+  --uadt-accent-alt: #b0e0d0;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

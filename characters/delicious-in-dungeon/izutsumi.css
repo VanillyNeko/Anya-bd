@@ -1,0 +1,15 @@
+/* Izutsumi - Delicious in Dungeon */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #a8a0d0;
+  --uadt-accent-alt: #f2c94c;
+  --uadt-tint: #0f0e16;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

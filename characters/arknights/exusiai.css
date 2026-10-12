@@ -1,0 +1,14 @@
+/* Exusiai - Arknights */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #ff6b6b;
+  --uadt-accent-alt: #ffd27f;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Permanent Marker";
+  --uadt-font-button: "Permanent Marker";
+}

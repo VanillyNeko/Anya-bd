@@ -1,0 +1,15 @@
+/* Ginko - Mushishi */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #8fd8a8;
+  --uadt-accent-alt: #c0c0b0;
+  --uadt-tint: #0c1612;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

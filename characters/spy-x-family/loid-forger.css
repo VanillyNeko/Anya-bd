@@ -1,0 +1,19 @@
+/* Loid Forger - Spy x Family */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #5fb8a8;
+  --uadt-accent-alt: #e6d2a4;
+  --uadt-tint: #0f1a26;
+  --uadt-text: #e4eef0;
+  --uadt-text-strong: #ffffff;
+  --uadt-text-muted: #98aeb4;
+  --uadt-link: #7fd6c6;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Permanent Marker";
+  --uadt-font-button: "Permanent Marker";
+}

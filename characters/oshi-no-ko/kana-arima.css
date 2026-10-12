@@ -1,0 +1,14 @@
+/* Kana Arima - Oshi no Ko */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #e85a5a;
+  --uadt-accent-alt: #ffb0b0;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

@@ -1,0 +1,15 @@
+/* Sasuke Uchiha - Naruto */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #8a85d0;
+  --uadt-accent-alt: #e0405a;
+  --uadt-tint: #0f0e18;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

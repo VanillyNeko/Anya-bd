@@ -1,0 +1,14 @@
+/* Sunaookami Shiroko - Blue Archive */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #8fc2f0;
+  --uadt-accent-alt: #e6e6e6;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

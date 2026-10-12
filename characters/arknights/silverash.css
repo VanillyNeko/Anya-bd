@@ -1,0 +1,14 @@
+/* SilverAsh - Arknights */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #c9d6e6;
+  --uadt-accent-alt: #5f8ae0;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

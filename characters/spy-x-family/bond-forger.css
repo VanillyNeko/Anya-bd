@@ -1,0 +1,19 @@
+/* Bond Forger - Spy x Family */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #9cc4ff;
+  --uadt-accent-alt: #ffe9b8;
+  --uadt-tint: #1a2132;
+  --uadt-text: #eef3ff;
+  --uadt-text-strong: #ffffff;
+  --uadt-text-muted: #a9b6cf;
+  --uadt-link: #b3d3ff;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

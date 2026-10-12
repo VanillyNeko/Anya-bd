@@ -1,0 +1,412 @@
+{
+  "version": "6.0.0",
+  "styles": {
+    "cute": { "body": "Single Day", "heading": "Pacifico", "button": "Permanent Marker" },
+    "clean": { "body": "gg sans", "heading": "Pacifico", "button": "Permanent Marker" },
+    "bold": { "body": "gg sans", "heading": "Permanent Marker", "button": "Permanent Marker" }
+  },
+  "series": [
+    {
+      "id": "genshin-impact",
+      "name": "Genshin Impact",
+      "category": "Gacha",
+      "characters": [
+        { "id": "furina", "name": "Furina", "accent": "#7fb2ff", "alt": "#f2e3b3" },
+        { "id": "raiden-shogun", "name": "Raiden Shogun", "accent": "#b48cff", "alt": "#e8c4ff", "style": "clean" },
+        { "id": "hu-tao", "name": "Hu Tao", "accent": "#ff6a4d", "alt": "#f2b84a", "tint": "#1e0c0c" },
+        { "id": "nahida", "name": "Nahida", "accent": "#8fe08f", "alt": "#f2f2e6" },
+        { "id": "zhongli", "name": "Zhongli", "accent": "#e0a84a", "alt": "#8a6a3b", "tint": "#1a130b", "style": "clean" },
+        { "id": "venti", "name": "Venti", "accent": "#5fd6b4", "alt": "#e8dcb0" },
+        { "id": "ganyu", "name": "Ganyu", "accent": "#8fc2f0", "alt": "#e6c27a" },
+        { "id": "kaedehara-kazuha", "name": "Kaedehara Kazuha", "accent": "#e8604f", "alt": "#e8dcc8" },
+        { "id": "arlecchino", "name": "Arlecchino", "accent": "#e04646", "alt": "#e6e6e6", "tint": "#110809", "style": "bold" }
+      ]
+    },
+    {
+      "id": "honkai-star-rail",
+      "name": "Honkai: Star Rail",
+      "category": "Gacha",
+      "characters": [
+        { "id": "march-7th", "name": "March 7th", "accent": "#ff9ccf", "alt": "#8fd3ff" },
+        { "id": "dan-heng", "name": "Dan Heng", "accent": "#4fc2a8", "alt": "#b0e0d0", "style": "clean" },
+        { "id": "kafka", "name": "Kafka", "accent": "#d0507a", "alt": "#a07ae0", "tint": "#1a0c14", "style": "clean" },
+        { "id": "silver-wolf", "name": "Silver Wolf", "accent": "#8a7cff", "alt": "#6fe6ff", "style": "bold" },
+        { "id": "firefly", "name": "Firefly", "accent": "#6fe0c8", "alt": "#ff9b6a" },
+        { "id": "acheron", "name": "Acheron", "accent": "#b04a7a", "alt": "#c7b3ff", "tint": "#120c18", "style": "clean" },
+        { "id": "robin", "name": "Robin", "accent": "#9ec7ff", "alt": "#ffd27f" },
+        { "id": "sparkle", "name": "Sparkle", "accent": "#ff5070", "alt": "#ffcf5c", "style": "bold" },
+        { "id": "himeko", "name": "Himeko", "accent": "#e05a48", "alt": "#f0c27a", "style": "clean" }
+      ]
+    },
+    {
+      "id": "zenless-zone-zero",
+      "name": "Zenless Zone Zero",
+      "category": "Gacha",
+      "characters": [
+        { "id": "ellen-joe", "name": "Ellen Joe", "accent": "#e8606f", "alt": "#f2f2f2", "tint": "#111216" },
+        { "id": "jane-doe", "name": "Jane Doe", "accent": "#d04a66", "alt": "#d8b4ff", "style": "clean" },
+        { "id": "hoshimi-miyabi", "name": "Hoshimi Miyabi", "accent": "#6fb4f0", "alt": "#e6e6ff", "tint": "#0f1626", "style": "clean" },
+        { "id": "nicole-demara", "name": "Nicole Demara", "accent": "#ff7ab8", "alt": "#6fd0ff" },
+        { "id": "anby-demara", "name": "Anby Demara", "accent": "#7fd8a8", "alt": "#f2d16b", "style": "bold" },
+        { "id": "belle", "name": "Belle", "accent": "#59b6ff", "alt": "#ffcc66" },
+        { "id": "zhu-yuan", "name": "Zhu Yuan", "accent": "#6f8ff0", "alt": "#f2c94c", "style": "bold" }
+      ]
+    },
+    {
+      "id": "wuthering-waves",
+      "name": "Wuthering Waves",
+      "category": "Gacha",
+      "characters": [
+        { "id": "rover", "name": "Rover", "accent": "#e6d08a", "alt": "#8fb6e6" },
+        { "id": "jinhsi", "name": "Jinhsi", "accent": "#f2d16b", "alt": "#8fd3e6", "tint": "#141a22", "style": "clean" },
+        { "id": "changli", "name": "Changli", "accent": "#f0703f", "alt": "#f2d16b" },
+        { "id": "camellya", "name": "Camellya", "accent": "#d04a6a", "alt": "#e6e6e6", "tint": "#140a0e", "style": "bold" },
+        { "id": "carlotta", "name": "Carlotta", "accent": "#a8c8ff", "alt": "#d0b0ff", "style": "clean" },
+        { "id": "the-shorekeeper", "name": "The Shorekeeper", "accent": "#8fb0ff", "alt": "#e6d6ff", "tint": "#0e1226" },
+        { "id": "phoebe", "name": "Phoebe", "accent": "#ffd27f", "alt": "#e6e6ff" }
+      ]
+    },
+    {
+      "id": "blue-archive",
+      "name": "Blue Archive",
+      "category": "Gacha",
+      "characters": [
+        { "id": "arona", "name": "Arona", "accent": "#7fd3ff", "alt": "#ffffff", "tint": "#10203a" },
+        { "id": "shiroko", "name": "Sunaookami Shiroko", "accent": "#8fc2f0", "alt": "#e6e6e6" },
+        { "id": "hoshino", "name": "Takanashi Hoshino", "accent": "#ff9ccf", "alt": "#8fb6ff" },
+        { "id": "hina", "name": "Sorasaki Hina", "accent": "#b39cf0", "alt": "#e86060", "style": "clean" },
+        { "id": "aris", "name": "Tendou Aris", "accent": "#6fa8ff", "alt": "#ffd27f", "style": "bold" },
+        { "id": "yuuka", "name": "Hayase Yuuka", "accent": "#7f8ff0", "alt": "#e6e6ff", "style": "clean" },
+        { "id": "mika", "name": "Misono Mika", "accent": "#ffb0d0", "alt": "#ffe48a" }
+      ]
+    },
+    {
+      "id": "arknights",
+      "name": "Arknights",
+      "category": "Gacha",
+      "characters": [
+        { "id": "amiya", "name": "Amiya", "accent": "#7f9ff0", "alt": "#e6d6ff", "tint": "#10162a" },
+        { "id": "texas", "name": "Texas", "accent": "#e05a5a", "alt": "#f2c94c", "style": "clean" },
+        { "id": "exusiai", "name": "Exusiai", "accent": "#ff6b6b", "alt": "#ffd27f", "style": "bold" },
+        { "id": "skadi", "name": "Skadi", "accent": "#d0506a", "alt": "#5f7fd6", "style": "clean" },
+        { "id": "chen", "name": "Ch'en", "accent": "#e04a4a", "alt": "#4fb07f", "style": "bold" },
+        { "id": "silverash", "name": "SilverAsh", "accent": "#c9d6e6", "alt": "#5f8ae0", "style": "clean" },
+        { "id": "kaltsit", "name": "Kal'tsit", "accent": "#7fd6a8", "alt": "#e6e6e6", "style": "clean" }
+      ]
+    },
+    {
+      "id": "fate-grand-order",
+      "name": "Fate/Grand Order",
+      "category": "Gacha",
+      "characters": [
+        { "id": "mash-kyrielight", "name": "Mash Kyrielight", "accent": "#a88ff0", "alt": "#e6e6ff", "tint": "#14102a" },
+        { "id": "artoria-pendragon", "name": "Artoria Pendragon", "accent": "#6f8fe0", "alt": "#f2d16b", "style": "clean" },
+        { "id": "gilgamesh", "name": "Gilgamesh", "accent": "#f2c94c", "alt": "#e05050", "tint": "#17120a", "style": "bold" },
+        { "id": "jeanne-darc", "name": "Jeanne d'Arc", "accent": "#e6d6a0", "alt": "#6f8fe0", "style": "clean" },
+        { "id": "jeanne-alter", "name": "Jeanne d'Arc (Alter)", "accent": "#8f95c0", "alt": "#f06050", "tint": "#0e0f16", "style": "bold" },
+        { "id": "ishtar", "name": "Ishtar", "accent": "#e05a5a", "alt": "#f2c94c" },
+        { "id": "scathach", "name": "Scathach", "accent": "#c04a7a", "alt": "#e05a5a", "tint": "#150a12", "style": "clean" }
+      ]
+    },
+    {
+      "id": "uma-musume",
+      "name": "Uma Musume Pretty Derby",
+      "category": "Gacha",
+      "characters": [
+        { "id": "special-week", "name": "Special Week", "accent": "#ff8ac0", "alt": "#7fb6ff" },
+        { "id": "silence-suzuka", "name": "Silence Suzuka", "accent": "#4fc28f", "alt": "#f2d16b" },
+        { "id": "tokai-teio", "name": "Tokai Teio", "accent": "#6f8ff0", "alt": "#ff6b8a" },
+        { "id": "gold-ship", "name": "Gold Ship", "accent": "#e05a5a", "alt": "#f2c94c", "style": "bold" },
+        { "id": "mejiro-mcqueen", "name": "Mejiro McQueen", "accent": "#9a8ff0", "alt": "#e6e6ff", "style": "clean" },
+        { "id": "kitasan-black", "name": "Kitasan Black", "accent": "#f0604a", "alt": "#f2f2f2", "tint": "#120c0c" }
+      ]
+    },
+    {
+      "id": "spy-x-family",
+      "name": "Spy x Family",
+      "category": "Popular",
+      "characters": [
+        {
+          "id": "anya-forger", "name": "Anya Forger", "accent": "#ff8ad8", "alt": "#7fdcff", "tint": "#2a1638",
+          "text": "#f0dcff", "textStrong": "#ffd6f3", "textMuted": "#c9a6de", "link": "#ff9fe0",
+          "background": "assets/anya-darkened.jpg", "homeIcon": "assets/home-icon.gif"
+        },
+        {
+          "id": "yor-forger", "name": "Yor Forger", "accent": "#e0456b", "alt": "#e8c27a", "tint": "#1c0a12",
+          "text": "#f6e4ea", "textStrong": "#ffd2dd", "textMuted": "#c79aa8", "link": "#ff7f9e"
+        },
+        {
+          "id": "loid-forger", "name": "Loid Forger", "accent": "#5fb8a8", "alt": "#e6d2a4", "tint": "#0f1a26",
+          "text": "#e4eef0", "textStrong": "#ffffff", "textMuted": "#98aeb4", "link": "#7fd6c6", "style": "bold"
+        },
+        {
+          "id": "bond-forger", "name": "Bond Forger", "accent": "#9cc4ff", "alt": "#ffe9b8", "tint": "#1a2132",
+          "text": "#eef3ff", "textStrong": "#ffffff", "textMuted": "#a9b6cf", "link": "#b3d3ff"
+        },
+        { "id": "damian-desmond", "name": "Damian Desmond", "accent": "#6fb07f", "alt": "#f2d16b", "style": "clean" },
+        { "id": "becky-blackbell", "name": "Becky Blackbell", "accent": "#f0b860", "alt": "#ff9cc0" }
+      ]
+    },
+    {
+      "id": "frieren",
+      "name": "Frieren: Beyond Journey's End",
+      "category": "Popular",
+      "characters": [
+        { "id": "frieren", "name": "Frieren", "accent": "#8fd8b0", "alt": "#e6c27a", "tint": "#0f1a16" },
+        { "id": "fern", "name": "Fern", "accent": "#b08fe8", "alt": "#f2f2f2" },
+        { "id": "stark", "name": "Stark", "accent": "#e05a5a", "alt": "#e6a04a", "style": "bold" },
+        { "id": "himmel", "name": "Himmel", "accent": "#8fc0ff", "alt": "#e6e6ff" },
+        { "id": "heiter", "name": "Heiter", "accent": "#d6c08a", "alt": "#7f9fb8", "style": "clean" },
+        { "id": "eisen", "name": "Eisen", "accent": "#c0a07a", "alt": "#c0c0c0", "style": "bold" },
+        { "id": "ubel", "name": "Ubel", "accent": "#6fb08f", "alt": "#c0a0ff", "style": "clean" }
+      ]
+    },
+    {
+      "id": "jujutsu-kaisen",
+      "name": "Jujutsu Kaisen",
+      "category": "Popular",
+      "characters": [
+        { "id": "satoru-gojo", "name": "Satoru Gojo", "accent": "#7fd3ff", "alt": "#f2f2f2", "tint": "#0c1424", "style": "clean" },
+        { "id": "yuji-itadori", "name": "Yuji Itadori", "accent": "#ff8a9b", "alt": "#e05050", "style": "bold" },
+        { "id": "megumi-fushiguro", "name": "Megumi Fushiguro", "accent": "#6f8fc0", "alt": "#8fc2f0", "style": "clean" },
+        { "id": "nobara-kugisaki", "name": "Nobara Kugisaki", "accent": "#e8945a", "alt": "#e05050" },
+        { "id": "ryomen-sukuna", "name": "Ryomen Sukuna", "accent": "#d0405a", "alt": "#f2c0a0", "tint": "#130709", "style": "bold" },
+        { "id": "suguru-geto", "name": "Suguru Geto", "accent": "#9a8fe0", "alt": "#c9a0ff", "style": "clean" },
+        { "id": "maki-zenin", "name": "Maki Zenin", "accent": "#6fb07f", "alt": "#e6c27a", "style": "bold" },
+        { "id": "toji-fushiguro", "name": "Toji Fushiguro", "accent": "#8fa88f", "alt": "#c0c0c0", "style": "bold" }
+      ]
+    },
+    {
+      "id": "demon-slayer",
+      "name": "Demon Slayer",
+      "category": "Popular",
+      "characters": [
+        { "id": "tanjiro-kamado", "name": "Tanjiro Kamado", "accent": "#4fb87f", "alt": "#e05050", "style": "clean" },
+        { "id": "nezuko-kamado", "name": "Nezuko Kamado", "accent": "#ff8ac0", "alt": "#7fc27f" },
+        { "id": "zenitsu-agatsuma", "name": "Zenitsu Agatsuma", "accent": "#f2c94c", "alt": "#ff9f4a" },
+        { "id": "inosuke-hashibira", "name": "Inosuke Hashibira", "accent": "#7f95e0", "alt": "#c0a07a", "style": "bold" },
+        { "id": "kyojuro-rengoku", "name": "Kyojuro Rengoku", "accent": "#ff7f2a", "alt": "#f2c94c", "style": "bold" },
+        { "id": "shinobu-kocho", "name": "Shinobu Kocho", "accent": "#a88ff0", "alt": "#6fd3c0" },
+        { "id": "giyu-tomioka", "name": "Giyu Tomioka", "accent": "#6f8fc0", "alt": "#e05a5a", "style": "clean" },
+        { "id": "mitsuri-kanroji", "name": "Mitsuri Kanroji", "accent": "#ff8ac0", "alt": "#7fd6a0" }
+      ]
+    },
+    {
+      "id": "chainsaw-man",
+      "name": "Chainsaw Man",
+      "category": "Popular",
+      "characters": [
+        { "id": "denji", "name": "Denji", "accent": "#f2a03a", "alt": "#e05050", "style": "bold" },
+        { "id": "power", "name": "Power", "accent": "#f05a5a", "alt": "#f2c94c", "style": "bold" },
+        { "id": "makima", "name": "Makima", "accent": "#d0606a", "alt": "#f2c94c", "tint": "#140b0c", "style": "clean" },
+        { "id": "aki-hayakawa", "name": "Aki Hayakawa", "accent": "#7f95c0", "alt": "#e6e6e6", "style": "clean" },
+        { "id": "reze", "name": "Reze", "accent": "#9a8fe0", "alt": "#7fd6a0" },
+        { "id": "kobeni-higashiyama", "name": "Kobeni Higashiyama", "accent": "#e0a8a8", "alt": "#a07070" }
+      ]
+    },
+    {
+      "id": "oshi-no-ko",
+      "name": "Oshi no Ko",
+      "category": "Popular",
+      "characters": [
+        { "id": "ai-hoshino", "name": "Ai Hoshino", "accent": "#b07fef", "alt": "#ffd27f", "tint": "#170f22" },
+        { "id": "ruby-hoshino", "name": "Ruby Hoshino", "accent": "#f2c94c", "alt": "#ff8ac0" },
+        { "id": "aqua-hoshino", "name": "Aquamarine Hoshino", "accent": "#6f8ff0", "alt": "#7fd3ff", "style": "clean" },
+        { "id": "kana-arima", "name": "Kana Arima", "accent": "#e85a5a", "alt": "#ffb0b0" },
+        { "id": "akane-kurokawa", "name": "Akane Kurokawa", "accent": "#6f8fc0", "alt": "#8fc2f0", "style": "clean" },
+        { "id": "mem-cho", "name": "MEM-cho", "accent": "#ffd27f", "alt": "#ff8ac0" }
+      ]
+    },
+    {
+      "id": "bocchi-the-rock",
+      "name": "Bocchi the Rock!",
+      "category": "Popular",
+      "characters": [
+        { "id": "hitori-gotoh", "name": "Hitori Gotoh", "accent": "#ff8ac0", "alt": "#ffd27f" },
+        { "id": "nijika-ijichi", "name": "Nijika Ijichi", "accent": "#f2c94c", "alt": "#ff9f6a" },
+        { "id": "ryo-yamada", "name": "Ryo Yamada", "accent": "#6f8ff0", "alt": "#9fafff", "style": "clean" },
+        { "id": "ikuyo-kita", "name": "Ikuyo Kita", "accent": "#f05a5a", "alt": "#ff9f6a" }
+      ]
+    },
+    {
+      "id": "attack-on-titan",
+      "name": "Attack on Titan",
+      "category": "Popular",
+      "characters": [
+        { "id": "eren-yeager", "name": "Eren Yeager", "accent": "#5fb07f", "alt": "#c0a07a", "style": "bold" },
+        { "id": "mikasa-ackerman", "name": "Mikasa Ackerman", "accent": "#e05050", "alt": "#c0c0c0", "tint": "#120a0b", "style": "clean" },
+        { "id": "levi-ackerman", "name": "Levi Ackerman", "accent": "#b0b0c8", "alt": "#5f7fa0", "style": "bold" },
+        { "id": "armin-arlert", "name": "Armin Arlert", "accent": "#f2d16b", "alt": "#6f95e0", "style": "clean" },
+        { "id": "hange-zoe", "name": "Hange Zoe", "accent": "#d09a6a", "alt": "#7fa87f" }
+      ]
+    },
+    {
+      "id": "evangelion",
+      "name": "Neon Genesis Evangelion",
+      "category": "Popular",
+      "characters": [
+        { "id": "rei-ayanami", "name": "Rei Ayanami", "accent": "#9fc0ff", "alt": "#e85a5a", "tint": "#0e1220", "style": "clean" },
+        { "id": "asuka-langley", "name": "Asuka Langley", "accent": "#f05a40", "alt": "#ff9f4a", "style": "bold" },
+        { "id": "shinji-ikari", "name": "Shinji Ikari", "accent": "#8a7ff0", "alt": "#8fe06f", "tint": "#110e1e", "style": "clean" },
+        { "id": "misato-katsuragi", "name": "Misato Katsuragi", "accent": "#a07fe0", "alt": "#e05a5a" },
+        { "id": "kaworu-nagisa", "name": "Kaworu Nagisa", "accent": "#d0d0e6", "alt": "#e85a5a", "style": "clean" },
+        { "id": "mari-makinami", "name": "Mari Makinami", "accent": "#ff7fb0", "alt": "#7fcf9f" }
+      ]
+    },
+    {
+      "id": "one-piece",
+      "name": "One Piece",
+      "category": "Popular",
+      "characters": [
+        { "id": "monkey-d-luffy", "name": "Monkey D. Luffy", "accent": "#e85a5a", "alt": "#f2c94c", "style": "bold" },
+        { "id": "roronoa-zoro", "name": "Roronoa Zoro", "accent": "#4fc27f", "alt": "#c0c0c0", "style": "bold" },
+        { "id": "nami", "name": "Nami", "accent": "#ff944a", "alt": "#5fb0e6" },
+        { "id": "sanji", "name": "Sanji", "accent": "#f2d16b", "alt": "#6f85b0", "style": "clean" },
+        { "id": "nico-robin", "name": "Nico Robin", "accent": "#9a8fd0", "alt": "#e6c27a", "style": "clean" },
+        { "id": "tony-tony-chopper", "name": "Tony Tony Chopper", "accent": "#ff9fc0", "alt": "#c0a07a" },
+        { "id": "trafalgar-law", "name": "Trafalgar Law", "accent": "#f2c94c", "alt": "#6f85b0", "style": "bold" }
+      ]
+    },
+    {
+      "id": "naruto",
+      "name": "Naruto",
+      "category": "Popular",
+      "characters": [
+        { "id": "naruto-uzumaki", "name": "Naruto Uzumaki", "accent": "#ff8a2a", "alt": "#6f85c0", "style": "bold" },
+        { "id": "sasuke-uchiha", "name": "Sasuke Uchiha", "accent": "#8a85d0", "alt": "#e0405a", "tint": "#0f0e18", "style": "clean" },
+        { "id": "sakura-haruno", "name": "Sakura Haruno", "accent": "#ff8ac0", "alt": "#7fd6a0" },
+        { "id": "kakashi-hatake", "name": "Kakashi Hatake", "accent": "#b0b8c8", "alt": "#6f85c0", "style": "clean" },
+        { "id": "hinata-hyuga", "name": "Hinata Hyuga", "accent": "#aaa8f0", "alt": "#6f75b0" },
+        { "id": "itachi-uchiha", "name": "Itachi Uchiha", "accent": "#d0405a", "alt": "#c0c0c0", "tint": "#120709", "style": "clean" },
+        { "id": "gaara", "name": "Gaara", "accent": "#e05040", "alt": "#7fd3c0", "style": "bold" }
+      ]
+    },
+    {
+      "id": "my-hero-academia",
+      "name": "My Hero Academia",
+      "category": "Popular",
+      "characters": [
+        { "id": "izuku-midoriya", "name": "Izuku Midoriya", "accent": "#4fc27f", "alt": "#f2c94c", "style": "bold" },
+        { "id": "katsuki-bakugo", "name": "Katsuki Bakugo", "accent": "#ff8a2a", "alt": "#f2c94c", "style": "bold" },
+        { "id": "shoto-todoroki", "name": "Shoto Todoroki", "accent": "#e85a5a", "alt": "#8fc2ff", "style": "clean" },
+        { "id": "ochaco-uraraka", "name": "Ochaco Uraraka", "accent": "#ff9fc0", "alt": "#ffb0a0" },
+        { "id": "all-might", "name": "All Might", "accent": "#f2c94c", "alt": "#6f8ff0", "style": "bold" },
+        { "id": "tsuyu-asui", "name": "Tsuyu Asui", "accent": "#7fc27f", "alt": "#e6e6ff" },
+        { "id": "himiko-toga", "name": "Himiko Toga", "accent": "#f2d16b", "alt": "#e85a5a" }
+      ]
+    },
+    {
+      "id": "violet-evergarden",
+      "name": "Violet Evergarden",
+      "category": "Niche",
+      "characters": [
+        { "id": "violet-evergarden", "name": "Violet Evergarden", "accent": "#7f9fe0", "alt": "#7fd6a0", "tint": "#0e1424", "style": "clean" },
+        { "id": "gilbert-bougainvillea", "name": "Gilbert Bougainvillea", "accent": "#6fa88f", "alt": "#e6c27a", "style": "clean" },
+        { "id": "claudia-hodgins", "name": "Claudia Hodgins", "accent": "#e8904a", "alt": "#6f85c0" },
+        { "id": "cattleya-baudelaire", "name": "Cattleya Baudelaire", "accent": "#c05a75", "alt": "#e6c27a", "style": "clean" }
+      ]
+    },
+    {
+      "id": "made-in-abyss",
+      "name": "Made in Abyss",
+      "category": "Niche",
+      "characters": [
+        { "id": "riko", "name": "Riko", "accent": "#f0b04a", "alt": "#e05a5a" },
+        { "id": "reg", "name": "Reg", "accent": "#e05a5a", "alt": "#e6c27a", "style": "bold" },
+        { "id": "nanachi", "name": "Nanachi", "accent": "#e8d0a8", "alt": "#a88fe0" },
+        { "id": "ozen", "name": "Ozen the Immovable", "accent": "#9a9ac0", "alt": "#e6e6e6", "tint": "#0e0e16", "style": "bold" },
+        { "id": "faputa", "name": "Faputa", "accent": "#e6e6ff", "alt": "#e05a5a" }
+      ]
+    },
+    {
+      "id": "mushishi",
+      "name": "Mushishi",
+      "category": "Niche",
+      "characters": [
+        { "id": "ginko", "name": "Ginko", "accent": "#8fd8a8", "alt": "#c0c0b0", "tint": "#0c1612", "style": "clean" },
+        { "id": "tanyuu", "name": "Tanyuu", "accent": "#c86070", "alt": "#e6c27a", "style": "clean" }
+      ]
+    },
+    {
+      "id": "steins-gate",
+      "name": "Steins;Gate",
+      "category": "Niche",
+      "characters": [
+        { "id": "rintaro-okabe", "name": "Rintaro Okabe", "accent": "#ff9f4a", "alt": "#e6e6e6", "tint": "#150f0a", "style": "bold" },
+        { "id": "kurisu-makise", "name": "Kurisu Makise", "accent": "#d0604a", "alt": "#6f85c0", "style": "clean" },
+        { "id": "mayuri-shiina", "name": "Mayuri Shiina", "accent": "#8fc0ff", "alt": "#ffd27f" },
+        { "id": "suzuha-amane", "name": "Suzuha Amane", "accent": "#e8a84a", "alt": "#6fa88f", "style": "bold" },
+        { "id": "faris-nyannyan", "name": "Faris NyanNyan", "accent": "#ff9fc0", "alt": "#7fcf9f" }
+      ]
+    },
+    {
+      "id": "cowboy-bebop",
+      "name": "Cowboy Bebop",
+      "category": "Niche",
+      "characters": [
+        { "id": "spike-spiegel", "name": "Spike Spiegel", "accent": "#6f85d0", "alt": "#f2c94c", "tint": "#0d1020", "style": "bold" },
+        { "id": "faye-valentine", "name": "Faye Valentine", "accent": "#f2d16b", "alt": "#c05a75", "style": "clean" },
+        { "id": "jet-black", "name": "Jet Black", "accent": "#c0a07a", "alt": "#6f8f8f", "style": "bold" },
+        { "id": "edward", "name": "Radical Edward", "accent": "#ff8a3a", "alt": "#7fcf9f" },
+        { "id": "ein", "name": "Ein", "accent": "#e6c27a", "alt": "#7fb0e0" },
+        { "id": "vicious", "name": "Vicious", "accent": "#c8c8e0", "alt": "#d0405a", "tint": "#0e0e14", "style": "clean" }
+      ]
+    },
+    {
+      "id": "girls-last-tour",
+      "name": "Girls' Last Tour",
+      "category": "Niche",
+      "characters": [
+        { "id": "chito", "name": "Chito", "accent": "#a8b8b0", "alt": "#e6c27a", "tint": "#101315", "style": "clean" },
+        { "id": "yuuri", "name": "Yuuri", "accent": "#e6c27a", "alt": "#8f9f7f", "tint": "#141310" }
+      ]
+    },
+    {
+      "id": "march-comes-in-like-a-lion",
+      "name": "March Comes in Like a Lion",
+      "category": "Niche",
+      "characters": [
+        { "id": "rei-kiriyama", "name": "Rei Kiriyama", "accent": "#7fa8e0", "alt": "#e6e6e6", "tint": "#0e1420", "style": "clean" },
+        { "id": "hinata-kawamoto", "name": "Hinata Kawamoto", "accent": "#ff9f6a", "alt": "#6f85c0" },
+        { "id": "akari-kawamoto", "name": "Akari Kawamoto", "accent": "#f0b0b0", "alt": "#f2d16b" },
+        { "id": "momo-kawamoto", "name": "Momo Kawamoto", "accent": "#ffb0d0", "alt": "#ffd27f" }
+      ]
+    },
+    {
+      "id": "monogatari",
+      "name": "Monogatari",
+      "category": "Niche",
+      "characters": [
+        { "id": "hitagi-senjougahara", "name": "Hitagi Senjougahara", "accent": "#b07fd0", "alt": "#e6e6e6", "tint": "#140e18", "style": "clean" },
+        { "id": "tsubasa-hanekawa", "name": "Tsubasa Hanekawa", "accent": "#d0d0e6", "alt": "#f2c94c" },
+        { "id": "shinobu-oshino", "name": "Shinobu Oshino", "accent": "#f2c94c", "alt": "#e85a5a" },
+        { "id": "mayoi-hachikuji", "name": "Mayoi Hachikuji", "accent": "#ff9fc0", "alt": "#7fb6ff" },
+        { "id": "nadeko-sengoku", "name": "Nadeko Sengoku", "accent": "#ff8ac0", "alt": "#7fcf9f" },
+        { "id": "yotsugi-ononoki", "name": "Yotsugi Ononoki", "accent": "#7fd6b0", "alt": "#ff9fc0", "style": "bold" }
+      ]
+    },
+    {
+      "id": "odd-taxi",
+      "name": "Odd Taxi",
+      "category": "Niche",
+      "characters": [
+        { "id": "hiroshi-odokawa", "name": "Hiroshi Odokawa", "accent": "#e6c27a", "alt": "#6fa88f", "tint": "#12110c", "style": "clean" },
+        { "id": "miho-shirakawa", "name": "Miho Shirakawa", "accent": "#8fc2f0", "alt": "#ffffff", "style": "clean" },
+        { "id": "dobu", "name": "Dobu", "accent": "#d04a5a", "alt": "#f2c94c", "style": "bold" }
+      ]
+    },
+    {
+      "id": "delicious-in-dungeon",
+      "name": "Delicious in Dungeon",
+      "category": "Niche",
+      "characters": [
+        { "id": "laios-touden", "name": "Laios Touden", "accent": "#7fa8e0", "alt": "#e6c27a", "style": "clean" },
+        { "id": "marcille-donato", "name": "Marcille Donato", "accent": "#f2d16b", "alt": "#6fb39f" },
+        { "id": "chilchuck-tims", "name": "Chilchuck Tims", "accent": "#c0a07a", "alt": "#7f9f6f", "style": "bold" },
+        { "id": "senshi", "name": "Senshi", "accent": "#e0a84a", "alt": "#a08a6a", "style": "bold" },
+        { "id": "izutsumi", "name": "Izutsumi", "accent": "#a8a0d0", "alt": "#f2c94c", "tint": "#0f0e16" },
+        { "id": "falin-touden", "name": "Falin Touden", "accent": "#e6c27a", "alt": "#8fd3a8" }
+      ]
+    }
+  ]
+}

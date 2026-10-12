@@ -1,0 +1,14 @@
+/* Akari Kawamoto - March Comes in Like a Lion */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #f0b0b0;
+  --uadt-accent-alt: #f2d16b;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

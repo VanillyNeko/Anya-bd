@@ -1,0 +1,19 @@
+/* Anya Forger - Spy x Family */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: url(https://vanillyneko.github.io/Anya-bd/assets/anya-darkened.jpg);
+  --uadt-home-icon: url(https://vanillyneko.github.io/Anya-bd/assets/home-icon.gif);
+  --uadt-home-logo: hidden;
+
+  --uadt-accent: #ff8ad8;
+  --uadt-accent-alt: #7fdcff;
+  --uadt-tint: #2a1638;
+  --uadt-text: #f0dcff;
+  --uadt-text-strong: #ffd6f3;
+  --uadt-text-muted: #c9a6de;
+  --uadt-link: #ff9fe0;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

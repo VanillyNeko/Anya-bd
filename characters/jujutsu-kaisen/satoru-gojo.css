@@ -1,0 +1,15 @@
+/* Satoru Gojo - Jujutsu Kaisen */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #7fd3ff;
+  --uadt-accent-alt: #f2f2f2;
+  --uadt-tint: #0c1424;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

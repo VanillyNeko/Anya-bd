@@ -1,0 +1,15 @@
+/* Ryomen Sukuna - Jujutsu Kaisen */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #d0405a;
+  --uadt-accent-alt: #f2c0a0;
+  --uadt-tint: #130709;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Permanent Marker";
+  --uadt-font-button: "Permanent Marker";
+}

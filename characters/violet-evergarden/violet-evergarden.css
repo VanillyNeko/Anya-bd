@@ -1,0 +1,15 @@
+/* Violet Evergarden - Violet Evergarden */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #7f9fe0;
+  --uadt-accent-alt: #7fd6a0;
+  --uadt-tint: #0e1424;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

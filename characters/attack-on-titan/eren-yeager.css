@@ -1,0 +1,14 @@
+/* Eren Yeager - Attack on Titan */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #5fb07f;
+  --uadt-accent-alt: #c0a07a;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Permanent Marker";
+  --uadt-font-button: "Permanent Marker";
+}

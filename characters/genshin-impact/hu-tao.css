@@ -1,0 +1,15 @@
+/* Hu Tao - Genshin Impact */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #ff6a4d;
+  --uadt-accent-alt: #f2b84a;
+  --uadt-tint: #1e0c0c;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

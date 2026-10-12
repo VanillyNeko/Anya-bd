@@ -1,0 +1,15 @@
+/* Rintaro Okabe - Steins;Gate */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #ff9f4a;
+  --uadt-accent-alt: #e6e6e6;
+  --uadt-tint: #150f0a;
+
+  --uadt-font-body: "gg sans";
+  --uadt-font-heading: "Permanent Marker";
+  --uadt-font-button: "Permanent Marker";
+}

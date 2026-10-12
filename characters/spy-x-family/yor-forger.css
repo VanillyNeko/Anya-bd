@@ -1,0 +1,19 @@
+/* Yor Forger - Spy x Family */
+/* Generated from roster.json by scripts/build.py - edit roster.json instead. */
+:root {
+  --uadt-background-image: none;
+  --uadt-home-icon: none;
+  --uadt-home-logo: visible;
+
+  --uadt-accent: #e0456b;
+  --uadt-accent-alt: #e8c27a;
+  --uadt-tint: #1c0a12;
+  --uadt-text: #f6e4ea;
+  --uadt-text-strong: #ffd2dd;
+  --uadt-text-muted: #c79aa8;
+  --uadt-link: #ff7f9e;
+
+  --uadt-font-body: "Single Day";
+  --uadt-font-heading: "Pacifico";
+  --uadt-font-button: "Permanent Marker";
+}

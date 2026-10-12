@@ -1,11 +1,11 @@
 /**
- * @name        Anya-BD
- * @version     5.0.0
- * @description Spy x Family theme for Discord. This file is the Anya entry point that
- *              older installs import; the theme itself lives in core.css and characters/.
+ * @name        The Ultimate Anime Discord Theme
+ * @version     6.0.0
+ * @description Anime theme for Discord. This file is the Anya entry point that older installs
+ *              import; the theme itself lives in core.css and characters/.
  * @author      VanillyNeko
  */
 
-/* To switch character, change anya below to yor, loid or bond. */
+/* To switch character, swap the second import for any file in characters/ (see CHARACTERS.md). */
 @import url("https://vanillyneko.github.io/Anya-bd/core.css");
-@import url("https://vanillyneko.github.io/Anya-bd/characters/anya.css");
+@import url("https://vanillyneko.github.io/Anya-bd/characters/spy-x-family/anya-forger.css");
